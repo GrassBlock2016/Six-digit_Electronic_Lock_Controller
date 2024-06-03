@@ -1,1 +1,4 @@
 # Six-digit_Electronic_Lock_Controller
+上海大学计算机工程与科学学院计算机科学与技术专业夏季硬件大作业
+
+六位密码电子锁控制器
