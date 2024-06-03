@@ -46,6 +46,6 @@
 另有一个`寄存器`存储错误次数，正确则归零，达到三次灯10秒闪烁
 
 
-### FUCK DING DONG
+### 
 
 ### I love you Daniel
