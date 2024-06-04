@@ -1,0 +1,83 @@
+Flow report for Six-digit_Electronic_Lock_Controller
+Tue Jun 04 15:51:35 2024
+Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Flow Summary                                                            ;
++-------------------------+-----------------------------------------------+
+; Flow Status             ; Flow Failed - Tue Jun 04 15:51:35 2024        ;
+; Quartus II Version      ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
+; Revision Name           ; Six-digit_Electronic_Lock_Controller          ;
+; Top-level Entity Name   ; Six-digit_Electronic_Lock_Controller          ;
+; Family                  ; Stratix                                       ;
+; Met timing requirements ; N/A                                           ;
++-------------------------+-----------------------------------------------+
+
+
++----------------------------------------------------------+
+; Flow Settings                                            ;
++-------------------+--------------------------------------+
+; Option            ; Setting                              ;
++-------------------+--------------------------------------+
+; Start date & time ; 06/04/2024 15:51:35                  ;
+; Main task         ; Compilation                          ;
+; Revision Name     ; Six-digit_Electronic_Lock_Controller ;
++-------------------+--------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                   ;
++-----------------+-------+---------------+-------------+------------+
+; Assignment Name ; Value ; Default Value ; Entity Name ; Section Id ;
++-----------------+-------+---------------+-------------+------------+
+
+
++-------------------------------------+
+; Flow Elapsed Time                   ;
++----------------------+--------------+
+; Module Name          ; Elapsed Time ;
++----------------------+--------------+
+; Analysis & Synthesis ; 00:00:00     ;
+; Total                ; 00:00:00     ;
++----------------------+--------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Six-digit_Electronic_Lock_Controller -c Six-digit_Electronic_Lock_Controller
+
+
+
