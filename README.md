@@ -55,3 +55,5 @@
 ### 输出（[3:0] output1, [3:0] output2, [3:0] output3, [3:0] output4, [3:0] output5, [3:0] output6）
 
 分别数码管上的6位密码，每个密码四个二进制输出
+
+qian
