@@ -15,9 +15,9 @@
 
 
 QUARTUS_VERSION = "6.0"
-DATE = "11:06:13  June 03, 2024"
+DATE = "16:28:37  June 04, 2024"
 
 
 # Revisions
 
-PROJECT_REVISION = "Six-digit_Electronic_Lock_Controller"
+PROJECT_REVISION = "SixDigit_Electronic_Lock_Controller"

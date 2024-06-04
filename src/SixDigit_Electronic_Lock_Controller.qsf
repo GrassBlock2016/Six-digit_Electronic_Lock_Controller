@@ -14,7 +14,7 @@
 
 
 # The default values for assignments are stored in the file
-#		Six-digit_Electronic_Lock_Controller_assignment_defaults.qdf
+#		SixDigit_Electronic_Lock_Controller_assignment_defaults.qdf
 # If this file doesn't exist, and for assignments not listed, see file
 #		assignment_defaults.qdf
 
@@ -25,9 +25,9 @@
 
 set_global_assignment -name FAMILY Stratix
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY "Six-digit_Electronic_Lock_Controller"
+set_global_assignment -name TOP_LEVEL_ENTITY SixDigit_Electronic_Lock_Controller
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "6.0 SP1"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:06:13  JUNE 03, 2024"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:28:37  JUNE 04, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "6.0 SP1"
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
-set_global_assignment -name VERILOG_FILE judge.v
+set_global_assignment -name VERILOG_FILE SixDigit_Electronic_Lock_Controller.v
