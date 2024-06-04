@@ -20,6 +20,28 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+judge
+# storage
+db|SixDigit_Electronic_Lock_Controller.(1).cnf
+db|SixDigit_Electronic_Lock_Controller.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+judge.v
+ee5d84943013df6018f541919d165648
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+judge:judge_1
+}
+# end
+# entity
 SixDigit_Electronic_Lock_Controller
 # storage
 db|SixDigit_Electronic_Lock_Controller.(0).cnf
@@ -31,7 +53,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-a6563a1ae0bf5dcfd8ca1e35b1099ed
+ff453bc66fe79946f2a0883d4f8d5576
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
