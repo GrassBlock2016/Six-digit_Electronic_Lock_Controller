@@ -30,3 +30,4 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION "6.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:06:13  JUNE 03, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "6.0 SP1"
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
+set_global_assignment -name VERILOG_FILE judge.v
