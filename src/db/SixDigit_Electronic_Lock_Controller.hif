@@ -42,6 +42,55 @@ judge:judge_1
 }
 # end
 # entity
+passwd_register
+# storage
+db|SixDigit_Electronic_Lock_Controller.(2).cnf
+db|SixDigit_Electronic_Lock_Controller.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+passwd_register.v
+53f398a7eb6aab24ea18745dbc32eb7
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+passwd_register:password
+}
+# end
+# entity
+register
+# storage
+db|SixDigit_Electronic_Lock_Controller.(3).cnf
+db|SixDigit_Electronic_Lock_Controller.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+register.v
+fcbc59e7ab2d642e3fe8fd46ee18292
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+passwd_register:password|register:r1
+passwd_register:password|register:r2
+passwd_register:password|register:r3
+passwd_register:password|register:r4
+passwd_register:password|register:r5
+passwd_register:password|register:r6
+}
+# end
+# entity
 SixDigit_Electronic_Lock_Controller
 # storage
 db|SixDigit_Electronic_Lock_Controller.(0).cnf
@@ -53,7 +102,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-ff453bc66fe79946f2a0883d4f8d5576
+12e0c4279a8da3a3e988f4b1a656be5
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
