@@ -10,7 +10,7 @@ ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
 DocPathName=judge.v
 DocumentCLSID={84678d98-dc76-11d0-a0d8-0020affa5bde}
-WindowPlacement=MCAAAAAACAAAAAAACAAAAAAAAAAAAAAAACEAAAAAIPPPPPPPBOPPPPPPBCAAAAAALDAAAAAALMIAAAAAMCDAAAAA
+WindowPlacement=MCAAAAAACAAAAAAACAAAAAAAAAAAAAAALICAAAAAIPPPPPPPBOPPPPPPBCAAAAAALDAAAAAAAOGAAAAAMCDAAAAA
 IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0.StateMap]
@@ -20,7 +20,7 @@ ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0]
 DocPathName=SixDigit_Electronic_Lock_Controller.v
 DocumentCLSID={84678d98-dc76-11d0-a0d8-0020affa5bde}
-WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPMJAAAAAAMJAAAAAAPAJAAAAAHHDAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPFEAAAAAAECAAAAAAEAHAAAAAPPCAAAAA
 IsActiveChildFrame=True
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0.StateMap]
