@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Wed Jun 05 15:12:56 2024
+Thu Jun 06 15:25:35 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -7,13 +7,10 @@ Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Analysis & Synthesis Source Files Read
-  5. Analysis & Synthesis Resource Usage Summary
-  6. Analysis & Synthesis Resource Utilization by Entity
-  7. General Register Statistics
-  8. Analysis & Synthesis Messages
+  2. Analysis & Synthesis Settings
+  3. Analysis & Synthesis Source Files Read
+  4. Analysis & Elaboration Summary
+  5. Analysis & Synthesis Messages
 
 
 
@@ -34,24 +31,6 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 
-
-
-+-----------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                ;
-+-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Jun 05 15:12:56 2024         ;
-; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
-; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
-; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
-; Family                      ; Stratix                                       ;
-; Total logic elements        ; 64                                            ;
-; Total pins                  ; 53                                            ;
-; Total virtual pins          ; 0                                             ;
-; Total memory bits           ; 0                                             ;
-; DSP block 9-bit elements    ; 0                                             ;
-; Total PLLs                  ; 0                                             ;
-; Total DLLs                  ; 0                                             ;
-+-----------------------------+-----------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -125,76 +104,20 @@ applicable agreement for further details.
 ; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
 ; register.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
 ; passwd_register.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
+; reset.v                               ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/reset.v                               ;
 ; judge.v                               ; yes             ; Other                  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
 +---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Total logic elements                        ; 64    ;
-;     -- Combinational with no register       ; 16    ;
-;     -- Register only                        ; 24    ;
-;     -- Combinational with a register        ; 24    ;
-;                                             ;       ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 16    ;
-;     -- 3 input functions                    ; 24    ;
-;     -- 2 input functions                    ; 0     ;
-;     -- 1 input functions                    ; 0     ;
-;     -- 0 input functions                    ; 0     ;
-;         -- Combinational cells for routing  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 64    ;
-;     -- arithmetic mode                      ; 0     ;
-;     -- qfbk mode                            ; 0     ;
-;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 48    ;
-;                                             ;       ;
-; Total registers                             ; 48    ;
-; I/O pins                                    ; 53    ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 48    ;
-; Total fan-out                               ; 281   ;
-; Average fan-out                             ; 2.40  ;
-+---------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                             ;
-+--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------+
-; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                       ;
-+--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------+
-; |SixDigit_Electronic_Lock_Controller ; 64 (24)     ; 48           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 53   ; 0            ; 16 (0)       ; 24 (0)            ; 24 (24)          ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                      ;
-;    |judge:judge_1|                   ; 16 (16)     ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1                        ;
-;    |passwd_register:password|        ; 24 (0)      ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 24 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password             ;
-;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r1 ;
-;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r2 ;
-;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r3 ;
-;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r4 ;
-;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r5 ;
-;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r6 ;
-+--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 48    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 48    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++-------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                ;
++-------------------------------+-----------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Thu Jun 06 15:25:35 2024         ;
+; Quartus II Version            ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
+; Revision Name                 ; SixDigit_Electronic_Lock_Controller           ;
+; Top-level Entity Name         ; SixDigit_Electronic_Lock_Controller           ;
+; Family                        ; Stratix                                       ;
++-------------------------------+-----------------------------------------------+
 
 
 +-------------------------------+
@@ -203,16 +126,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Jun 05 15:12:56 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
+    Info: Processing started: Thu Jun 06 15:25:35 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller --analyze_project
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file register.v
     Info: Found entity 1: register
 Info: Found 1 design units, including 1 entities, in source file passwd_register.v
     Info: Found entity 1: passwd_register
+Info: Found 1 design units, including 1 entities, in source file reset.v
+    Info: Found entity 1: reset
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at SixDigit_Electronic_Lock_Controller.v(13): object "judge_enable" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at SixDigit_Electronic_Lock_Controller.v(15): object "judge_enable" assigned a value but never read
 Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:password"
 Info: Elaborating entity "register" for hierarchy "passwd_register:password|register:r1"
 Warning: Using design file judge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -230,12 +155,39 @@ Warning (10235): Verilog HDL Always Construct warning at judge.v(19): variable "
 Warning (10235): Verilog HDL Always Construct warning at judge.v(19): variable "b5" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at judge.v(21): variable "a6" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at judge.v(21): variable "b6" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Info: Implemented 117 device resources after synthesis - the final resource count might be different
-    Info: Implemented 28 input pins
-    Info: Implemented 25 output pins
-    Info: Implemented 64 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Processing ended: Wed Jun 05 15:12:56 2024
+Info: Elaborating entity "reset" for hierarchy "reset:reset_1"
+Warning (10240): Verilog HDL Always Construct warning at reset.v(13): inferring latch(es) for variable "out1", which holds its previous value in one or more paths through the always construct
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out1[3]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out1[2]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out1[1]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out1[0]"
+Warning (10240): Verilog HDL Always Construct warning at reset.v(13): inferring latch(es) for variable "out2", which holds its previous value in one or more paths through the always construct
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out2[3]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out2[2]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out2[1]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out2[0]"
+Warning (10240): Verilog HDL Always Construct warning at reset.v(13): inferring latch(es) for variable "out3", which holds its previous value in one or more paths through the always construct
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out3[3]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out3[2]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out3[1]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out3[0]"
+Warning (10240): Verilog HDL Always Construct warning at reset.v(13): inferring latch(es) for variable "out4", which holds its previous value in one or more paths through the always construct
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out4[3]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out4[2]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out4[1]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out4[0]"
+Warning (10240): Verilog HDL Always Construct warning at reset.v(13): inferring latch(es) for variable "out5", which holds its previous value in one or more paths through the always construct
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out5[3]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out5[2]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out5[1]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out5[0]"
+Warning (10240): Verilog HDL Always Construct warning at reset.v(13): inferring latch(es) for variable "out6", which holds its previous value in one or more paths through the always construct
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[3]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[2]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[1]"
+Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[0]"
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Processing ended: Thu Jun 06 15:25:35 2024
     Info: Elapsed time: 00:00:00
 
 

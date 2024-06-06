@@ -102,7 +102,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-12e0c4279a8da3a3e988f4b1a656be5
+29fc57e1a0fb36579263acef5be03857
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -110,6 +110,28 @@ OFF
 }
 # hierarchies {
 |
+}
+# end
+# entity
+reset
+# storage
+db|SixDigit_Electronic_Lock_Controller.(4).cnf
+db|SixDigit_Electronic_Lock_Controller.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+reset.v
+bf88cf88d76594bac89883bfefbae2df
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+reset:reset_1
 }
 # end
 # complete

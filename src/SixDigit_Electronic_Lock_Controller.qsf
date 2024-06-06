@@ -33,3 +33,4 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name VERILOG_FILE SixDigit_Electronic_Lock_Controller.v
 set_global_assignment -name VERILOG_FILE register.v
 set_global_assignment -name VERILOG_FILE passwd_register.v
+set_global_assignment -name VERILOG_FILE reset.v
