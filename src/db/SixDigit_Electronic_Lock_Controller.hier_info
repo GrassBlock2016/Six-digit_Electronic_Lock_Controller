@@ -27,7 +27,6 @@ m => out6_reg~0.OUTPUTSELECT
 m => out6_reg~1.OUTPUTSELECT
 m => out6_reg~2.OUTPUTSELECT
 m => out6_reg~3.OUTPUTSELECT
-r => r~0.IN1
 in1[0] => in1[0]~3.IN2
 in1[1] => in1[1]~2.IN2
 in1[2] => in1[2]~1.IN2
@@ -52,7 +51,7 @@ in6[0] => in6[0]~3.IN1
 in6[1] => in6[1]~2.IN1
 in6[2] => in6[2]~1.IN1
 in6[3] => in6[3]~0.IN1
-clk => clk~0.IN2
+clk => clk~0.IN1
 clr => clr~0.IN1
 out1[0] <= out1_reg[0].DB_MAX_OUTPUT_PORT_TYPE
 out1[1] <= out1_reg[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -309,34 +308,5 @@ b6[1] => always0~36.IN1
 b6[2] => always0~38.IN1
 b6[3] => always0~40.IN1
 c <= c~5.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|SixDigit_Electronic_Lock_Controller|reset:reset_1
-reset_switch => ~NO_FANOUT~
-out1[0] <= <GND>
-out1[1] <= <GND>
-out1[2] <= <GND>
-out1[3] <= <GND>
-out2[0] <= <GND>
-out2[1] <= <GND>
-out2[2] <= <GND>
-out2[3] <= <GND>
-out3[0] <= <GND>
-out3[1] <= <GND>
-out3[2] <= <GND>
-out3[3] <= <GND>
-out4[0] <= <GND>
-out4[1] <= <GND>
-out4[2] <= <GND>
-out4[3] <= <GND>
-out5[0] <= <GND>
-out5[1] <= <GND>
-out5[2] <= <GND>
-out5[3] <= <GND>
-out6[0] <= <GND>
-out6[1] <= <GND>
-out6[2] <= <GND>
-out6[3] <= <GND>
-clk => ~NO_FANOUT~
 
 

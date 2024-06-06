@@ -86,31 +86,6 @@ bf88cf88d76594bac89883bfefbae2df
 AUTO_RESOURCE_SHARING
 OFF
 }
-# hierarchies {
-reset:reset_1
-}
-# end
-# entity
-yima2to4
-# storage
-db|SixDigit_Electronic_Lock_Controller.(5).cnf
-db|SixDigit_Electronic_Lock_Controller.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-yima2to4.v
-1b2372ba343465836bdeed39f93c79d
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-yima2to4:yima
-}
 # end
 # entity
 passwd_register
@@ -146,7 +121,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-ec94839a84ae30d3516d895aeda84f
+de14c310f7de444079fd31172bc7cdd
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -154,6 +129,28 @@ OFF
 }
 # hierarchies {
 |
+}
+# end
+# entity
+yima2to4
+# storage
+db|SixDigit_Electronic_Lock_Controller.(5).cnf
+db|SixDigit_Electronic_Lock_Controller.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+yima2to4.v
+b712fb15fc22743ca4ce776dcfe4e58
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+yima2to4:yima
 }
 # end
 # complete

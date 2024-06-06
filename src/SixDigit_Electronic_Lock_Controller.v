@@ -1,7 +1,6 @@
 module SixDigit_Electronic_Lock_Controller(
     input j,              // judge，开启判断
     input m,              // mode，切换模式，0为设置密码，1为输入密码
-	input r,			  // reset，重置
     input [3:0] in1, in2, in3, in4, in5, in6, // 输入
     input clk, clr,       // 时钟信号
     output [3:0] out1, out2, out3, out4, out5, out6, // 输出
@@ -36,12 +35,9 @@ module SixDigit_Electronic_Lock_Controller(
     // 比较模块实例化
     judge judge_1(j,in1,in2,in3,in4,in5,in6,passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6,res);
 
-	// 重置模块实例化
-	reset reset_1(r,reset_out1, reset_out2, reset_out3, reset_out4, reset_out5, reset_out6,clk);
-
     // 模式选择和输出赋值的控制逻辑
-    always @(posedge clk or posedge clr or posedge r) begin
-        if (clr || r) begin
+    always @(posedge clk or posedge clr) begin
+        if (clr) begin
             out1_reg <= reset_out1;
             out2_reg <= reset_out2;
             out3_reg <= reset_out3;

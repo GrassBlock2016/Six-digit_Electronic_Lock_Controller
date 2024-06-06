@@ -1,5 +1,5 @@
 Fitter report for SixDigit_Electronic_Lock_Controller
-Thu Jun 06 17:12:44 2024
+Thu Jun 06 17:37:42 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -60,15 +60,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Fitter Summary                                                           ;
 +--------------------------+-----------------------------------------------+
-; Fitter Status            ; Successful - Thu Jun 06 17:12:44 2024         ;
+; Fitter Status            ; Successful - Thu Jun 06 17:37:42 2024         ;
 ; Quartus II Version       ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name            ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name    ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                   ; Stratix                                       ;
 ; Device                   ; EP1S10F484C5                                  ;
 ; Timing Models            ; Final                                         ;
-; Total logic elements     ; 33 / 10,570 ( < 1 % )                         ;
-; Total pins               ; 56 / 336 ( 17 % )                             ;
+; Total logic elements     ; 32 / 10,570 ( < 1 % )                         ;
+; Total pins               ; 55 / 336 ( 16 % )                             ;
 ; Total virtual pins       ; 0                                             ;
 ; Total memory bits        ; 0 / 920,448 ( 0 % )                           ;
 ; DSP block 9-bit elements ; 0 / 48 ( 0 % )                                ;
@@ -127,32 +127,32 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 33 / 10,570 ( < 1 % ) ;
-;     -- Combinational with no register       ; 9                     ;
+; Total logic elements                        ; 32 / 10,570 ( < 1 % ) ;
+;     -- Combinational with no register       ; 8                     ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 24                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 8                     ;
 ;     -- 3 input functions                    ; 0                     ;
-;     -- 2 input functions                    ; 25                    ;
+;     -- 2 input functions                    ; 24                    ;
 ;     -- 1 input functions                    ; 0                     ;
 ;     -- 0 input functions                    ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 33                    ;
+;     -- normal mode                          ; 32                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;     -- qfbk mode                            ; 0                     ;
 ;     -- register cascade mode                ; 0                     ;
 ;     -- synchronous clear/load mode          ; 0                     ;
 ;     -- asynchronous clear/load mode         ; 24                    ;
 ;                                             ;                       ;
-; Total LABs                                  ; 5 / 1,057 ( < 1 % )   ;
+; Total LABs                                  ; 4 / 1,057 ( < 1 % )   ;
 ; Logic elements in carry chains              ; 0                     ;
 ; User inserted logic elements                ; 0                     ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 56 / 336 ( 17 % )     ;
-;     -- Clock pins                           ; 2 / 16 ( 13 % )       ;
+; I/O pins                                    ; 55 / 336 ( 16 % )     ;
+;     -- Clock pins                           ; 6 / 16 ( 38 % )       ;
 ; Global signals                              ; 2                     ;
 ; M512s                                       ; 0 / 94 ( 0 % )        ;
 ; M4Ks                                        ; 0 / 60 ( 0 % )        ;
@@ -166,12 +166,12 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; Fast regional clocks                        ; 0 / 8 ( 0 % )         ;
 ; SERDES transmitters                         ; 0 / 44 ( 0 % )        ;
 ; SERDES receivers                            ; 0 / 44 ( 0 % )        ;
-; Maximum fan-out node                        ; always0~0             ;
+; Maximum fan-out node                        ; m                     ;
 ; Maximum fan-out                             ; 24                    ;
 ; Highest non-global fan-out signal           ; m                     ;
 ; Highest non-global fan-out                  ; 24                    ;
-; Total fan-out                               ; 155                   ;
-; Average fan-out                             ; 1.72                  ;
+; Total fan-out                               ; 153                   ;
+; Average fan-out                             ; 1.74                  ;
 +---------------------------------------------+-----------------------+
 
 
@@ -180,37 +180,36 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; a0     ; AB8   ; 7        ; 44           ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; a1     ; J14   ; 3        ; 3            ; 31           ; 4           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; a0     ; AA8   ; 7        ; 36           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; a1     ; M16   ; 3        ; 1            ; 31           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
 ; clk    ; M20   ; 1        ; 0            ; 12           ; 0           ; 24                    ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; clr    ; L22   ; 2        ; 0            ; 19           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in1[0] ; E7    ; 4        ; 44           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in1[1] ; A6    ; 4        ; 46           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in1[2] ; A8    ; 4        ; 44           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in1[3] ; F6    ; 4        ; 44           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in2[0] ; A7    ; 4        ; 44           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in2[1] ; D7    ; 4        ; 44           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in2[2] ; F7    ; 4        ; 46           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in2[3] ; H8    ; 4        ; 41           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in3[0] ; A5    ; 4        ; 48           ; 31           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in3[1] ; D1    ; 5        ; 53           ; 30           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in3[2] ; C6    ; 4        ; 48           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in3[3] ; B7    ; 4        ; 46           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in4[0] ; E5    ; 4        ; 48           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in4[1] ; D5    ; 4        ; 48           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in4[2] ; E6    ; 4        ; 46           ; 31           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in4[3] ; C3    ; 4        ; 50           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in5[0] ; C5    ; 4        ; 48           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in5[1] ; B5    ; 4        ; 48           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in5[2] ; E9    ; 4        ; 36           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in5[3] ; D9    ; 4        ; 36           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in6[0] ; B8    ; 4        ; 36           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in6[1] ; D8    ; 4        ; 41           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in6[2] ; L7    ; 4        ; 36           ; 31           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; in6[3] ; C9    ; 4        ; 36           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; j      ; B6    ; 4        ; 46           ; 31           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; m      ; F9    ; 4        ; 36           ; 31           ; 1           ; 24                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; r      ; L21   ; 2        ; 0            ; 19           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; clr    ; M21   ; 1        ; 0            ; 12           ; 2           ; 24                    ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in1[0] ; K8    ; 4        ; 33           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in1[1] ; F10   ; 4        ; 33           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in1[2] ; D9    ; 4        ; 36           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in1[3] ; J8    ; 4        ; 33           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in2[0] ; D2    ; 5        ; 53           ; 30           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in2[1] ; B11   ; 4        ; 29           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in2[2] ; H10   ; 4        ; 33           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in2[3] ; T10   ; 7        ; 33           ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in3[0] ; C9    ; 4        ; 36           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in3[1] ; F9    ; 4        ; 36           ; 31           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in3[2] ; E9    ; 4        ; 36           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in3[3] ; L7    ; 4        ; 36           ; 31           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in4[0] ; E8    ; 4        ; 41           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in4[1] ; E2    ; 5        ; 53           ; 29           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in4[2] ; F8    ; 4        ; 41           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in4[3] ; H8    ; 4        ; 41           ; 31           ; 5           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in5[0] ; V9    ; 7        ; 36           ; 0            ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in5[1] ; B8    ; 4        ; 36           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in5[2] ; E13   ; 3        ; 21           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in5[3] ; B14   ; 3        ; 21           ; 31           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in6[0] ; A11   ; 4        ; 29           ; 31           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in6[1] ; J9    ; 4        ; 33           ; 31           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in6[2] ; C13   ; 9        ; 25           ; 31           ; 4           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; in6[3] ; D22   ; 2        ; 0            ; 30           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; j      ; G9    ; 4        ; 31           ; 31           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; m      ; B12   ; 9        ; 25           ; 31           ; 2           ; 24                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -219,31 +218,31 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load  ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+
-; out1[0] ; K10   ; 4        ; 31           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out1[1] ; G8    ; 4        ; 41           ; 31           ; 4           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out1[2] ; E2    ; 5        ; 53           ; 29           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out1[3] ; E8    ; 4        ; 41           ; 31           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out2[0] ; J9    ; 4        ; 33           ; 31           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out2[1] ; C7    ; 4        ; 44           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out2[2] ; C8    ; 4        ; 41           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out2[3] ; K8    ; 4        ; 33           ; 31           ; 5           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out3[0] ; D4    ; 4        ; 50           ; 31           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out3[1] ; A4    ; 4        ; 50           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out3[2] ; E1    ; 5        ; 53           ; 29           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out3[3] ; D2    ; 5        ; 53           ; 30           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out4[0] ; F4    ; 5        ; 53           ; 30           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out4[1] ; F3    ; 5        ; 53           ; 30           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out4[2] ; F5    ; 5        ; 53           ; 29           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out4[3] ; C4    ; 4        ; 50           ; 31           ; 5           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out5[0] ; G4    ; 5        ; 53           ; 27           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out5[1] ; G5    ; 5        ; 53           ; 28           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out5[2] ; H10   ; 4        ; 33           ; 31           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out5[3] ; F10   ; 4        ; 33           ; 31           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out6[0] ; G9    ; 4        ; 31           ; 31           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out6[1] ; F8    ; 4        ; 41           ; 31           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out6[2] ; B13   ; 9        ; 25           ; 31           ; 5           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; out6[3] ; J8    ; 4        ; 33           ; 31           ; 4           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
-; res     ; D6    ; 4        ; 46           ; 31           ; 4           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out1[0] ; B13   ; 9        ; 25           ; 31           ; 5           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out1[1] ; K10   ; 4        ; 31           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out1[2] ; C14   ; 3        ; 21           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out1[3] ; F6    ; 4        ; 44           ; 31           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out2[0] ; B7    ; 4        ; 46           ; 31           ; 5           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out2[1] ; K15   ; 3        ; 19           ; 31           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out2[2] ; A7    ; 4        ; 44           ; 31           ; 4           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out2[3] ; F3    ; 5        ; 53           ; 30           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out3[0] ; G8    ; 4        ; 41           ; 31           ; 4           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out3[1] ; D7    ; 4        ; 44           ; 31           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out3[2] ; E15   ; 3        ; 12           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out3[3] ; A8    ; 4        ; 44           ; 31           ; 5           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out4[0] ; E1    ; 5        ; 53           ; 29           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out4[1] ; E7    ; 4        ; 44           ; 31           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out4[2] ; C8    ; 4        ; 41           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out4[3] ; D1    ; 5        ; 53           ; 30           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out5[0] ; E19   ; 2        ; 0            ; 30           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out5[1] ; F4    ; 5        ; 53           ; 30           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out5[2] ; D21   ; 2        ; 0            ; 30           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out5[3] ; D13   ; 3        ; 21           ; 31           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out6[0] ; C12   ; 9        ; 25           ; 31           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out6[1] ; A12   ; 9        ; 25           ; 31           ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out6[2] ; D12   ; 9        ; 25           ; 31           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; out6[3] ; L15   ; 3        ; 19           ; 31           ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
+; res     ; D8    ; 4        ; 41           ; 31           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; 10 pF ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+
 
 
@@ -252,15 +251,15 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 1 / 29 ( 3 % )   ; 3.3V          ; --           ;
-; 2        ; 2 / 30 ( 7 % )   ; 3.3V          ; --           ;
-; 3        ; 1 / 51 ( 2 % )   ; 3.3V          ; --           ;
-; 4        ; 42 / 52 ( 81 % ) ; 3.3V          ; --           ;
-; 5        ; 9 / 29 ( 31 % )  ; 3.3V          ; --           ;
+; 1        ; 2 / 29 ( 7 % )   ; 3.3V          ; --           ;
+; 2        ; 3 / 30 ( 10 % )  ; 3.3V          ; --           ;
+; 3        ; 8 / 51 ( 16 % )  ; 3.3V          ; --           ;
+; 4        ; 28 / 52 ( 54 % ) ; 3.3V          ; --           ;
+; 5        ; 6 / 29 ( 21 % )  ; 3.3V          ; --           ;
 ; 6        ; 0 / 29 ( 0 % )   ; 3.3V          ; --           ;
-; 7        ; 1 / 52 ( 2 % )   ; 3.3V          ; --           ;
+; 7        ; 3 / 52 ( 6 % )   ; 3.3V          ; --           ;
 ; 8        ; 0 / 51 ( 0 % )   ; 3.3V          ; --           ;
-; 9        ; 1 / 6 ( 17 % )   ; 3.3V          ; --           ;
+; 9        ; 6 / 6 ( 100 % )  ; 3.3V          ; --           ;
 ; 10       ; 0 / 0 ( -- )     ; 3.3V          ; --           ;
 ; 11       ; 0 / 6 ( 0 % )    ; 3.3V          ; --           ;
 ; 12       ; 0 / 0 ( -- )     ; 3.3V          ; --           ;
@@ -275,15 +274,15 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; A1       ;            ;          ; VCCINT                    ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; A2       ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; A3       ;            ; 4        ; VCCIO4                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
-; A4       ; 339        ; 4        ; out3[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; A5       ; 346        ; 4        ; in3[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; A6       ; 351        ; 4        ; in1[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; A7       ; 355        ; 4        ; in2[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; A8       ; 356        ; 4        ; in1[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; A4       ; 339        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; A5       ; 346        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; A6       ; 351        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; A7       ; 355        ; 4        ; out2[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; A8       ; 356        ; 4        ; out3[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; A9       ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; A10      ;            ; 4        ; VCCIO4                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
-; A11      ; 389        ; 4        ; GND+                      ;        ;              ;         ; Column I/O ; --          ;                 ; --       ; --           ;
-; A12      ; 395        ; 9        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; A11      ; 389        ; 4        ; in6[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; A12      ; 395        ; 9        ; out6[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; A13      ;            ; 3        ; VCCIO3                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
 ; A14      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; A15      ; 416        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
@@ -301,7 +300,7 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; AA5      ; 216        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; AA6      ; 210        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; AA7      ; 204        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; AA8      ; 187        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; AA8      ; 187        ; 7        ; a0                        ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; AA9      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; AA10     ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; AA11     ; 168        ; 7        ; GND+                      ;        ;              ;         ; Column I/O ; --          ;                 ; --       ; --           ;
@@ -323,7 +322,7 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; AB5      ; 213        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; AB6      ; 212        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; AB7      ; 203        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; AB8      ; 201        ; 7        ; a0                        ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; AB8      ; 201        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; AB9      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; AB10     ;            ; 7        ; VCCIO7                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
 ; AB11     ; 170        ; 7        ; GND+                      ;        ;              ;         ; Column I/O ; --          ;                 ; --       ; --           ;
@@ -342,16 +341,16 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; B2       ; 332        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; B3       ; 331        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; B4       ; 335        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; B5       ; 345        ; 4        ; in5[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; B6       ; 353        ; 4        ; j                         ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; B7       ; 350        ; 4        ; in3[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; B8       ; 367        ; 4        ; in6[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; B5       ; 345        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; B6       ; 353        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; B7       ; 350        ; 4        ; out2[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; B8       ; 367        ; 4        ; in5[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; B9       ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; B10      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; B11      ; 391        ; 4        ; GND+                      ;        ;              ;         ; Column I/O ; --          ;                 ; --       ; --           ;
-; B12      ; 394        ; 9        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; B13      ; 393        ; 9        ; out6[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; B14      ; 406        ; 3        ; GND+                      ;        ;              ;         ; Column I/O ; --          ;                 ; --       ; --           ;
+; B11      ; 391        ; 4        ; in2[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; B12      ; 394        ; 9        ; m                         ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; B13      ; 393        ; 9        ; out1[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; B14      ; 406        ; 3        ; in5[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; B15      ; 428        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; B16      ; 432        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; B17      ; 438        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
@@ -362,18 +361,18 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; B22      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; C1       ;            ; 5        ; VCCIO5                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
 ; C2       ; 334        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; C3       ; 336        ; 4        ; in4[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; C4       ; 337        ; 4        ; out4[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; C5       ; 343        ; 4        ; in5[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; C6       ; 347        ; 4        ; in3[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; C7       ; 358        ; 4        ; out2[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; C8       ; 364        ; 4        ; out2[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; C9       ; 368        ; 4        ; in6[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; C3       ; 336        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; C4       ; 337        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; C5       ; 343        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; C6       ; 347        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; C7       ; 358        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; C8       ; 364        ; 4        ; out4[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; C9       ; 368        ; 4        ; in3[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; C10      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; C11      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; C12      ; 397        ; 9        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; C13      ; 392        ; 9        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; C14      ; 407        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; C12      ; 397        ; 9        ; out6[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; C13      ; 392        ; 9        ; in6[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; C14      ; 407        ; 3        ; out1[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; C15      ; 417        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; C16      ; 433        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; C17      ; 440        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
@@ -382,19 +381,19 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; C20      ; 457        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; C21      ; 453        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; C22      ;            ; 2        ; VCCIO2                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
-; D1       ; 329        ; 5        ; in3[1]                    ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; D2       ; 328        ; 5        ; out3[3]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; D1       ; 329        ; 5        ; out4[3]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; D2       ; 328        ; 5        ; in2[0]                    ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
 ; D3       ; 333        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; D4       ; 338        ; 4        ; out3[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; D5       ; 344        ; 4        ; in4[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; D6       ; 349        ; 4        ; res                       ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; D7       ; 357        ; 4        ; in2[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; D8       ; 366        ; 4        ; in6[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; D9       ; 369        ; 4        ; in5[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; D4       ; 338        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; D5       ; 344        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; D6       ; 349        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; D7       ; 357        ; 4        ; out3[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; D8       ; 366        ; 4        ; res                       ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; D9       ; 369        ; 4        ; in1[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; D10      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; D11      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; D12      ; 396        ; 9        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; D13      ; 409        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; D12      ; 396        ; 9        ; out6[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; D13      ; 409        ; 3        ; out5[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; D14      ; 419        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; D15      ; 425        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; D16      ; 434        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
@@ -402,40 +401,40 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; D18      ; 446        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; D19      ; 454        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; D20      ; 458        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; D21      ; 1          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
-; D22      ; 0          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
-; E1       ; 324        ; 5        ; out3[2]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; E2       ; 325        ; 5        ; out1[2]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; D21      ; 1          ; 2        ; out5[2]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; D22      ; 0          ; 2        ; in6[3]                    ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; E1       ; 324        ; 5        ; out4[0]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; E2       ; 325        ; 5        ; in4[1]                    ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
 ; E3       ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; E4       ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; E5       ; 348        ; 4        ; in4[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; E6       ; 352        ; 4        ; in4[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; E7       ; 360        ; 4        ; in1[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; E8       ; 363        ; 4        ; out1[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; E9       ; 371        ; 4        ; in5[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; E5       ; 348        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; E6       ; 352        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; E7       ; 360        ; 4        ; out4[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; E8       ; 363        ; 4        ; in4[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; E9       ; 371        ; 4        ; in3[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; E10      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; E11      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; E12      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; E13      ; 408        ; 3        ; GND+                      ;        ;              ;         ; Column I/O ; --          ;                 ; --       ; --           ;
+; E13      ; 408        ; 3        ; in5[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; E14      ; 421        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; E15      ; 426        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; E15      ; 426        ; 3        ; out3[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; E16      ; 430        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; E17      ; 437        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; E18      ; 443        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; E19      ; 2          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
+; E19      ; 2          ; 2        ; out5[0]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
 ; E20      ; 3          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; E21      ; 4          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; E22      ; 5          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; F1       ; 299        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; F2       ; 300        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
-; F3       ; 326        ; 5        ; out4[1]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; F4       ; 327        ; 5        ; out4[0]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; F5       ; 322        ; 5        ; out4[2]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; F6       ; 359        ; 4        ; in1[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; F7       ; 354        ; 4        ; in2[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; F8       ; 365        ; 4        ; out6[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; F9       ; 372        ; 4        ; m                         ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; F10      ; 376        ; 4        ; out5[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; F3       ; 326        ; 5        ; out2[3]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; F4       ; 327        ; 5        ; out5[1]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; F5       ; 322        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
+; F6       ; 359        ; 4        ; out1[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; F7       ; 354        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; F8       ; 365        ; 4        ; in4[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; F9       ; 372        ; 4        ; in3[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; F10      ; 376        ; 4        ; in1[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; F11      ;            ;          ; VCCG_PLL5                 ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; F12      ;            ;          ; GNDA_PLL5                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; F13      ;            ; 9        ; VCC_PLL5_OUTA             ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
@@ -451,12 +450,12 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; G1       ; 296        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; G2       ; 295        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; G3       ; 313        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
-; G4       ; 314        ; 5        ; out5[0]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; G5       ; 318        ; 5        ; out5[1]                   ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; G4       ; 314        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
+; G5       ; 318        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; G6       ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; G7       ; 330        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; G8       ; 361        ; 4        ; out1[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; G9       ; 384        ; 4        ; out6[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; G8       ; 361        ; 4        ; out3[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; G9       ; 384        ; 4        ; j                         ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; G10      ; 380        ; 4        ; #TMS                      ; input  ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; G11      ;            ;          ; GNDG_PLL5                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; G12      ;            ;          ; TEMPDIODEp                ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
@@ -477,9 +476,9 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; H5       ; 317        ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; no       ; Off          ;
 ; H6       ; 342        ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; no       ; Off          ;
 ; H7       ; 373        ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; no       ; Off          ;
-; H8       ; 362        ; 4        ; in2[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; H8       ; 362        ; 4        ; in4[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; H9       ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; H10      ; 379        ; 4        ; out5[2]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; H10      ; 379        ; 4        ; in2[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; H11      ; 387        ; 4        ; #TDO                      ; output ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; H12      ;            ;          ; TEMPDIODEn                ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; H13      ; 403        ; 3        ; ^nCONFIG                  ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
@@ -499,13 +498,13 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; J5       ; 292        ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; no       ; Off          ;
 ; J6       ; 309        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; J7       ; 340        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; J8       ; 374        ; 4        ; out6[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
-; J9       ; 378        ; 4        ; out2[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; J8       ; 374        ; 4        ; in1[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; J9       ; 378        ; 4        ; in6[1]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; J10      ; 381        ; 4        ; #TRST                     ; input  ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; J11      ; 386        ; 4        ; #TDI                      ; input  ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; J12      ; 402        ; 3        ; ^nSTATUS                  ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; J13      ; 404        ; 3        ; ^DCLK                     ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; J14      ; 448        ; 3        ; a1                        ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; J14      ; 448        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; J15      ; 418        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; J16      ; 424        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; J17      ; 14         ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
@@ -521,14 +520,14 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; K5       ;            ;          ; VCCG_PLL4                 ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; K6       ; 297        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; K7       ; 341        ; 4        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; K8       ; 375        ; 4        ; out2[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; K8       ; 375        ; 4        ; in1[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; K9       ; 382        ; 4        ; #TCK                      ; input  ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; K10      ; 383        ; 4        ; out1[0]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; K10      ; 383        ; 4        ; out1[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; K11      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; K12      ;            ;          ; VCCINT                    ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; K13      ; 405        ; 3        ; ^CONF_DONE                ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; K14      ; 411        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; K15      ; 413        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; K15      ; 413        ; 3        ; out2[1]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; K16      ; 423        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; K17      ; 32         ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; K18      ;            ;          ; VCCG_PLL1                 ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
@@ -542,7 +541,7 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; L4       ;            ;          ; GNDA_PLL4                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; L5       ;            ;          ; GNDG_PLL4                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; L6       ; 293        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
-; L7       ; 370        ; 4        ; in6[2]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
+; L7       ; 370        ; 4        ; in3[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; L8       ; 377        ; 4        ; +~DATA0~ / RESERVED_INPUT ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; L9       ;            ;          ; VCCINT                    ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; L10      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
@@ -550,14 +549,14 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; L12      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; L13      ;            ;          ; VCCINT                    ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; L14      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
-; L15      ; 415        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; L15      ; 415        ; 3        ; out6[3]                   ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; L16      ; 422        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; L17      ; 35         ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; L18      ;            ;          ; GNDG_PLL1                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; L19      ;            ;          ; GNDA_PLL1                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; L20      ; 49         ; 2        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
-; L21      ; 47         ; 2        ; r                         ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; L22      ; 46         ; 2        ; clr                       ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
+; L21      ; 47         ; 2        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
+; L22      ; 46         ; 2        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
 ; M1       ; 278        ; 6        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
 ; M2       ; 279        ; 6        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
 ; M3       ; 277        ; 6        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
@@ -573,12 +572,12 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; M13      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; M14      ;            ;          ; VCCINT                    ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; M15      ; 414        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; M16      ; 459        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; M16      ; 459        ; 3        ; a1                        ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; M17      ; 66         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
 ; M18      ;            ;          ; VCCA_PLL2                 ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; M19      ;            ;          ; GNDA_PLL2                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; M20      ; 52         ; 1        ; clk                       ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
-; M21      ; 50         ; 1        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
+; M21      ; 50         ; 1        ; clr                       ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ; no       ; Off          ;
 ; M22      ; 51         ; 1        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ; --       ; --           ;
 ; N1       ;            ; 6        ; VCCIO6                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ; --       ; --           ;
 ; N2       ; 273        ; 6        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ; no       ; Off          ;
@@ -655,7 +654,7 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; T7       ; 229        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; T8       ; 197        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; T9       ; 184        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; T10      ; 181        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; T10      ; 181        ; 7        ; in2[3]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; T11      ;            ;          ; GNDG_PLL6                 ; gnd    ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; T12      ;            ;          ; VCCA_PLL6                 ; power  ;              ; 1.5V    ; --         ; --          ;                 ; --       ; --           ;
 ; T13      ; 155        ; 8        ; ^MSEL0                    ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
@@ -698,7 +697,7 @@ The pin-out file can be found in F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controlle
 ; V6       ; 202        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; V7       ; 207        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
 ; V8       ; 195        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
-; V9       ; 192        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ; no       ; Off          ;
+; V9       ; 192        ; 7        ; in5[0]                    ; input  ; LVTTL        ;         ; Column I/O ; Off         ; N               ; no       ; Off          ;
 ; V10      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; V11      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
 ; V12      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ; --       ; --           ;
@@ -804,7 +803,7 @@ Note: User assignments will override these defaults. The user specified values a
 +--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------+
 ; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                ;
 +--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------+
-; |SixDigit_Electronic_Lock_Controller ; 33 (25)     ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 56   ; 0            ; 9 (1)        ; 0 (0)             ; 24 (24)          ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller               ;
+; |SixDigit_Electronic_Lock_Controller ; 32 (24)     ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 55   ; 0            ; 8 (0)        ; 0 (0)             ; 24 (24)          ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller               ;
 ;    |judge:judge_1|                   ; 8 (8)       ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1 ;
 +--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -844,8 +843,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; j       ; Input    ; ON            ; ON            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
 ; m       ; Input    ; ON            ; ON            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
 ; clk     ; Input    ; OFF           ; OFF           ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
-; clr     ; Input    ; ON            ; ON            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
-; r       ; Input    ; ON            ; ON            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
+; clr     ; Input    ; OFF           ; OFF           ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
 ; out1[0] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
 ; out1[1] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
 ; out1[2] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
@@ -891,8 +889,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - out4_reg[2]         ; 1                 ; ON      ;
 ;      - judge:judge_1|c~208 ; 1                 ; ON      ;
 ; in5[1]                     ;                   ;         ;
-;      - out5_reg[1]         ; 0                 ; ON      ;
-;      - judge:judge_1|c~208 ; 0                 ; ON      ;
+;      - out5_reg[1]         ; 1                 ; ON      ;
+;      - judge:judge_1|c~208 ; 1                 ; ON      ;
 ; in5[2]                     ;                   ;         ;
 ;      - out5_reg[2]         ; 1                 ; ON      ;
 ;      - judge:judge_1|c~209 ; 1                 ; ON      ;
@@ -912,8 +910,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - out6_reg[2]         ; 0                 ; ON      ;
 ;      - judge:judge_1|c~210 ; 0                 ; ON      ;
 ; in4[0]                     ;                   ;         ;
-;      - out4_reg[0]         ; 1                 ; ON      ;
-;      - judge:judge_1|c~210 ; 1                 ; ON      ;
+;      - out4_reg[0]         ; 0                 ; ON      ;
+;      - judge:judge_1|c~210 ; 0                 ; ON      ;
 ; in6[3]                     ;                   ;         ;
 ;      - out6_reg[3]         ; 0                 ; ON      ;
 ;      - judge:judge_1|c~210 ; 0                 ; ON      ;
@@ -927,23 +925,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - out2_reg[2]         ; 0                 ; ON      ;
 ;      - judge:judge_1|c~211 ; 0                 ; ON      ;
 ; in6[0]                     ;                   ;         ;
-;      - out6_reg[0]         ; 1                 ; ON      ;
-;      - judge:judge_1|c~211 ; 1                 ; ON      ;
+;      - out6_reg[0]         ; 0                 ; ON      ;
+;      - judge:judge_1|c~211 ; 0                 ; ON      ;
 ; in5[0]                     ;                   ;         ;
-;      - out5_reg[0]         ; 1                 ; ON      ;
-;      - judge:judge_1|c~213 ; 1                 ; ON      ;
-; in2[0]                     ;                   ;         ;
-;      - out2_reg[0]         ; 0                 ; ON      ;
+;      - out5_reg[0]         ; 0                 ; ON      ;
 ;      - judge:judge_1|c~213 ; 0                 ; ON      ;
+; in2[0]                     ;                   ;         ;
+;      - out2_reg[0]         ; 1                 ; ON      ;
+;      - judge:judge_1|c~213 ; 1                 ; ON      ;
 ; in2[1]                     ;                   ;         ;
 ;      - out2_reg[1]         ; 1                 ; ON      ;
 ;      - judge:judge_1|c~213 ; 1                 ; ON      ;
 ; in3[1]                     ;                   ;         ;
-;      - out3_reg[1]         ; 1                 ; ON      ;
-;      - judge:judge_1|c~213 ; 1                 ; ON      ;
+;      - out3_reg[1]         ; 0                 ; ON      ;
+;      - judge:judge_1|c~213 ; 0                 ; ON      ;
 ; in4[3]                     ;                   ;         ;
-;      - out4_reg[3]         ; 0                 ; ON      ;
-;      - judge:judge_1|c~214 ; 0                 ; ON      ;
+;      - out4_reg[3]         ; 1                 ; ON      ;
+;      - judge:judge_1|c~214 ; 1                 ; ON      ;
 ; in3[0]                     ;                   ;         ;
 ;      - out3_reg[0]         ; 0                 ; ON      ;
 ;      - judge:judge_1|c~214 ; 0                 ; ON      ;
@@ -954,58 +952,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - out3_reg[3]         ; 1                 ; ON      ;
 ;      - judge:judge_1|c~214 ; 1                 ; ON      ;
 ; j                          ;                   ;         ;
-;      - judge:judge_1|c~215 ; 1                 ; ON      ;
+;      - judge:judge_1|c~215 ; 0                 ; ON      ;
 ; m                          ;                   ;         ;
-;      - out1_reg[0]         ; 0                 ; ON      ;
-;      - out1_reg[1]         ; 0                 ; ON      ;
-;      - out1_reg[2]         ; 0                 ; ON      ;
-;      - out1_reg[3]         ; 0                 ; ON      ;
-;      - out2_reg[0]         ; 0                 ; ON      ;
-;      - out2_reg[1]         ; 0                 ; ON      ;
-;      - out2_reg[2]         ; 0                 ; ON      ;
-;      - out2_reg[3]         ; 0                 ; ON      ;
-;      - out3_reg[0]         ; 0                 ; ON      ;
-;      - out3_reg[1]         ; 0                 ; ON      ;
-;      - out3_reg[2]         ; 0                 ; ON      ;
-;      - out3_reg[3]         ; 0                 ; ON      ;
-;      - out4_reg[0]         ; 0                 ; ON      ;
-;      - out4_reg[1]         ; 0                 ; ON      ;
-;      - out4_reg[2]         ; 0                 ; ON      ;
-;      - out4_reg[3]         ; 0                 ; ON      ;
-;      - out5_reg[0]         ; 0                 ; ON      ;
-;      - out5_reg[1]         ; 0                 ; ON      ;
-;      - out5_reg[2]         ; 0                 ; ON      ;
-;      - out5_reg[3]         ; 0                 ; ON      ;
-;      - out6_reg[0]         ; 0                 ; ON      ;
-;      - out6_reg[1]         ; 0                 ; ON      ;
-;      - out6_reg[2]         ; 0                 ; ON      ;
-;      - out6_reg[3]         ; 0                 ; ON      ;
+;      - out1_reg[0]         ; 1                 ; ON      ;
+;      - out1_reg[1]         ; 1                 ; ON      ;
+;      - out1_reg[2]         ; 1                 ; ON      ;
+;      - out1_reg[3]         ; 1                 ; ON      ;
+;      - out2_reg[0]         ; 1                 ; ON      ;
+;      - out2_reg[1]         ; 1                 ; ON      ;
+;      - out2_reg[2]         ; 1                 ; ON      ;
+;      - out2_reg[3]         ; 1                 ; ON      ;
+;      - out3_reg[0]         ; 1                 ; ON      ;
+;      - out3_reg[1]         ; 1                 ; ON      ;
+;      - out3_reg[2]         ; 1                 ; ON      ;
+;      - out3_reg[3]         ; 1                 ; ON      ;
+;      - out4_reg[0]         ; 1                 ; ON      ;
+;      - out4_reg[1]         ; 1                 ; ON      ;
+;      - out4_reg[2]         ; 1                 ; ON      ;
+;      - out4_reg[3]         ; 1                 ; ON      ;
+;      - out5_reg[0]         ; 1                 ; ON      ;
+;      - out5_reg[1]         ; 1                 ; ON      ;
+;      - out5_reg[2]         ; 1                 ; ON      ;
+;      - out5_reg[3]         ; 1                 ; ON      ;
+;      - out6_reg[0]         ; 1                 ; ON      ;
+;      - out6_reg[1]         ; 1                 ; ON      ;
+;      - out6_reg[2]         ; 1                 ; ON      ;
+;      - out6_reg[3]         ; 1                 ; ON      ;
 ; clk                        ;                   ;         ;
 ; clr                        ;                   ;         ;
-;      - always0~0           ; 1                 ; ON      ;
-; r                          ;                   ;         ;
-;      - always0~0           ; 1                 ; ON      ;
 +----------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                      ;
-+-----------+--------------+---------+--------------+--------+----------------------+------------------+
-; Name      ; Location     ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
-+-----------+--------------+---------+--------------+--------+----------------------+------------------+
-; always0~0 ; LC_X1_Y17_N2 ; 24      ; Async. clear ; yes    ; Global clock         ; GCLK0            ;
-; clk       ; PIN_M20      ; 24      ; Clock        ; yes    ; Global clock         ; GCLK3            ;
-+-----------+--------------+---------+--------------+--------+----------------------+------------------+
++---------------------------------------------------------------------------------------------+
+; Control Signals                                                                             ;
++------+----------+---------+--------------+--------+----------------------+------------------+
+; Name ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
++------+----------+---------+--------------+--------+----------------------+------------------+
+; clk  ; PIN_M20  ; 24      ; Clock        ; yes    ; Global clock         ; GCLK3            ;
+; clr  ; PIN_M21  ; 24      ; Async. clear ; yes    ; Global clock         ; GCLK2            ;
++------+----------+---------+--------------+--------+----------------------+------------------+
 
 
-+------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                  ;
-+-----------+--------------+---------+----------------------+------------------+
-; Name      ; Location     ; Fan-Out ; Global Resource Used ; Global Line Name ;
-+-----------+--------------+---------+----------------------+------------------+
-; always0~0 ; LC_X1_Y17_N2 ; 24      ; Global clock         ; GCLK0            ;
-; clk       ; PIN_M20      ; 24      ; Global clock         ; GCLK3            ;
-+-----------+--------------+---------+----------------------+------------------+
++---------------------------------------------------------------------+
+; Global & Other Fast Signals                                         ;
++------+----------+---------+----------------------+------------------+
+; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
++------+----------+---------+----------------------+------------------+
+; clk  ; PIN_M20  ; 24      ; Global clock         ; GCLK3            ;
+; clr  ; PIN_M21  ; 24      ; Global clock         ; GCLK2            ;
++------+----------+---------+----------------------+------------------+
 
 
 +---------------------------------+
@@ -1038,8 +1033,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; in4[2]              ; 2         ;
 ; in4[1]              ; 2         ;
 ; in5[3]              ; 2         ;
-; r                   ; 1         ;
-; clr                 ; 1         ;
 ; j                   ; 1         ;
 ; judge:judge_1|c~215 ; 1         ;
 ; judge:judge_1|c~214 ; 1         ;
@@ -1063,6 +1056,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; out4_reg[0]         ; 1         ;
 ; out3_reg[3]         ; 1         ;
 ; out3_reg[2]         ; 1         ;
+; out3_reg[1]         ; 1         ;
+; out3_reg[0]         ; 1         ;
 +---------------------+-----------+
 
 
@@ -1071,22 +1066,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Interconnect Resource Type  ; Usage                 ;
 +-----------------------------+-----------------------+
-; C16 interconnects           ; 6 / 2,286 ( < 1 % )   ;
-; C4 interconnects            ; 35 / 31,320 ( < 1 % ) ;
-; C8 interconnects            ; 12 / 7,272 ( < 1 % )  ;
+; C16 interconnects           ; 8 / 2,286 ( < 1 % )   ;
+; C4 interconnects            ; 20 / 31,320 ( < 1 % ) ;
+; C8 interconnects            ; 23 / 7,272 ( < 1 % )  ;
 ; DIFFIOCLKs                  ; 0 / 16 ( 0 % )        ;
 ; DQS bus muxes               ; 0 / 56 ( 0 % )        ;
 ; DQS-32 I/O buses            ; 0 / 4 ( 0 % )         ;
 ; DQS-8 I/O buses             ; 0 / 16 ( 0 % )        ;
-; Direct links                ; 1 / 44,740 ( < 1 % )  ;
+; Direct links                ; 2 / 44,740 ( < 1 % )  ;
 ; Fast regional clocks        ; 0 / 8 ( 0 % )         ;
 ; Global clocks               ; 2 / 16 ( 13 % )       ;
-; I/O buses                   ; 2 / 208 ( < 1 % )     ;
+; I/O buses                   ; 5 / 208 ( 2 % )       ;
 ; LUT chains                  ; 0 / 9,513 ( 0 % )     ;
-; Local routing interconnects ; 6 / 10,570 ( < 1 % )  ;
-; R24 interconnects           ; 1 / 2,280 ( < 1 % )   ;
-; R4 interconnects            ; 37 / 62,520 ( < 1 % ) ;
-; R8 interconnects            ; 21 / 10,410 ( < 1 % ) ;
+; Local routing interconnects ; 5 / 10,570 ( < 1 % )  ;
+; R24 interconnects           ; 7 / 2,280 ( < 1 % )   ;
+; R4 interconnects            ; 25 / 62,520 ( < 1 % ) ;
+; R8 interconnects            ; 28 / 10,410 ( < 1 % ) ;
 ; Regional clocks             ; 0 / 16 ( 0 % )        ;
 +-----------------------------+-----------------------+
 
@@ -1094,9 +1089,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 6.60) ; Number of LABs  (Total = 5) ;
+; Number of Logic Elements  (Average = 8.00) ; Number of LABs  (Total = 4) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 1                           ;
+; 1                                          ; 0                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
@@ -1112,7 +1107,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.20) ; Number of LABs  (Total = 5) ;
+; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 4) ;
 +------------------------------------+-----------------------------+
 ; 1 Async. clear                     ; 3                           ;
 ; 1 Clock                            ; 3                           ;
@@ -1122,10 +1117,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 6.60) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced  (Average = 8.00) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 1                           ;
+; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
@@ -1141,10 +1136,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 5.40) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 6.50) ; Number of LABs  (Total = 4) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 2                           ;
+; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
@@ -1160,11 +1155,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 11.80) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 14.25) ; Number of LABs  (Total = 4) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
-; 2                                            ; 1                           ;
+; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
@@ -1224,29 +1219,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Auto Fit Point 1 - Fit Attempt 1                                               ; ff         ;
 ; Mid Wire Use - Fit Attempt 1                                                   ; 0          ;
 ; Mid Slack - Fit Attempt 1                                                      ; 2147483639 ;
-; Internal Atom Count - Fit Attempt 1                                            ; 34         ;
-; LE/ALM Count - Fit Attempt 1                                                   ; 34         ;
-; LAB Count - Fit Attempt 1                                                      ; 6          ;
-; Outputs per Lab - Fit Attempt 1                                                ; 4.500      ;
-; Inputs per LAB - Fit Attempt 1                                                 ; 8.833      ;
-; Global Inputs per LAB - Fit Attempt 1                                          ; 1.000      ;
-; LAB Constraint 'non-global clock / CE pair + async load' - Fit Attempt 1       ; 0:6        ;
-; LAB Constraint 'ce + sync load' - Fit Attempt 1                                ; 0:6        ;
-; LAB Constraint 'non-global controls' - Fit Attempt 1                           ; 0:6        ;
-; LAB Constraint 'un-route combination' - Fit Attempt 1                          ; 0:6        ;
-; LAB Constraint 'non-global with asyn_clear' - Fit Attempt 1                    ; 0:3;1:3    ;
-; LAB Constraint 'un-route with async_clear' - Fit Attempt 1                     ; 0:3;1:3    ;
-; LAB Constraint 'non-global async clear + sync clear' - Fit Attempt 1           ; 0:6        ;
-; LAB Constraint 'global non-clock/non-asynch_clear' - Fit Attempt 1             ; 0:6        ;
-; LAB Constraint 'ygr_cl_ngclk_gclkce_sload_aload_constraint' - Fit Attempt 1    ; 0:6        ;
-; LAB Constraint 'global control signals' - Fit Attempt 1                        ; 0:3;2:3    ;
-; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1                    ; 0:3;1:3    ;
-; LAB Constraint 'aload_aclr pair with aload used' - Fit Attempt 1               ; 0:6        ;
-; LAB Constraint 'aload_aclr pair' - Fit Attempt 1                               ; 0:3;1:3    ;
-; LAB Constraint 'sload_sclear pair' - Fit Attempt 1                             ; 0:6        ;
-; LAB Constraint 'invert_a constraint' - Fit Attempt 1                           ; 0:4;1:2    ;
-; LAB Constraint 'has placement constraint' - Fit Attempt 1                      ; 0:6        ;
-; LAB Constraint 'use of ADATA or SDATA by registers constraint' - Fit Attempt 1 ; 0:6        ;
+; Internal Atom Count - Fit Attempt 1                                            ; 33         ;
+; LE/ALM Count - Fit Attempt 1                                                   ; 33         ;
+; LAB Count - Fit Attempt 1                                                      ; 5          ;
+; Outputs per Lab - Fit Attempt 1                                                ; 5.200      ;
+; Inputs per LAB - Fit Attempt 1                                                 ; 10.200     ;
+; Global Inputs per LAB - Fit Attempt 1                                          ; 1.200      ;
+; LAB Constraint 'non-global clock / CE pair + async load' - Fit Attempt 1       ; 0:5        ;
+; LAB Constraint 'ce + sync load' - Fit Attempt 1                                ; 0:5        ;
+; LAB Constraint 'non-global controls' - Fit Attempt 1                           ; 0:5        ;
+; LAB Constraint 'un-route combination' - Fit Attempt 1                          ; 0:5        ;
+; LAB Constraint 'non-global with asyn_clear' - Fit Attempt 1                    ; 0:2;1:3    ;
+; LAB Constraint 'un-route with async_clear' - Fit Attempt 1                     ; 0:2;1:3    ;
+; LAB Constraint 'non-global async clear + sync clear' - Fit Attempt 1           ; 0:5        ;
+; LAB Constraint 'global non-clock/non-asynch_clear' - Fit Attempt 1             ; 0:5        ;
+; LAB Constraint 'ygr_cl_ngclk_gclkce_sload_aload_constraint' - Fit Attempt 1    ; 0:5        ;
+; LAB Constraint 'global control signals' - Fit Attempt 1                        ; 0:2;2:3    ;
+; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1                    ; 0:2;1:3    ;
+; LAB Constraint 'aload_aclr pair with aload used' - Fit Attempt 1               ; 0:5        ;
+; LAB Constraint 'aload_aclr pair' - Fit Attempt 1                               ; 0:2;1:3    ;
+; LAB Constraint 'sload_sclear pair' - Fit Attempt 1                             ; 0:5        ;
+; LAB Constraint 'invert_a constraint' - Fit Attempt 1                           ; 0:3;1:2    ;
+; LAB Constraint 'has placement constraint' - Fit Attempt 1                      ; 0:5        ;
+; LAB Constraint 'use of ADATA or SDATA by registers constraint' - Fit Attempt 1 ; 0:5        ;
 ; LEs in Chains - Fit Attempt 1                                                  ; 0          ;
 ; LEs in Long Chains - Fit Attempt 1                                             ; 0          ;
 ; LABs with Chains - Fit Attempt 1                                               ; 0          ;
@@ -1295,13 +1290,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Jun 06 17:12:42 2024
+    Info: Processing started: Thu Jun 06 17:37:40 2024
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Automatically selected device EP1S10F484C5 for design SixDigit_Electronic_Lock_Controller
 Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Info: Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
     Info: Device EP1S20F484C5 is compatible
-Info: No exact pin location assignment(s) for 56 pins of 56 total pins
+Info: No exact pin location assignment(s) for 55 pins of 55 total pins
     Info: Pin out1[0] not assigned to an exact location on the device
     Info: Pin out1[1] not assigned to an exact location on the device
     Info: Pin out1[2] not assigned to an exact location on the device
@@ -1357,21 +1352,20 @@ Info: No exact pin location assignment(s) for 56 pins of 56 total pins
     Info: Pin m not assigned to an exact location on the device
     Info: Pin clk not assigned to an exact location on the device
     Info: Pin clr not assigned to an exact location on the device
-    Info: Pin r not assigned to an exact location on the device
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
 Info: Completed User Assigned Global Signals Promotion Operation
 Info: Automatically promoted signal "clk" to use Global clock in PIN M20
-Info: Automatically promoted signal "always0~0" to use Global clock
+Info: Automatically promoted signal "clr" to use Global clock in PIN M21
 Info: Completed Auto Global Promotion Operation
 Info: Starting register packing
 Info: Fitter is using Normal packing mode for logic elements with Auto setting for Auto Packed Registers logic option
 Info: Finished register packing: elapsed time is 00:00:00
 Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info: Number of I/O pins in group: 55 (unused VREF, 3.30 VCCIO, 30 input, 25 output, 0 bidirectional)
+    Info: Number of I/O pins in group: 53 (unused VREF, 3.30 VCCIO, 28 input, 25 output, 0 bidirectional)
         Info: I/O standards used: LVTTL.
 Info: I/O bank details before I/O pin placement
     Info: Statistics of I/O banks
-        Info: I/O bank number 1 does not use VREF pins and has unused VCCIO pins. 1 total pin(s) used --  28 pins available
+        Info: I/O bank number 1 does not use VREF pins and has unused VCCIO pins. 2 total pin(s) used --  27 pins available
         Info: I/O bank number 2 does not use VREF pins and has unused VCCIO pins. 0 total pin(s) used --  30 pins available
         Info: I/O bank number 3 does not use VREF pins and has unused VCCIO pins. 0 total pin(s) used --  51 pins available
         Info: I/O bank number 4 does not use VREF pins and has unused VCCIO pins. 1 total pin(s) used --  51 pins available
@@ -1398,7 +1392,7 @@ Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
 Info: Completed Auto Delay Chain Operation
 Info: Quartus II Fitter was successful. 0 errors, 0 warnings
-    Info: Processing ended: Thu Jun 06 17:12:44 2024
+    Info: Processing ended: Thu Jun 06 17:37:42 2024
     Info: Elapsed time: 00:00:02
 
 
