@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Thu Jun 06 15:25:35 2024
+Thu Jun 06 17:12:41 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -7,10 +7,13 @@ Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Settings
-  3. Analysis & Synthesis Source Files Read
-  4. Analysis & Elaboration Summary
-  5. Analysis & Synthesis Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Analysis & Synthesis Messages
 
 
 
@@ -31,6 +34,24 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                ;
++-----------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Jun 06 17:12:41 2024         ;
+; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
+; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
+; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
+; Family                      ; Stratix                                       ;
+; Total logic elements        ; 33                                            ;
+; Total pins                  ; 56                                            ;
+; Total virtual pins          ; 0                                             ;
+; Total memory bits           ; 0                                             ;
+; DSP block 9-bit elements    ; 0                                             ;
+; Total PLLs                  ; 0                                             ;
+; Total DLLs                  ; 0                                             ;
++-----------------------------+-----------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -96,28 +117,79 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+-------------------------------------+-------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                         ;
-+---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
-; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
-; register.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
-; passwd_register.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
-; reset.v                               ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/reset.v                               ;
-; judge.v                               ; yes             ; Other                  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
-+---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
+; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
+; register.v                            ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
+; passwd_register.v                     ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
+; reset.v                               ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/reset.v                               ;
+; yima2to4.v                            ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/yima2to4.v                            ;
+; judge.v                               ; yes             ; Other                  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                ;
-+-------------------------------+-----------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Jun 06 15:25:35 2024         ;
-; Quartus II Version            ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
-; Revision Name                 ; SixDigit_Electronic_Lock_Controller           ;
-; Top-level Entity Name         ; SixDigit_Electronic_Lock_Controller           ;
-; Family                        ; Stratix                                       ;
-+-------------------------------+-----------------------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Total logic elements                        ; 33        ;
+;     -- Combinational with no register       ; 9         ;
+;     -- Register only                        ; 0         ;
+;     -- Combinational with a register        ; 24        ;
+;                                             ;           ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 8         ;
+;     -- 3 input functions                    ; 0         ;
+;     -- 2 input functions                    ; 25        ;
+;     -- 1 input functions                    ; 0         ;
+;     -- 0 input functions                    ; 0         ;
+;         -- Combinational cells for routing  ; 0         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 33        ;
+;     -- arithmetic mode                      ; 0         ;
+;     -- qfbk mode                            ; 0         ;
+;     -- register cascade mode                ; 0         ;
+;     -- synchronous clear/load mode          ; 0         ;
+;     -- asynchronous clear/load mode         ; 24        ;
+;                                             ;           ;
+; Total registers                             ; 24        ;
+; I/O pins                                    ; 56        ;
+; Maximum fan-out node                        ; always0~0 ;
+; Maximum fan-out                             ; 24        ;
+; Total fan-out                               ; 155       ;
+; Average fan-out                             ; 1.74      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                      ;
++--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------+
+; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                ;
++--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------+
+; |SixDigit_Electronic_Lock_Controller ; 33 (25)     ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 56   ; 0            ; 9 (1)        ; 0 (0)             ; 24 (24)          ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller               ;
+;    |judge:judge_1|                   ; 8 (8)       ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1 ;
++--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 24    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 24    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
 
 
 +-------------------------------+
@@ -126,8 +198,8 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Jun 06 15:25:35 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller --analyze_project
+    Info: Processing started: Thu Jun 06 17:12:41 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file register.v
@@ -136,10 +208,15 @@ Info: Found 1 design units, including 1 entities, in source file passwd_register
     Info: Found entity 1: passwd_register
 Info: Found 1 design units, including 1 entities, in source file reset.v
     Info: Found entity 1: reset
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/4to1.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/2to4.v is missing
+Info: Found 1 design units, including 1 entities, in source file yima2to4.v
+    Info: Found entity 1: yima2to4
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at SixDigit_Electronic_Lock_Controller.v(15): object "judge_enable" assigned a value but never read
-Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:password"
-Info: Elaborating entity "register" for hierarchy "passwd_register:password|register:r1"
+Warning (10036): Verilog HDL or VHDL warning at SixDigit_Electronic_Lock_Controller.v(17): object "judge_enable" assigned a value but never read
+Info: Elaborating entity "yima2to4" for hierarchy "yima2to4:yima"
+Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:set_password"
+Info: Elaborating entity "register" for hierarchy "passwd_register:set_password|register:r1"
 Warning: Using design file judge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: judge
 Info: Elaborating entity "judge" for hierarchy "judge:judge_1"
@@ -186,8 +263,64 @@ Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[3
 Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[2]"
 Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[1]"
 Info (10041): Verilog HDL or VHDL info at reset.v(5): inferred latch for "out6[0]"
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Processing ended: Thu Jun 06 15:25:35 2024
+Warning: Port "#2" on the entity instantiation of "yima" is connected to a signal of width 32. The formal width of the signal in the module is 1.  Extra bits will be driven by GND.
+Warning: No clock transition on "passwd_register:set_password|register:r6|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r6|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r6|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r6|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r6|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r6|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r6|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r6|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r5|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r5|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r5|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r5|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r5|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r5|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r5|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r5|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r4|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r4|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r4|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r4|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r4|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r4|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r4|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r4|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r3|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r3|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r3|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r3|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r3|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r3|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r3|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r3|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r2|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r2|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r2|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r2|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r2|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r2|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r2|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r2|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r1|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r1|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r1|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r1|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r1|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r1|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:set_password|register:r1|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:set_password|register:r1|q[3]" with stuck clock port to stuck value GND
+Warning: Design contains 2 input pin(s) that do not drive logic
+    Warning: No output dependent on input pin "a0"
+    Warning: No output dependent on input pin "a1"
+Info: Implemented 89 device resources after synthesis - the final resource count might be different
+    Info: Implemented 31 input pins
+    Info: Implemented 25 output pins
+    Info: Implemented 33 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 74 warnings
+    Info: Processing ended: Thu Jun 06 17:12:41 2024
     Info: Elapsed time: 00:00:00
 
 

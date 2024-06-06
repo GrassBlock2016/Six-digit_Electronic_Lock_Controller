@@ -5,12 +5,14 @@ module SixDigit_Electronic_Lock_Controller(
     input [3:0] in1, in2, in3, in4, in5, in6, // 输入
     input clk, clr,       // 时钟信号
     output [3:0] out1, out2, out3, out4, out5, out6, // 输出
-    output reg res        // 比较结果
+    output reg res,        // 比较结果
+    input a0,a1            // 高、中、低位输入与判断选择
 );
 
     // 内部信号
     wire [3:0] passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6;
 	wire [3:0] reset_out1, reset_out2, reset_out3, reset_out4, reset_out5, reset_out6;
+	wire y0,y1,y2,y3;      // 高位输入、中位输入、低位输入、判断选择
     reg [3:0] out1_reg, out2_reg, out3_reg, out4_reg, out5_reg, out6_reg;
     reg judge_enable;
 
@@ -21,9 +23,15 @@ module SixDigit_Electronic_Lock_Controller(
     assign out4 = out4_reg;
     assign out5 = out5_reg;
     assign out6 = out6_reg;
+    
+    // 24译码器实例化
+	yima2to4 yima(a0,a1,1,y0,y1,y2,y3);
 
-    // 密码寄存器实例化
-    passwd_register password(in1,in2,in3,in4,in5,in6,passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6,clr,clk);
+    // 设置密码寄存器实例化
+    passwd_register set_password(in1,in2,!m&y0,!m&y1,!m&y2,passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6,clr,clk);
+
+    // 输入密码寄存器实例化
+    // passwd_register cin_password(in1,in2,m&y0,m&y1,m&y2,passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6,clr,clk);
 
     // 比较模块实例化
     judge judge_1(j,in1,in2,in3,in4,in5,in6,passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6,res);

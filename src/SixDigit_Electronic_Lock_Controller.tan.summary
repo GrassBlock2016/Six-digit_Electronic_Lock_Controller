@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.052 ns
+Actual Time    : 3.132 ns
 From           : m
-To             : out2_reg[1]
+To             : out5_reg[0]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 10.145 ns
-From           : passwd_register:password|register:r6|q[3]
-To             : res
+Actual Time    : 7.391 ns
+From           : out6_reg[2]
+To             : out6[2]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.507 ns
+Actual Time    : 10.924 ns
 From           : in5[2]
 To             : res
 From Clock     : --
@@ -35,20 +35,10 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.686 ns
-From           : in6[2]
-To             : passwd_register:password|register:r6|q[2]
+Actual Time    : -2.021 ns
+From           : in3[2]
+To             : out3_reg[2]
 From Clock     : --
-To Clock       : clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clk'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 422.12 MHz ( period = 2.369 ns )
-From           : passwd_register:password|register:r6|q[0]
-To             : out6_reg[0]
-From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
 

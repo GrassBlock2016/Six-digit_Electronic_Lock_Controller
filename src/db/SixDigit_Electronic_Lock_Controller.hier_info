@@ -1,5 +1,8 @@
 |SixDigit_Electronic_Lock_Controller
 j => j~0.IN1
+m => comb~0.IN1
+m => comb~1.IN1
+m => comb~2.IN1
 m => out1_reg~0.OUTPUTSELECT
 m => out1_reg~1.OUTPUTSELECT
 m => out1_reg~2.OUTPUTSELECT
@@ -33,22 +36,22 @@ in2[0] => in2[0]~3.IN2
 in2[1] => in2[1]~2.IN2
 in2[2] => in2[2]~1.IN2
 in2[3] => in2[3]~0.IN2
-in3[0] => in3[0]~3.IN2
-in3[1] => in3[1]~2.IN2
-in3[2] => in3[2]~1.IN2
-in3[3] => in3[3]~0.IN2
-in4[0] => in4[0]~3.IN2
-in4[1] => in4[1]~2.IN2
-in4[2] => in4[2]~1.IN2
-in4[3] => in4[3]~0.IN2
-in5[0] => in5[0]~3.IN2
-in5[1] => in5[1]~2.IN2
-in5[2] => in5[2]~1.IN2
-in5[3] => in5[3]~0.IN2
-in6[0] => in6[0]~3.IN2
-in6[1] => in6[1]~2.IN2
-in6[2] => in6[2]~1.IN2
-in6[3] => in6[3]~0.IN2
+in3[0] => in3[0]~3.IN1
+in3[1] => in3[1]~2.IN1
+in3[2] => in3[2]~1.IN1
+in3[3] => in3[3]~0.IN1
+in4[0] => in4[0]~3.IN1
+in4[1] => in4[1]~2.IN1
+in4[2] => in4[2]~1.IN1
+in4[3] => in4[3]~0.IN1
+in5[0] => in5[0]~3.IN1
+in5[1] => in5[1]~2.IN1
+in5[2] => in5[2]~1.IN1
+in5[3] => in5[3]~0.IN1
+in6[0] => in6[0]~3.IN1
+in6[1] => in6[1]~2.IN1
+in6[2] => in6[2]~1.IN1
+in6[3] => in6[3]~0.IN1
 clk => clk~0.IN2
 clr => clr~0.IN1
 out1[0] <= out1_reg[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -76,33 +79,38 @@ out6[1] <= out6_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 out6[2] <= out6_reg[2].DB_MAX_OUTPUT_PORT_TYPE
 out6[3] <= out6_reg[3].DB_MAX_OUTPUT_PORT_TYPE
 res <= judge:judge_1.port13
+a0 => a0~0.IN1
+a1 => a1~0.IN1
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password
-d1[0] => d1[0]~3.IN1
-d1[1] => d1[1]~2.IN1
-d1[2] => d1[2]~1.IN1
-d1[3] => d1[3]~0.IN1
-d2[0] => d2[0]~3.IN1
-d2[1] => d2[1]~2.IN1
-d2[2] => d2[2]~1.IN1
-d2[3] => d2[3]~0.IN1
-d3[0] => d3[0]~3.IN1
-d3[1] => d3[1]~2.IN1
-d3[2] => d3[2]~1.IN1
-d3[3] => d3[3]~0.IN1
-d4[0] => d4[0]~3.IN1
-d4[1] => d4[1]~2.IN1
-d4[2] => d4[2]~1.IN1
-d4[3] => d4[3]~0.IN1
-d5[0] => d5[0]~3.IN1
-d5[1] => d5[1]~2.IN1
-d5[2] => d5[2]~1.IN1
-d5[3] => d5[3]~0.IN1
-d6[0] => d6[0]~3.IN1
-d6[1] => d6[1]~2.IN1
-d6[2] => d6[2]~1.IN1
-d6[3] => d6[3]~0.IN1
+|SixDigit_Electronic_Lock_Controller|yima2to4:yima
+A0 => Decoder0.IN0
+A1 => Decoder0.IN1
+EN => Y3~0.OUTPUTSELECT
+EN => Y2~0.OUTPUTSELECT
+EN => Y1~0.OUTPUTSELECT
+EN => Y0~0.OUTPUTSELECT
+Y0 <= Y0~0.DB_MAX_OUTPUT_PORT_TYPE
+Y1 <= Y1~0.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= Y2~0.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= Y3~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password
+d1[0] => d1[0]~3.IN3
+d1[1] => d1[1]~2.IN3
+d1[2] => d1[2]~1.IN3
+d1[3] => d1[3]~0.IN3
+d2[0] => d2[0]~3.IN3
+d2[1] => d2[1]~2.IN3
+d2[2] => d2[2]~1.IN3
+d2[3] => d2[3]~0.IN3
+y0 => comb~0.IN1
+y0 => comb~1.IN1
+y1 => comb~2.IN1
+y1 => comb~3.IN1
+y2 => comb~4.IN1
+y2 => comb~5.IN1
 q1[0] <= register:r1.port1
 q1[1] <= register:r1.port1
 q1[2] <= register:r1.port1
@@ -128,10 +136,15 @@ q6[1] <= register:r6.port1
 q6[2] <= register:r6.port1
 q6[3] <= register:r6.port1
 clr => clr~0.IN6
-clk => clk~0.IN6
+clk => comb~0.IN0
+clk => comb~1.IN0
+clk => comb~2.IN0
+clk => comb~3.IN0
+clk => comb~4.IN0
+clk => comb~5.IN0
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r1
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -150,7 +163,7 @@ clr => q[0]~reg0.ACLR
 clr => q[3]~reg0.ACLR
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r2
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -169,7 +182,7 @@ clr => q[0]~reg0.ACLR
 clr => q[3]~reg0.ACLR
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r3
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -188,7 +201,7 @@ clr => q[0]~reg0.ACLR
 clr => q[3]~reg0.ACLR
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r4
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -207,7 +220,7 @@ clr => q[0]~reg0.ACLR
 clr => q[3]~reg0.ACLR
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r5
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -226,7 +239,7 @@ clr => q[0]~reg0.ACLR
 clr => q[3]~reg0.ACLR
 
 
-|SixDigit_Electronic_Lock_Controller|passwd_register:password|register:r6
+|SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
