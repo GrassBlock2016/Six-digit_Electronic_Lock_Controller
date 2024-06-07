@@ -20,74 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-judge
-# storage
-db|SixDigit_Electronic_Lock_Controller.(1).cnf
-db|SixDigit_Electronic_Lock_Controller.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-judge.v
-ee5d84943013df6018f541919d165648
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-judge:judge_1
-}
-# end
-# entity
-register
-# storage
-db|SixDigit_Electronic_Lock_Controller.(3).cnf
-db|SixDigit_Electronic_Lock_Controller.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-register.v
-fcbc59e7ab2d642e3fe8fd46ee18292
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-passwd_register:set_password|register:r1
-passwd_register:set_password|register:r2
-passwd_register:set_password|register:r3
-passwd_register:set_password|register:r4
-passwd_register:set_password|register:r5
-passwd_register:set_password|register:r6
-}
-# end
-# entity
-reset
-# storage
-db|SixDigit_Electronic_Lock_Controller.(4).cnf
-db|SixDigit_Electronic_Lock_Controller.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-reset.v
-bf88cf88d76594bac89883bfefbae2df
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# end
-# entity
 passwd_register
 # storage
 db|SixDigit_Electronic_Lock_Controller.(2).cnf
@@ -110,6 +42,77 @@ passwd_register:set_password
 }
 # end
 # entity
+register
+# storage
+db|SixDigit_Electronic_Lock_Controller.(3).cnf
+db|SixDigit_Electronic_Lock_Controller.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+register.v
+2d2c54cc51e6c17ba2ad841afa68fc
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+passwd_register:set_password|register:r1
+passwd_register:set_password|register:r2
+passwd_register:set_password|register:r3
+passwd_register:set_password|register:r4
+passwd_register:set_password|register:r5
+passwd_register:set_password|register:r6
+}
+# end
+# entity
+yima2to4
+# storage
+db|SixDigit_Electronic_Lock_Controller.(4).cnf
+db|SixDigit_Electronic_Lock_Controller.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+yima2to4.v
+c562c7aa2c82d129c5f9e8f047264b3f
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+yima2to4:yima
+}
+# end
+# entity
+judge
+# storage
+db|SixDigit_Electronic_Lock_Controller.(1).cnf
+db|SixDigit_Electronic_Lock_Controller.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+judge.v
+75b4ed478bacae1dfd98859da276c41
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+judge:judge_1
+}
+# end
+# entity
 SixDigit_Electronic_Lock_Controller
 # storage
 db|SixDigit_Electronic_Lock_Controller.(0).cnf
@@ -121,7 +124,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-de14c310f7de444079fd31172bc7cdd
+6bcf86c9e3f78fb1676a3272b5bf16
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -129,28 +132,6 @@ OFF
 }
 # hierarchies {
 |
-}
-# end
-# entity
-yima2to4
-# storage
-db|SixDigit_Electronic_Lock_Controller.(5).cnf
-db|SixDigit_Electronic_Lock_Controller.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-yima2to4.v
-b712fb15fc22743ca4ce776dcfe4e58
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-yima2to4:yima
 }
 # end
 # complete
