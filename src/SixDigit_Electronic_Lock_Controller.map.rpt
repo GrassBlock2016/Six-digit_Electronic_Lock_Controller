@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Sat Jun 08 01:38:47 2024
+Sat Jun 08 02:46:50 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -13,7 +13,8 @@ Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Analysis & Synthesis Messages
+  8. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Analysis & Synthesis Messages
 
 
 
@@ -39,13 +40,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jun 08 01:38:47 2024         ;
+; Analysis & Synthesis Status ; Successful - Sat Jun 08 02:46:50 2024         ;
 ; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                      ; Stratix                                       ;
-; Total logic elements        ; 0                                             ;
-; Total pins                  ; 38                                            ;
+; Total logic elements        ; 89                                            ;
+; Total pins                  ; 62                                            ;
 ; Total virtual pins          ; 0                                             ;
 ; Total memory bits           ; 0                                             ;
 ; DSP block 9-bit elements    ; 0                                             ;
@@ -135,39 +136,58 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 0     ;
-;     -- Combinational with no register       ; 0     ;
-;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 0     ;
+; Total logic elements                        ; 89    ;
+;     -- Combinational with no register       ; 17    ;
+;     -- Register only                        ; 48    ;
+;     -- Combinational with a register        ; 24    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 38    ;
 ;     -- 3 input functions                    ; 0     ;
-;     -- 2 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 3     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;         -- Combinational cells for routing  ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
+;     -- normal mode                          ; 89    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
+;     -- asynchronous clear/load mode         ; 48    ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-; I/O pins                                    ; 38    ;
+; Total registers                             ; 72    ;
+; I/O pins                                    ; 62    ;
+; Maximum fan-out node                        ; m     ;
+; Maximum fan-out                             ; 32    ;
+; Total fan-out                               ; 375   ;
+; Average fan-out                             ; 2.48  ;
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
-+--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------+
-; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                  ;
-+--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------+
-; |SixDigit_Electronic_Lock_Controller ; 0 (0)       ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 38   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller ;
-+--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                 ;
++--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------+
+; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                           ;
++--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------+
+; |SixDigit_Electronic_Lock_Controller ; 89 (26)     ; 72           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 62   ; 0            ; 17 (2)       ; 48 (0)            ; 24 (24)          ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                          ;
+;    |judge:judge_1|                   ; 9 (9)       ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1                            ;
+;    |passwd_register:cin_password|    ; 27 (3)      ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 24 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password             ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1 ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2 ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3 ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4 ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5 ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6 ;
+;    |passwd_register:set_password|    ; 27 (3)      ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 24 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password             ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1 ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2 ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3 ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4 ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5 ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6 ;
++--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -176,14 +196,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |SixDigit_Electronic_Lock_Controller|out1_reg[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
 +-------------------------------+
@@ -192,8 +221,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jun 08 01:38:47 2024
+    Info: Processing started: Sat Jun 08 02:46:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
+Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(51): created undeclared net "passwd_out1"
+Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(51): created undeclared net "passwd_out2"
+Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(51): created undeclared net "passwd_out3"
+Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(51): created undeclared net "passwd_out4"
+Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(51): created undeclared net "passwd_out5"
+Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(51): created undeclared net "passwd_out6"
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file register.v
@@ -207,7 +242,6 @@ Info: Found 1 design units, including 1 entities, in source file yima2to4.v
     Info: Found entity 1: yima2to4
 Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/mux4to1.v is missing
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(47): all case item expressions in this case statement are onehot
 Info: Elaborating entity "yima2to4" for hierarchy "yima2to4:yima"
 Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:set_password"
 Info: Elaborating entity "register" for hierarchy "passwd_register:set_password|register:r1"
@@ -226,172 +260,19 @@ Warning (10235): Verilog HDL Always Construct warning at judge.v(19): variable "
 Warning (10235): Verilog HDL Always Construct warning at judge.v(19): variable "b5" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at judge.v(21): variable "a6" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at judge.v(21): variable "b6" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning: Port "#7" on the entity instantiation of "judge_1" is connected to a signal of width 1. The formal width of the signal in the module is 4.  Extra bits will be driven by GND.
+Warning: Port "#8" on the entity instantiation of "judge_1" is connected to a signal of width 1. The formal width of the signal in the module is 4.  Extra bits will be driven by GND.
+Warning: Port "#9" on the entity instantiation of "judge_1" is connected to a signal of width 1. The formal width of the signal in the module is 4.  Extra bits will be driven by GND.
+Warning: Port "#10" on the entity instantiation of "judge_1" is connected to a signal of width 1. The formal width of the signal in the module is 4.  Extra bits will be driven by GND.
+Warning: Port "#11" on the entity instantiation of "judge_1" is connected to a signal of width 1. The formal width of the signal in the module is 4.  Extra bits will be driven by GND.
+Warning: Port "#12" on the entity instantiation of "judge_1" is connected to a signal of width 1. The formal width of the signal in the module is 4.  Extra bits will be driven by GND.
 Warning: Port "#2" on the entity instantiation of "yima" is connected to a signal of width 32. The formal width of the signal in the module is 1.  Extra bits will be driven by GND.
-Warning: No clock transition on "passwd_register:cin_password|register:r6|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r6|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r6|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r6|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r6|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r6|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r6|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r6|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r5|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r5|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r5|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r5|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r5|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r5|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r5|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r5|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r4|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r4|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r4|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r4|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r4|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r4|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r4|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r4|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r3|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r3|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r3|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r3|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r3|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r3|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r3|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r3|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r2|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r2|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r2|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r2|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r2|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r2|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r2|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r2|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r1|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r1|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r1|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r1|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r1|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r1|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:cin_password|register:r1|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:cin_password|register:r1|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r6|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r6|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r6|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r6|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r6|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r6|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r6|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r6|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r5|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r5|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r5|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r5|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r5|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r5|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r5|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r5|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r4|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r4|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r4|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r4|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r4|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r4|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r4|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r4|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r3|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r3|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r3|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r3|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r3|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r3|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r3|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r3|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r2|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r2|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r2|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r2|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r2|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r2|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r2|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r2|q[3]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r1|q[2]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r1|q[2]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r1|q[1]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r1|q[1]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r1|q[0]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r1|q[0]" with stuck clock port to stuck value GND
-Warning: No clock transition on "passwd_register:set_password|register:r1|q[3]" register due to stuck clock or clock enable
-Warning: Reduced register "passwd_register:set_password|register:r1|q[3]" with stuck clock port to stuck value GND
-Warning: Reduced register "out1_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[0]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[0]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out3_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out3_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out3_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out3_reg[0]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out4_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out4_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out4_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out4_reg[0]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out5_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out5_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out5_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out5_reg[0]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out6_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out6_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out6_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out6_reg[0]" with stuck data_in port to stuck value GND
-Warning: Output pins are stuck at VCC or GND
-    Warning: Pin "out1[0]" stuck at GND
-    Warning: Pin "out1[1]" stuck at GND
-    Warning: Pin "out1[2]" stuck at GND
-    Warning: Pin "out1[3]" stuck at GND
-    Warning: Pin "out2[0]" stuck at GND
-    Warning: Pin "out2[1]" stuck at GND
-    Warning: Pin "out2[2]" stuck at GND
-    Warning: Pin "out2[3]" stuck at GND
-    Warning: Pin "out3[0]" stuck at GND
-    Warning: Pin "out3[1]" stuck at GND
-    Warning: Pin "out3[2]" stuck at GND
-    Warning: Pin "out3[3]" stuck at GND
-    Warning: Pin "out4[0]" stuck at GND
-    Warning: Pin "out4[1]" stuck at GND
-    Warning: Pin "out4[2]" stuck at GND
-    Warning: Pin "out4[3]" stuck at GND
-    Warning: Pin "out5[0]" stuck at GND
-    Warning: Pin "out5[1]" stuck at GND
-    Warning: Pin "out5[2]" stuck at GND
-    Warning: Pin "out5[3]" stuck at GND
-    Warning: Pin "out6[0]" stuck at GND
-    Warning: Pin "out6[1]" stuck at GND
-    Warning: Pin "out6[2]" stuck at GND
-    Warning: Pin "out6[3]" stuck at GND
-    Warning: Pin "res" stuck at VCC
-Warning: Design contains 13 input pin(s) that do not drive logic
-    Warning: No output dependent on input pin "m"
-    Warning: No output dependent on input pin "inA[0]"
-    Warning: No output dependent on input pin "inA[1]"
-    Warning: No output dependent on input pin "inA[2]"
-    Warning: No output dependent on input pin "inA[3]"
-    Warning: No output dependent on input pin "inB[0]"
-    Warning: No output dependent on input pin "inB[1]"
-    Warning: No output dependent on input pin "inB[2]"
-    Warning: No output dependent on input pin "inB[3]"
-    Warning: No output dependent on input pin "clk"
-    Warning: No output dependent on input pin "clr"
-    Warning: No output dependent on input pin "a0"
-    Warning: No output dependent on input pin "a1"
-Info: Implemented 38 device resources after synthesis - the final resource count might be different
+Info: Implemented 151 device resources after synthesis - the final resource count might be different
     Info: Implemented 13 input pins
-    Info: Implemented 25 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 178 warnings
-    Info: Processing ended: Sat Jun 08 01:38:47 2024
+    Info: Implemented 49 output pins
+    Info: Implemented 89 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Processing ended: Sat Jun 08 02:46:50 2024
     Info: Elapsed time: 00:00:00
 
 
