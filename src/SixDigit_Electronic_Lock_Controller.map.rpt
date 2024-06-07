@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Sat Jun 08 01:30:38 2024
+Sat Jun 08 01:38:47 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jun 08 01:30:38 2024         ;
+; Analysis & Synthesis Status ; Successful - Sat Jun 08 01:38:47 2024         ;
 ; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
@@ -117,17 +117,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+-------------------------------------+-------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                              ;
-+---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                     ;
-+---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
-; register.v                            ; yes             ; User Verilog HDL File  ; D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
-; passwd_register.v                     ; yes             ; User Verilog HDL File  ; D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
-; yima2to4.v                            ; yes             ; User Verilog HDL File  ; D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/yima2to4.v                            ;
-; judge.v                               ; yes             ; Other                  ; D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
-+---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
+; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
+; register.v                            ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
+; passwd_register.v                     ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
+; yima2to4.v                            ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/yima2to4.v                            ;
+; judge.v                               ; yes             ; Other                  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -192,7 +192,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jun 08 01:30:38 2024
+    Info: Processing started: Sat Jun 08 01:38:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
@@ -200,12 +200,12 @@ Info: Found 1 design units, including 1 entities, in source file register.v
     Info: Found entity 1: register
 Info: Found 1 design units, including 1 entities, in source file passwd_register.v
     Info: Found entity 1: passwd_register
-Warning: Can't analyze file -- file D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/reset.v is missing
-Warning: Can't analyze file -- file D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/4to1.v is missing
-Warning: Can't analyze file -- file D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/2to4.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/reset.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/4to1.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/2to4.v is missing
 Info: Found 1 design units, including 1 entities, in source file yima2to4.v
     Info: Found entity 1: yima2to4
-Warning: Can't analyze file -- file D:/student/hardware_homework/Six-digit_Electronic_Lock_Controller/Six-digit_Electronic_Lock_Controller/src/mux4to1.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/mux4to1.v is missing
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
 Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(47): all case item expressions in this case statement are onehot
 Info: Elaborating entity "yima2to4" for hierarchy "yima2to4:yima"
@@ -227,38 +227,54 @@ Warning (10235): Verilog HDL Always Construct warning at judge.v(19): variable "
 Warning (10235): Verilog HDL Always Construct warning at judge.v(21): variable "a6" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at judge.v(21): variable "b6" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning: Port "#2" on the entity instantiation of "yima" is connected to a signal of width 32. The formal width of the signal in the module is 1.  Extra bits will be driven by GND.
-Warning: No clock transition on "in3[3]" register due to stuck clock or clock enable
-Warning: Reduced register "in3[3]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in3[2]" register due to stuck clock or clock enable
-Warning: Reduced register "in3[2]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in3[1]" register due to stuck clock or clock enable
-Warning: Reduced register "in3[1]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in3[0]" register due to stuck clock or clock enable
-Warning: Reduced register "in3[0]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in4[3]" register due to stuck clock or clock enable
-Warning: Reduced register "in4[3]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in4[2]" register due to stuck clock or clock enable
-Warning: Reduced register "in4[2]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in4[1]" register due to stuck clock or clock enable
-Warning: Reduced register "in4[1]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in4[0]" register due to stuck clock or clock enable
-Warning: Reduced register "in4[0]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in5[3]" register due to stuck clock or clock enable
-Warning: Reduced register "in5[3]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in5[2]" register due to stuck clock or clock enable
-Warning: Reduced register "in5[2]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in5[1]" register due to stuck clock or clock enable
-Warning: Reduced register "in5[1]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in5[0]" register due to stuck clock or clock enable
-Warning: Reduced register "in5[0]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in6[3]" register due to stuck clock or clock enable
-Warning: Reduced register "in6[3]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in6[2]" register due to stuck clock or clock enable
-Warning: Reduced register "in6[2]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in6[1]" register due to stuck clock or clock enable
-Warning: Reduced register "in6[1]" with stuck clock_enable port to stuck value GND
-Warning: No clock transition on "in6[0]" register due to stuck clock or clock enable
-Warning: Reduced register "in6[0]" with stuck clock_enable port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r6|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r6|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r6|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r6|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r6|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r6|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r6|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r6|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r5|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r5|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r5|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r5|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r5|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r5|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r5|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r5|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r4|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r4|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r4|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r4|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r4|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r4|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r4|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r4|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r3|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r3|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r3|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r3|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r3|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r3|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r3|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r3|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r2|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r2|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r2|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r2|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r2|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r2|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r2|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r2|q[3]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r1|q[2]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r1|q[2]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r1|q[1]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r1|q[1]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r1|q[0]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r1|q[0]" with stuck clock port to stuck value GND
+Warning: No clock transition on "passwd_register:cin_password|register:r1|q[3]" register due to stuck clock or clock enable
+Warning: Reduced register "passwd_register:cin_password|register:r1|q[3]" with stuck clock port to stuck value GND
 Warning: No clock transition on "passwd_register:set_password|register:r6|q[2]" register due to stuck clock or clock enable
 Warning: Reduced register "passwd_register:set_password|register:r6|q[2]" with stuck clock port to stuck value GND
 Warning: No clock transition on "passwd_register:set_password|register:r6|q[1]" register due to stuck clock or clock enable
@@ -307,6 +323,14 @@ Warning: No clock transition on "passwd_register:set_password|register:r1|q[0]" 
 Warning: Reduced register "passwd_register:set_password|register:r1|q[0]" with stuck clock port to stuck value GND
 Warning: No clock transition on "passwd_register:set_password|register:r1|q[3]" register due to stuck clock or clock enable
 Warning: Reduced register "passwd_register:set_password|register:r1|q[3]" with stuck clock port to stuck value GND
+Warning: Reduced register "out1_reg[3]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out1_reg[2]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out1_reg[1]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out1_reg[0]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out2_reg[3]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out2_reg[2]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out2_reg[1]" with stuck data_in port to stuck value GND
+Warning: Reduced register "out2_reg[0]" with stuck data_in port to stuck value GND
 Warning: Reduced register "out3_reg[3]" with stuck data_in port to stuck value GND
 Warning: Reduced register "out3_reg[2]" with stuck data_in port to stuck value GND
 Warning: Reduced register "out3_reg[1]" with stuck data_in port to stuck value GND
@@ -323,23 +347,6 @@ Warning: Reduced register "out6_reg[3]" with stuck data_in port to stuck value G
 Warning: Reduced register "out6_reg[2]" with stuck data_in port to stuck value GND
 Warning: Reduced register "out6_reg[1]" with stuck data_in port to stuck value GND
 Warning: Reduced register "out6_reg[0]" with stuck data_in port to stuck value GND
-Info: Duplicate registers merged to single register
-    Info: Duplicate register "in1[3]" merged to single register "in1[2]"
-    Info: Duplicate register "in2[2]" merged to single register "in1[2]"
-    Info: Duplicate register "in1[1]" merged to single register "in1[2]"
-    Info: Duplicate register "in2[3]" merged to single register "in1[2]"
-    Info: Duplicate register "in2[1]" merged to single register "in1[2]"
-    Info: Duplicate register "in1[0]" merged to single register "in1[2]"
-    Info: Duplicate register "in2[0]" merged to single register "in1[2]"
-Warning: Reduced register "in1[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out1_reg[0]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[3]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[2]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[1]" with stuck data_in port to stuck value GND
-Warning: Reduced register "out2_reg[0]" with stuck data_in port to stuck value GND
 Warning: Output pins are stuck at VCC or GND
     Warning: Pin "out1[0]" stuck at GND
     Warning: Pin "out1[1]" stuck at GND
@@ -383,8 +390,8 @@ Warning: Design contains 13 input pin(s) that do not drive logic
 Info: Implemented 38 device resources after synthesis - the final resource count might be different
     Info: Implemented 13 input pins
     Info: Implemented 25 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 163 warnings
-    Info: Processing ended: Sat Jun 08 01:30:38 2024
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 178 warnings
+    Info: Processing ended: Sat Jun 08 01:38:47 2024
     Info: Elapsed time: 00:00:00
 
 

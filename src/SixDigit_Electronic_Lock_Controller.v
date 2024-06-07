@@ -52,12 +52,12 @@ module SixDigit_Electronic_Lock_Controller(
 
         if (m == 0) begin
             // 模式0：设置密码
-            out1_reg <= in1;
-            out2_reg <= in2;
-            out3_reg <= in3;
-            out4_reg <= in4;
-            out5_reg <= in5;
-            out6_reg <= in6;
+            out1_reg <= passwd_out1;
+            out2_reg <= passwd_out2;
+            out3_reg <= passwd_out3;
+            out4_reg <= passwd_out4;
+            out5_reg <= passwd_out5;
+            out6_reg <= passwd_out6;
             // 在清除信号clr激活时清空输出寄存器
             if (clr) begin
                 out1_reg <= 4'b0000;
@@ -69,12 +69,12 @@ module SixDigit_Electronic_Lock_Controller(
             end
         end else begin
             // 模式1：输入密码并进行判断
-            out1_reg <= passwd_out1;
-            out2_reg <= passwd_out2;
-            out3_reg <= passwd_out3;
-            out4_reg <= passwd_out4;
-            out5_reg <= passwd_out5;
-            out6_reg <= passwd_out6;
+            out1_reg <= cin_out1;
+            out2_reg <= cin_out2;
+            out3_reg <= cin_out3;
+            out4_reg <= cin_out4;
+            out5_reg <= cin_out5;
+            out6_reg <= cin_out6;
         end
     end
 
