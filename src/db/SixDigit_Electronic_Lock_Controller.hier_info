@@ -1,4 +1,8 @@
 |SixDigit_Electronic_Lock_Controller
+m => comb~4.IN1
+m => comb~5.IN1
+m => comb~6.IN1
+m => comb~7.IN1
 m => comb~0.IN1
 m => comb~1.IN1
 m => comb~2.IN1
@@ -28,31 +32,32 @@ m => out6_reg~5.OUTPUTSELECT
 m => out6_reg~6.OUTPUTSELECT
 m => out6_reg~7.OUTPUTSELECT
 inA[0] => in1~7.DATAB
-inA[0] => in3~7.DATAB
-inA[0] => in5~7.DATAB
+inA[0] => in3[0].DATAIN
+inA[0] => in5[0].DATAIN
 inA[1] => in1~6.DATAB
-inA[1] => in3~6.DATAB
-inA[1] => in5~6.DATAB
+inA[1] => in3[1].DATAIN
+inA[1] => in5[1].DATAIN
 inA[2] => in1~5.DATAB
-inA[2] => in3~5.DATAB
-inA[2] => in5~5.DATAB
+inA[2] => in3[2].DATAIN
+inA[2] => in5[2].DATAIN
 inA[3] => in1~4.DATAB
-inA[3] => in3~4.DATAB
-inA[3] => in5~4.DATAB
+inA[3] => in3[3].DATAIN
+inA[3] => in5[3].DATAIN
 inB[0] => in2~7.DATAB
-inB[0] => in4~7.DATAB
-inB[0] => in6~7.DATAB
+inB[0] => in4[0].DATAIN
+inB[0] => in6[0].DATAIN
 inB[1] => in2~6.DATAB
-inB[1] => in4~6.DATAB
-inB[1] => in6~6.DATAB
+inB[1] => in4[1].DATAIN
+inB[1] => in6[1].DATAIN
 inB[2] => in2~5.DATAB
-inB[2] => in4~5.DATAB
-inB[2] => in6~5.DATAB
+inB[2] => in4[2].DATAIN
+inB[2] => in6[2].DATAIN
 inB[3] => in2~4.DATAB
-inB[3] => in4~4.DATAB
-inB[3] => in6~4.DATAB
-clk => clk~0.IN1
+inB[3] => in4[3].DATAIN
+inB[3] => in6[3].DATAIN
+clk => clk~0.IN2
 clr => comb~3.IN0
+clr => comb~7.IN0
 clr => out1_reg~0.OUTPUTSELECT
 clr => out1_reg~1.OUTPUTSELECT
 clr => out1_reg~2.OUTPUTSELECT
@@ -263,6 +268,168 @@ clr => q[3]~reg0.ACLR
 
 
 |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[2]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[0]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password
+d1[0] => d1[0]~3.IN3
+d1[1] => d1[1]~2.IN3
+d1[2] => d1[2]~1.IN3
+d1[3] => d1[3]~0.IN3
+d2[0] => d2[0]~3.IN3
+d2[1] => d2[1]~2.IN3
+d2[2] => d2[2]~1.IN3
+d2[3] => d2[3]~0.IN3
+y0 => comb~0.IN1
+y0 => comb~1.IN1
+y1 => comb~2.IN1
+y1 => comb~3.IN1
+y2 => comb~4.IN1
+y2 => comb~5.IN1
+q1[0] <= register:r1.port1
+q1[1] <= register:r1.port1
+q1[2] <= register:r1.port1
+q1[3] <= register:r1.port1
+q2[0] <= register:r2.port1
+q2[1] <= register:r2.port1
+q2[2] <= register:r2.port1
+q2[3] <= register:r2.port1
+q3[0] <= register:r3.port1
+q3[1] <= register:r3.port1
+q3[2] <= register:r3.port1
+q3[3] <= register:r3.port1
+q4[0] <= register:r4.port1
+q4[1] <= register:r4.port1
+q4[2] <= register:r4.port1
+q4[3] <= register:r4.port1
+q5[0] <= register:r5.port1
+q5[1] <= register:r5.port1
+q5[2] <= register:r5.port1
+q5[3] <= register:r5.port1
+q6[0] <= register:r6.port1
+q6[1] <= register:r6.port1
+q6[2] <= register:r6.port1
+q6[3] <= register:r6.port1
+clr => clr~0.IN6
+clk => comb~0.IN0
+clk => comb~1.IN0
+clk => comb~2.IN0
+clk => comb~3.IN0
+clk => comb~4.IN0
+clk => comb~5.IN0
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[2]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[0]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[2]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[0]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[2]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[0]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[2]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[0]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[2]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[0]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+
+
+|SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN

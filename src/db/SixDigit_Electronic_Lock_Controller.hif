@@ -39,6 +39,7 @@ OFF
 }
 # hierarchies {
 passwd_register:set_password
+passwd_register:cin_password
 }
 # end
 # entity
@@ -66,6 +67,12 @@ passwd_register:set_password|register:r3
 passwd_register:set_password|register:r4
 passwd_register:set_password|register:r5
 passwd_register:set_password|register:r6
+passwd_register:cin_password|register:r1
+passwd_register:cin_password|register:r2
+passwd_register:cin_password|register:r3
+passwd_register:cin_password|register:r4
+passwd_register:cin_password|register:r5
+passwd_register:cin_password|register:r6
 }
 # end
 # entity
@@ -124,7 +131,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-fecdb05f472c75265b37e2bc20806dac
+51bc57d1f60b22e82a45d3653ee43a0
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
