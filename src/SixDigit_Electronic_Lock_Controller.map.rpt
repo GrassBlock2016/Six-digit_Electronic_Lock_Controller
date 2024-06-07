@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Fri Jun 07 16:18:07 2024
+Fri Jun 07 17:09:16 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Jun 07 16:18:07 2024         ;
+; Analysis & Synthesis Status ; Successful - Fri Jun 07 17:09:16 2024         ;
 ; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
@@ -117,17 +117,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+-------------------------------------+-------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                         ;
-+---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
-; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
-; register.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
-; passwd_register.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
-; yima2to4.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/yima2to4.v                            ;
-; judge.v                               ; yes             ; Other                  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
-+---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
+; SixDigit_Electronic_Lock_Controller.v ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.v ;
+; register.v                            ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/register.v                            ;
+; passwd_register.v                     ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/passwd_register.v                     ;
+; yima2to4.v                            ; yes             ; User Verilog HDL File  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/yima2to4.v                            ;
+; judge.v                               ; yes             ; Other                  ; F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
++---------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -192,7 +192,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Jun 07 16:18:06 2024
+    Info: Processing started: Fri Jun 07 17:09:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
@@ -200,14 +200,14 @@ Info: Found 1 design units, including 1 entities, in source file register.v
     Info: Found entity 1: register
 Info: Found 1 design units, including 1 entities, in source file passwd_register.v
     Info: Found entity 1: passwd_register
-Warning: Can't analyze file -- file C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/reset.v is missing
-Warning: Can't analyze file -- file C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/4to1.v is missing
-Warning: Can't analyze file -- file C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/2to4.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/reset.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/4to1.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/2to4.v is missing
 Info: Found 1 design units, including 1 entities, in source file yima2to4.v
     Info: Found entity 1: yima2to4
-Warning: Can't analyze file -- file C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/mux4to1.v is missing
+Warning: Can't analyze file -- file F:/ÏÄ¼¾Ó²¼þ/Six-digit_Electronic_Lock_Controller/src/mux4to1.v is missing
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(39): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(46): all case item expressions in this case statement are onehot
 Info: Elaborating entity "yima2to4" for hierarchy "yima2to4:yima"
 Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:set_password"
 Info: Elaborating entity "register" for hierarchy "passwd_register:set_password|register:r1"
@@ -368,7 +368,7 @@ Info: Implemented 38 device resources after synthesis - the final resource count
     Info: Implemented 13 input pins
     Info: Implemented 25 output pins
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 131 warnings
-    Info: Processing ended: Fri Jun 07 16:18:07 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Jun 07 17:09:16 2024
+    Info: Elapsed time: 00:00:00
 
 

@@ -1,5 +1,5 @@
 Flow report for SixDigit_Electronic_Lock_Controller
-Fri Jun 07 16:18:11 2024
+Fri Jun 07 17:09:21 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +--------------------------+-----------------------------------------------+
-; Flow Status              ; Successful - Fri Jun 07 16:18:11 2024         ;
+; Flow Status              ; Successful - Fri Jun 07 17:09:21 2024         ;
 ; Quartus II Version       ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name            ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name    ; SixDigit_Electronic_Lock_Controller           ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 06/07/2024 16:18:06                 ;
+; Start date & time ; 06/07/2024 17:09:16                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; SixDigit_Electronic_Lock_Controller ;
 +-------------------+-------------------------------------+
@@ -78,11 +78,11 @@ applicable agreement for further details.
 +----------------------+--------------+
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
-; Analysis & Synthesis ; 00:00:01     ;
+; Analysis & Synthesis ; 00:00:00     ;
 ; Fitter               ; 00:00:02     ;
-; Assembler            ; 00:00:01     ;
+; Assembler            ; 00:00:00     ;
 ; Timing Analyzer      ; 00:00:00     ;
-; Total                ; 00:00:04     ;
+; Total                ; 00:00:02     ;
 +----------------------+--------------+
 
 

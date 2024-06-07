@@ -31,6 +31,13 @@ module SixDigit_Electronic_Lock_Controller(
         clr & (~m), clk
     );
 
+    // 输入密码寄存器实例化
+	//passwd_register cin_password(
+    //    in1, in2, m & y0, m & y1, m & y2,
+    //    passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6,
+    //    clr & (m), clk
+    //);
+
     // 比较模块实例化
     judge judge_1(y3, in1, in2, in3, in4, in5, in6, passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6, res);
 
