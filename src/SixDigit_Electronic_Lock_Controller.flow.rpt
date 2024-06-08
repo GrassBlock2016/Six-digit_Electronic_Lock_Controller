@@ -1,5 +1,5 @@
 Flow report for SixDigit_Electronic_Lock_Controller
-Sat Jun 08 02:46:56 2024
+Sat Jun 08 12:26:11 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -37,14 +37,14 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +--------------------------+-----------------------------------------------+
-; Flow Status              ; Successful - Sat Jun 08 02:46:56 2024         ;
+; Flow Status              ; Successful - Sat Jun 08 12:26:10 2024         ;
 ; Quartus II Version       ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name            ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name    ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                   ; Stratix                                       ;
 ; Met timing requirements  ; Yes                                           ;
-; Total logic elements     ; 83 / 10,570 ( < 1 % )                         ;
-; Total pins               ; 62 / 336 ( 18 % )                             ;
+; Total logic elements     ; 88 / 10,570 ( < 1 % )                         ;
+; Total pins               ; 86 / 336 ( 26 % )                             ;
 ; Total virtual pins       ; 0                                             ;
 ; Total memory bits        ; 0 / 920,448 ( 0 % )                           ;
 ; DSP block 9-bit elements ; 0 / 48 ( 0 % )                                ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 06/08/2024 02:46:50                 ;
+; Start date & time ; 06/08/2024 12:26:04                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; SixDigit_Electronic_Lock_Controller ;
 +-------------------+-------------------------------------+
@@ -78,10 +78,10 @@ applicable agreement for further details.
 +----------------------+--------------+
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
-; Analysis & Synthesis ; 00:00:00     ;
+; Analysis & Synthesis ; 00:00:01     ;
 ; Fitter               ; 00:00:02     ;
 ; Assembler            ; 00:00:01     ;
-; Timing Analyzer      ; 00:00:01     ;
+; Timing Analyzer      ; 00:00:00     ;
 ; Total                ; 00:00:04     ;
 +----------------------+--------------+
 

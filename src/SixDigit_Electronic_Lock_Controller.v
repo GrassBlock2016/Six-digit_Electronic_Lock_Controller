@@ -5,7 +5,8 @@ module SixDigit_Electronic_Lock_Controller(
     output [3:0] out1, out2, out3, out4, out5, out6, // 输出
     output reg res,        // 比较结果
     input a0, a1,            // 高、中、低位输入与判断选择
-	output [3:0] s1,s2,s3,s4,s5,s6    // debug用，先勿删
+	output [3:0] s1,s2,s3,s4,s5,s6,    // debug用，先勿删
+	output [3:0] c1,c2,c3,c4,c5,c6    // debug用，先勿删
 );
 
     // 内部信号
@@ -30,6 +31,12 @@ module SixDigit_Electronic_Lock_Controller(
 	assign s4=set_out4;
 	assign s5=set_out5;
 	assign s6=set_out6;
+	assign c1=cin_out1;
+	assign c2=cin_out2;
+	assign c3=cin_out3;
+	assign c4=cin_out4;
+	assign c5=cin_out5;
+	assign c6=cin_out6;
 
     // 24译码器实例化
     yima2to4 yima(a0, a1, 0, y0, y1, y2, y3);
@@ -49,7 +56,7 @@ module SixDigit_Electronic_Lock_Controller(
     );
 
     // 比较模块实例化
-    judge judge_1(y3, cin_out1, cin_out2, cin_out3, cin_out4, cin_out5, cin_out6, passwd_out1, passwd_out2, passwd_out3, passwd_out4, passwd_out5, passwd_out6, res);
+    judge judge_1(y3, cin_out1, cin_out2, cin_out3, cin_out4, cin_out5, cin_out6, set_out1, set_out2, set_out3, set_out4, set_out5, set_out6, res);
 
     // 模式选择和输出赋值的控制逻辑
     always @(posedge clk) begin
@@ -58,15 +65,20 @@ module SixDigit_Electronic_Lock_Controller(
         //    3'b010: {in3, in4} <= {inA, inB};
         //    3'b100: {in5, in6} <= {inA, inB};
         //endcase
+        case ({y2, y1, y0})
+            3'b001: {out1_reg, out2_reg} <= {inA, inB};
+            3'b010: {out3_reg, out4_reg} <= {inA, inB};
+            3'b100: {out5_reg, out6_reg} <= {inA, inB};
+        endcase
 
         if (m == 0) begin
             // 模式0：设置密码
-            out1_reg <= set_out1;
-            out2_reg <= set_out2;
-            out3_reg <= set_out3;
-            out4_reg <= set_out4;
-            out5_reg <= set_out5;
-            out6_reg <= set_out6;
+            //out1_reg <= set_out1;
+            //out2_reg <= set_out2;
+            //out3_reg <= set_out3;
+            //out4_reg <= set_out4;
+            //out5_reg <= set_out5;
+            //out6_reg <= set_out6;
             //out1_reg <= in1;
             //out2_reg <= in2;
             //out3_reg <= in3;
@@ -82,21 +94,21 @@ module SixDigit_Electronic_Lock_Controller(
                 out5_reg <= 4'b0000;
                 out6_reg <= 4'b0000;
             end
-        end else begin
+        end //else begin
             // 模式1：输入密码并进行判断
-            out1_reg <= cin_out1;
-            out2_reg <= cin_out2;
-            out3_reg <= cin_out3;
-            out4_reg <= cin_out4;
-            out5_reg <= cin_out5;
-            out6_reg <= cin_out6;
+            //out1_reg <= cin_out1;
+            //out2_reg <= cin_out2;
+            //out3_reg <= cin_out3;
+            //out4_reg <= cin_out4;
+            //out5_reg <= cin_out5;
+            //out6_reg <= cin_out6;
             //out1_reg <= in1;
             //out2_reg <= in2;
             //out3_reg <= in3;
             //out4_reg <= in4;
             //out5_reg <= in5;
             //out6_reg <= in6;
-        end
+        //end
     end
 
 endmodule

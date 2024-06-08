@@ -1,5 +1,5 @@
 Simulator report for SixDigit_Electronic_Lock_Controller
-Sat Jun 08 02:47:36 2024
+Sat Jun 08 12:31:39 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 230 nodes    ;
-; Simulation Coverage         ;      57.83 % ;
-; Total Number of Transitions ; 911          ;
+; Simulation Netlist Size     ; 305 nodes    ;
+; Simulation Coverage         ;      80.66 % ;
+; Total Number of Transitions ; 1597         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix      ;
 +-----------------------------+--------------+
@@ -92,13 +92,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      57.83 % ;
-; Total nodes checked                                 ; 230          ;
-; Total output ports checked                          ; 230          ;
-; Total output ports with complete 1/0-value coverage ; 133          ;
-; Total output ports with no 1/0-value coverage       ; 49           ;
-; Total output ports with no 1-value coverage         ; 53           ;
-; Total output ports with no 0-value coverage         ; 93           ;
+; Total coverage as a percentage                      ;      80.66 % ;
+; Total nodes checked                                 ; 305          ;
+; Total output ports checked                          ; 305          ;
+; Total output ports with complete 1/0-value coverage ; 246          ;
+; Total output ports with no 1/0-value coverage       ; 59           ;
+; Total output ports with no 1-value coverage         ; 59           ;
+; Total output ports with no 0-value coverage         ; 59           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -111,25 +111,42 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|comb~0                                        ; |SixDigit_Electronic_Lock_Controller|comb~0                                        ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~1                                        ; |SixDigit_Electronic_Lock_Controller|comb~1                                        ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~2                                        ; |SixDigit_Electronic_Lock_Controller|comb~2                                        ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~3                                        ; |SixDigit_Electronic_Lock_Controller|comb~3                                        ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~4                                        ; |SixDigit_Electronic_Lock_Controller|comb~4                                        ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~5                                        ; |SixDigit_Electronic_Lock_Controller|comb~5                                        ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~6                                        ; |SixDigit_Electronic_Lock_Controller|comb~6                                        ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~7                                        ; |SixDigit_Electronic_Lock_Controller|comb~7                                        ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg~0                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~0                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~1                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~2                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg~0                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~0                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~1                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~2                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg~0                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~0                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~1                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~2                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out4_reg~0                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~0                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~1                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~2                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~0                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~0                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~1                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out6_reg~0                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~0                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out6_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~1                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~2                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg~4                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~4                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg~5                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~5                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~6                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~7                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg~4                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~4                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg~5                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~5                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~6                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~7                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg~4                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~4                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg~5                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~5                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~6                                    ; out              ;
@@ -140,13 +157,39 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|out4_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~7                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~4                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~4                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~5                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~5                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~7                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out6_reg~4                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~4                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out6_reg~5                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~5                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~6                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~7                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~8                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~8                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~9                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~9                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg~10                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out1_reg~11                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg~11                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~8                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~8                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~9                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~9                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg~10                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg~11                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg~11                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~8                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~8                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~9                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~9                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out3_reg~10                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out3_reg~11                                   ; |SixDigit_Electronic_Lock_Controller|out3_reg~11                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~8                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~8                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~9                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~9                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg~10                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg~11                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg~11                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~8                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~8                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~9                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~9                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~11                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg~11                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~8                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~8                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~9                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~9                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg~10                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg~11                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg~11                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg[2]                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg[2]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg[1]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg[3]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[3]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out2_reg[2]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[2]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[1]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[0]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg[3]                                   ; |SixDigit_Electronic_Lock_Controller|out3_reg[3]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg[2]                                   ; |SixDigit_Electronic_Lock_Controller|out3_reg[2]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out3_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out3_reg[1]                                   ; out              ;
@@ -154,11 +197,12 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|out4_reg[3]                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg[3]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out4_reg[2]                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg[2]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out4_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg[1]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out4_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg[0]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg[3]                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg[3]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg[2]                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg[2]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out6_reg[3]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[3]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out6_reg[2]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[2]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[1]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out6_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[0]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg[3]                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg[3]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|m                                             ; |SixDigit_Electronic_Lock_Controller|m                                             ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|inA[0]                                        ; |SixDigit_Electronic_Lock_Controller|inA[0]                                        ; out              ;
@@ -170,42 +214,98 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|inB[2]                                        ; |SixDigit_Electronic_Lock_Controller|inB[2]                                        ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|inB[3]                                        ; |SixDigit_Electronic_Lock_Controller|inB[3]                                        ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|clk                                           ; |SixDigit_Electronic_Lock_Controller|clk                                           ; out              ;
+; |SixDigit_Electronic_Lock_Controller|clr                                           ; |SixDigit_Electronic_Lock_Controller|clr                                           ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1[1]                                       ; |SixDigit_Electronic_Lock_Controller|out1[1]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out1[2]                                       ; |SixDigit_Electronic_Lock_Controller|out1[2]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out1[3]                                       ; |SixDigit_Electronic_Lock_Controller|out1[3]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out2[1]                                       ; |SixDigit_Electronic_Lock_Controller|out2[1]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out2[0]                                       ; |SixDigit_Electronic_Lock_Controller|out2[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out2[2]                                       ; |SixDigit_Electronic_Lock_Controller|out2[2]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out2[3]                                       ; |SixDigit_Electronic_Lock_Controller|out2[3]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out3[0]                                       ; |SixDigit_Electronic_Lock_Controller|out3[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out3[1]                                       ; |SixDigit_Electronic_Lock_Controller|out3[1]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out3[2]                                       ; |SixDigit_Electronic_Lock_Controller|out3[2]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out3[3]                                       ; |SixDigit_Electronic_Lock_Controller|out3[3]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out4[0]                                       ; |SixDigit_Electronic_Lock_Controller|out4[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out4[1]                                       ; |SixDigit_Electronic_Lock_Controller|out4[1]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out4[2]                                       ; |SixDigit_Electronic_Lock_Controller|out4[2]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out4[3]                                       ; |SixDigit_Electronic_Lock_Controller|out4[3]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out5[2]                                       ; |SixDigit_Electronic_Lock_Controller|out5[2]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out5[3]                                       ; |SixDigit_Electronic_Lock_Controller|out5[3]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out6[0]                                       ; |SixDigit_Electronic_Lock_Controller|out6[0]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out6[1]                                       ; |SixDigit_Electronic_Lock_Controller|out6[1]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out6[2]                                       ; |SixDigit_Electronic_Lock_Controller|out6[2]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out6[3]                                       ; |SixDigit_Electronic_Lock_Controller|out6[3]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|res                                           ; |SixDigit_Electronic_Lock_Controller|res                                           ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|a0                                            ; |SixDigit_Electronic_Lock_Controller|a0                                            ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|a1                                            ; |SixDigit_Electronic_Lock_Controller|a1                                            ; out              ;
-; |SixDigit_Electronic_Lock_Controller|s1[2]                                         ; |SixDigit_Electronic_Lock_Controller|s1[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s1[1]                                         ; |SixDigit_Electronic_Lock_Controller|s1[1]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s1[3]                                         ; |SixDigit_Electronic_Lock_Controller|s1[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s2[0]                                         ; |SixDigit_Electronic_Lock_Controller|s2[0]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s2[2]                                         ; |SixDigit_Electronic_Lock_Controller|s2[2]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s2[3]                                         ; |SixDigit_Electronic_Lock_Controller|s2[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s3[0]                                         ; |SixDigit_Electronic_Lock_Controller|s3[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s3[1]                                         ; |SixDigit_Electronic_Lock_Controller|s3[1]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s3[3]                                         ; |SixDigit_Electronic_Lock_Controller|s3[3]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s4[3]                                         ; |SixDigit_Electronic_Lock_Controller|s4[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s4[1]                                         ; |SixDigit_Electronic_Lock_Controller|s4[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s4[2]                                         ; |SixDigit_Electronic_Lock_Controller|s4[2]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s5[2]                                         ; |SixDigit_Electronic_Lock_Controller|s5[2]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s5[3]                                         ; |SixDigit_Electronic_Lock_Controller|s5[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s6[0]                                         ; |SixDigit_Electronic_Lock_Controller|s6[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s6[1]                                         ; |SixDigit_Electronic_Lock_Controller|s6[1]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s6[2]                                         ; |SixDigit_Electronic_Lock_Controller|s6[2]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s6[3]                                         ; |SixDigit_Electronic_Lock_Controller|s6[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c1[1]                                         ; |SixDigit_Electronic_Lock_Controller|c1[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c1[2]                                         ; |SixDigit_Electronic_Lock_Controller|c1[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c1[3]                                         ; |SixDigit_Electronic_Lock_Controller|c1[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c2[0]                                         ; |SixDigit_Electronic_Lock_Controller|c2[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c2[3]                                         ; |SixDigit_Electronic_Lock_Controller|c2[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c3[0]                                         ; |SixDigit_Electronic_Lock_Controller|c3[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c3[1]                                         ; |SixDigit_Electronic_Lock_Controller|c3[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c3[2]                                         ; |SixDigit_Electronic_Lock_Controller|c3[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c3[3]                                         ; |SixDigit_Electronic_Lock_Controller|c3[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c4[1]                                         ; |SixDigit_Electronic_Lock_Controller|c4[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c4[3]                                         ; |SixDigit_Electronic_Lock_Controller|c4[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c6[0]                                         ; |SixDigit_Electronic_Lock_Controller|c6[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c6[1]                                         ; |SixDigit_Electronic_Lock_Controller|c6[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c6[3]                                         ; |SixDigit_Electronic_Lock_Controller|c6[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~1                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~1                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~2                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~2                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~3                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~3                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~4                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~4                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~5                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~5                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~6                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~6                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~7                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~7                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~9                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~9                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~10                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~10                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~11                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~11                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~12                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~12                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~13                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~13                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~14                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~14                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~15                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~15                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~16                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~16                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~17                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~17                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~18                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~18                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~19                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~19                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~20                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~20                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~22                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~22                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~23                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~23                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~24                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~24                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~25                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~25                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~26                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~26                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~27                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~27                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~31                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~31                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~32                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~32                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~33                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~33                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~34                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~34                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~35                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~35                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~36                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~36                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~37                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~37                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~38                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~38                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~39                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~39                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~40                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~40                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~41                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~41                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~0                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~0                             ; out              ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~1                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~1                             ; out              ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~2                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~2                             ; out              ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~3                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~3                             ; out              ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~4                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~4                             ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c                               ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c                               ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~0           ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~0           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~1           ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~1           ; out0             ;
@@ -213,14 +313,20 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~3           ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~3           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~4           ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~4           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~5           ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|comb~5           ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[2] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[2] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[0] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~0           ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~0           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~1           ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~1           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~2           ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~2           ; out0             ;
@@ -228,15 +334,22 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~4           ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~4           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~5           ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|comb~5           ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[2] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[0] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[0] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[2] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|Decoder0~8                                    ; |SixDigit_Electronic_Lock_Controller|Decoder0~8                                    ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|Decoder0~9                                    ; |SixDigit_Electronic_Lock_Controller|Decoder0~9                                    ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|Decoder0~10                                   ; |SixDigit_Electronic_Lock_Controller|Decoder0~10                                   ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima|Decoder0~4                      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima|Decoder0~4                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima|Decoder0~5                      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima|Decoder0~5                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima|Decoder0~6                      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima|Decoder0~6                      ; out0             ;
@@ -250,58 +363,64 @@ The following table displays output ports that do not toggle to 1 during simulat
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                          ; Output Port Name                                                                   ; Output Port Type ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
-; |SixDigit_Electronic_Lock_Controller|comb~3                                        ; |SixDigit_Electronic_Lock_Controller|comb~3                                        ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|comb~7                                        ; |SixDigit_Electronic_Lock_Controller|comb~7                                        ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|out1_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out5_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out1_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~7                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~7                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~6                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out5_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~7                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~6                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~7                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg~10                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg[0]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[0]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[1]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg[0]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg[1]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg[0]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[1]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[0]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|clr                                           ; |SixDigit_Electronic_Lock_Controller|clr                                           ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1[0]                                       ; |SixDigit_Electronic_Lock_Controller|out1[0]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out2[0]                                       ; |SixDigit_Electronic_Lock_Controller|out2[0]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out2[1]                                       ; |SixDigit_Electronic_Lock_Controller|out2[1]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out4[0]                                       ; |SixDigit_Electronic_Lock_Controller|out4[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out5[0]                                       ; |SixDigit_Electronic_Lock_Controller|out5[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out5[1]                                       ; |SixDigit_Electronic_Lock_Controller|out5[1]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out6[0]                                       ; |SixDigit_Electronic_Lock_Controller|out6[0]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out6[1]                                       ; |SixDigit_Electronic_Lock_Controller|out6[1]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s1[0]                                         ; |SixDigit_Electronic_Lock_Controller|s1[0]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s2[0]                                         ; |SixDigit_Electronic_Lock_Controller|s2[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s1[2]                                         ; |SixDigit_Electronic_Lock_Controller|s1[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s2[1]                                         ; |SixDigit_Electronic_Lock_Controller|s2[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s2[3]                                         ; |SixDigit_Electronic_Lock_Controller|s2[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s3[2]                                         ; |SixDigit_Electronic_Lock_Controller|s3[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s4[0]                                         ; |SixDigit_Electronic_Lock_Controller|s4[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s4[3]                                         ; |SixDigit_Electronic_Lock_Controller|s4[3]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s5[0]                                         ; |SixDigit_Electronic_Lock_Controller|s5[0]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s5[1]                                         ; |SixDigit_Electronic_Lock_Controller|s5[1]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s6[0]                                         ; |SixDigit_Electronic_Lock_Controller|s6[0]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s6[1]                                         ; |SixDigit_Electronic_Lock_Controller|s6[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s6[3]                                         ; |SixDigit_Electronic_Lock_Controller|s6[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c1[0]                                         ; |SixDigit_Electronic_Lock_Controller|c1[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c2[1]                                         ; |SixDigit_Electronic_Lock_Controller|c2[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c2[2]                                         ; |SixDigit_Electronic_Lock_Controller|c2[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c4[0]                                         ; |SixDigit_Electronic_Lock_Controller|c4[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c4[2]                                         ; |SixDigit_Electronic_Lock_Controller|c4[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[0]                                         ; |SixDigit_Electronic_Lock_Controller|c5[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[1]                                         ; |SixDigit_Electronic_Lock_Controller|c5[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[2]                                         ; |SixDigit_Electronic_Lock_Controller|c5[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[3]                                         ; |SixDigit_Electronic_Lock_Controller|c5[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c6[2]                                         ; |SixDigit_Electronic_Lock_Controller|c6[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~0                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~0                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~8                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~8                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~21                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~21                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~28                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~28                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~29                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~29                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~30                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~30                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~37                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~37                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~1                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~1                             ; out              ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~2                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~2                             ; out              ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~3                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~3                             ; out              ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~4                             ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|c~4                             ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[0] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[0] ; out              ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 
@@ -312,98 +431,64 @@ The following table displays output ports that do not toggle to 0 during simulat
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                          ; Output Port Name                                                                   ; Output Port Type ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
-; |SixDigit_Electronic_Lock_Controller|comb~3                                        ; |SixDigit_Electronic_Lock_Controller|comb~3                                        ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|comb~7                                        ; |SixDigit_Electronic_Lock_Controller|comb~7                                        ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|out1_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out1_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out3_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~1                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out3_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out3_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out3_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out4_reg~1                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~1                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out4_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out4_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out4_reg~3                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out5_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~2                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~2                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~3                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~3                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out1_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out1_reg~7                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out2_reg~7                                    ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~6                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out5_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out5_reg~7                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~6                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~6                                    ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg~7                                    ; |SixDigit_Electronic_Lock_Controller|out6_reg~7                                    ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out5_reg~10                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg~10                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out1_reg[0]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out2_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[0]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out2_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out2_reg[1]                                   ; out              ;
+; |SixDigit_Electronic_Lock_Controller|out4_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out4_reg[0]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg[1]                                   ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out5_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out5_reg[0]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg[1]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[1]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|out6_reg[0]                                   ; |SixDigit_Electronic_Lock_Controller|out6_reg[0]                                   ; out              ;
-; |SixDigit_Electronic_Lock_Controller|clr                                           ; |SixDigit_Electronic_Lock_Controller|clr                                           ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|out1[0]                                       ; |SixDigit_Electronic_Lock_Controller|out1[0]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out2[0]                                       ; |SixDigit_Electronic_Lock_Controller|out2[0]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out2[1]                                       ; |SixDigit_Electronic_Lock_Controller|out2[1]                                       ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|out4[0]                                       ; |SixDigit_Electronic_Lock_Controller|out4[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out5[0]                                       ; |SixDigit_Electronic_Lock_Controller|out5[0]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|out5[1]                                       ; |SixDigit_Electronic_Lock_Controller|out5[1]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out6[0]                                       ; |SixDigit_Electronic_Lock_Controller|out6[0]                                       ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|out6[1]                                       ; |SixDigit_Electronic_Lock_Controller|out6[1]                                       ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s1[0]                                         ; |SixDigit_Electronic_Lock_Controller|s1[0]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s1[1]                                         ; |SixDigit_Electronic_Lock_Controller|s1[1]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s2[0]                                         ; |SixDigit_Electronic_Lock_Controller|s2[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s1[2]                                         ; |SixDigit_Electronic_Lock_Controller|s1[2]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s2[1]                                         ; |SixDigit_Electronic_Lock_Controller|s2[1]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s3[0]                                         ; |SixDigit_Electronic_Lock_Controller|s3[0]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s3[1]                                         ; |SixDigit_Electronic_Lock_Controller|s3[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s2[3]                                         ; |SixDigit_Electronic_Lock_Controller|s2[3]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s3[2]                                         ; |SixDigit_Electronic_Lock_Controller|s3[2]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s4[0]                                         ; |SixDigit_Electronic_Lock_Controller|s4[0]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s4[1]                                         ; |SixDigit_Electronic_Lock_Controller|s4[1]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s4[2]                                         ; |SixDigit_Electronic_Lock_Controller|s4[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s4[3]                                         ; |SixDigit_Electronic_Lock_Controller|s4[3]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s5[0]                                         ; |SixDigit_Electronic_Lock_Controller|s5[0]                                         ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s5[1]                                         ; |SixDigit_Electronic_Lock_Controller|s5[1]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s6[0]                                         ; |SixDigit_Electronic_Lock_Controller|s6[0]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|s6[1]                                         ; |SixDigit_Electronic_Lock_Controller|s6[1]                                         ; pin_out          ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~2                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~2                       ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~4                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~4                       ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~6                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~6                       ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~9                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~9                       ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~11                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~11                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~13                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~13                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~16                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~16                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~18                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~18                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~20                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~20                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~23                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~23                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~25                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~25                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~27                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~27                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|s6[3]                                         ; |SixDigit_Electronic_Lock_Controller|s6[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c1[0]                                         ; |SixDigit_Electronic_Lock_Controller|c1[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c2[1]                                         ; |SixDigit_Electronic_Lock_Controller|c2[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c2[2]                                         ; |SixDigit_Electronic_Lock_Controller|c2[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c4[0]                                         ; |SixDigit_Electronic_Lock_Controller|c4[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c4[2]                                         ; |SixDigit_Electronic_Lock_Controller|c4[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[0]                                         ; |SixDigit_Electronic_Lock_Controller|c5[0]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[1]                                         ; |SixDigit_Electronic_Lock_Controller|c5[1]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[2]                                         ; |SixDigit_Electronic_Lock_Controller|c5[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c5[3]                                         ; |SixDigit_Electronic_Lock_Controller|c5[3]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|c6[2]                                         ; |SixDigit_Electronic_Lock_Controller|c6[2]                                         ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~0                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~0                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~8                       ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~8                       ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~21                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~21                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~28                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~28                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~29                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~29                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~30                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~30                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~37                      ; |SixDigit_Electronic_Lock_Controller|judge:judge_1|always0~37                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6|q[2] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[0] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1|q[3] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r6|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r5|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[2] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[1] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[0] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r4|q[3] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[2] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r3|q[0] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[1] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[0] ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[1] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[1] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[3] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r2|q[3] ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[2] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[2] ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[0] ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password|register:r1|q[0] ; out              ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 
@@ -421,18 +506,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jun 08 02:47:36 2024
+    Info: Processing started: Sat Jun 08 12:31:39 2024
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Overwriting simulation input file with simulation results
     Info: A backup of W_2.vwf called SixDigit_Electronic_Lock_Controller.sim_ori.vwf is created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      57.83 %
-Info: Number of transitions in simulation is 911
+Info: Simulation coverage is      80.66 %
+Info: Number of transitions in simulation is 1597
 Info: Vector file W_2.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Processing ended: Sat Jun 08 02:47:36 2024
+    Info: Processing ended: Sat Jun 08 12:31:39 2024
     Info: Elapsed time: 00:00:00
 
 
