@@ -63,7 +63,7 @@ module SixDigit_Electronic_Lock_Controller(
     judge jg(y3, cin_out1, cin_out2, cin_out3, cin_out4, cin_out5, cin_out6, set_out1, set_out2, set_out3, set_out4, set_out5, set_out6, res);
 	
 	// 错误计数器模块实例化
-	error_counter error_cnt(clk, res, error_count);
+	error_counter error_cnt(y3, res, error_count);
 	
 	// 定时器模块实例化
 	timer tm(clk, tick);

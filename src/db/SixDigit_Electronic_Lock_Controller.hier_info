@@ -16,7 +16,7 @@ inB[0] => inB[0]~3.IN2
 inB[1] => inB[1]~2.IN2
 inB[2] => inB[2]~1.IN2
 inB[3] => inB[3]~0.IN2
-clk => clk~0.IN4
+clk => clk~0.IN3
 clr => comb~3.IN1
 clr => comb~7.IN1
 clr => always0~0.IN1
@@ -489,8 +489,8 @@ c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt
-clk => error_count[0]~reg0.CLK
-clk => error_count[1]~reg0.CLK
+j => error_count[0]~reg0.CLK
+j => error_count[1]~reg0.CLK
 correct => error_count~2.OUTPUTSELECT
 correct => error_count~3.OUTPUTSELECT
 error_count[0] <= error_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE

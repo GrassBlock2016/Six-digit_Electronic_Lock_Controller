@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Sat Jun 08 17:42:14 2024
+Sun Jun 09 01:27:43 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -116,7 +116,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Jun 08 17:42:14 2024         ;
+; Analysis & Elaboration Status ; Successful - Sun Jun 09 01:27:43 2024         ;
 ; Quartus II Version            ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name                 ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name         ; SixDigit_Electronic_Lock_Controller           ;
@@ -142,7 +142,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jun 08 17:42:14 2024
+    Info: Processing started: Sun Jun 09 01:27:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller --analyze_project
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
@@ -190,7 +190,7 @@ Info: Elaborating entity "led_flasher" for hierarchy "led_flasher:led_fls"
 Warning (10230): Verilog HDL assignment warning at led_flasher.v(24): truncated value with size 32 to match size of target (4)
 Warning: Port "#2" on the entity instantiation of "yima" is connected to a signal of width 32. The formal width of the signal in the module is 1.  Extra bits will be driven by GND.
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Processing ended: Sat Jun 08 17:42:14 2024
+    Info: Processing ended: Sun Jun 09 01:27:43 2024
     Info: Elapsed time: 00:00:00
 
 

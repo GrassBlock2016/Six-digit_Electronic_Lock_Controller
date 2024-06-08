@@ -98,28 +98,6 @@ yima2to4:yima
 }
 # end
 # entity
-error_counter
-# storage
-db|SixDigit_Electronic_Lock_Controller.(5).cnf
-db|SixDigit_Electronic_Lock_Controller.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-error_counter.v
-622159b57d27ef61cff6275dab39e
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-error_counter:error_cnt
-}
-# end
-# entity
 timer
 # storage
 db|SixDigit_Electronic_Lock_Controller.(6).cnf
@@ -178,28 +156,6 @@ led_flasher:led_fls
 }
 # end
 # entity
-SixDigit_Electronic_Lock_Controller
-# storage
-db|SixDigit_Electronic_Lock_Controller.(0).cnf
-db|SixDigit_Electronic_Lock_Controller.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-SixDigit_Electronic_Lock_Controller.v
-4754fa22561ff93defafc4ad817
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-|
-}
-# end
-# entity
 judge
 # storage
 db|SixDigit_Electronic_Lock_Controller.(1).cnf
@@ -219,6 +175,50 @@ OFF
 }
 # hierarchies {
 judge:jg
+}
+# end
+# entity
+SixDigit_Electronic_Lock_Controller
+# storage
+db|SixDigit_Electronic_Lock_Controller.(0).cnf
+db|SixDigit_Electronic_Lock_Controller.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+SixDigit_Electronic_Lock_Controller.v
+f81ad147283c019239c615542c49352
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+|
+}
+# end
+# entity
+error_counter
+# storage
+db|SixDigit_Electronic_Lock_Controller.(5).cnf
+db|SixDigit_Electronic_Lock_Controller.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+error_counter.v
+87de28895ae3f65ad416d94331bad3
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+error_counter:error_cnt
 }
 # end
 # complete
