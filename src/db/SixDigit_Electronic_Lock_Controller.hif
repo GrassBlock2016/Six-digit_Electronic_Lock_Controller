@@ -98,25 +98,83 @@ yima2to4:yima
 }
 # end
 # entity
-judge
+error_counter
 # storage
-db|SixDigit_Electronic_Lock_Controller.(1).cnf
-db|SixDigit_Electronic_Lock_Controller.(1).cnf
+db|SixDigit_Electronic_Lock_Controller.(5).cnf
+db|SixDigit_Electronic_Lock_Controller.(5).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-judge.v
-75b4ed478bacae1dfd98859da276c41
+error_counter.v
+622159b57d27ef61cff6275dab39e
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
 OFF
 }
 # hierarchies {
-judge:judge_1
+error_counter:error_cnt
+}
+# end
+# entity
+timer
+# storage
+db|SixDigit_Electronic_Lock_Controller.(6).cnf
+db|SixDigit_Electronic_Lock_Controller.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+timer.v
+7a8263b512caa3f1af91378c51629dc
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+timer:tm
+}
+# end
+# entity
+led_flasher
+# storage
+db|SixDigit_Electronic_Lock_Controller.(7).cnf
+db|SixDigit_Electronic_Lock_Controller.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+led_flasher.v
+51b69c1ac456784b23f94091eabed78
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# user_parameter {
+IDLE
+00
+PARAMETER_BIN
+DEF
+FLASH
+01
+PARAMETER_BIN
+DEF
+DONE
+10
+PARAMETER_BIN
+DEF
+}
+# hierarchies {
+led_flasher:led_fls
 }
 # end
 # entity
@@ -131,7 +189,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-0963527635fa0ce6aff440283bc5d
+4754fa22561ff93defafc4ad817
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -139,6 +197,28 @@ OFF
 }
 # hierarchies {
 |
+}
+# end
+# entity
+judge
+# storage
+db|SixDigit_Electronic_Lock_Controller.(1).cnf
+db|SixDigit_Electronic_Lock_Controller.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+judge.v
+cc57a1f1c3358e31c003d50e99e2bd8
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+judge:jg
 }
 # end
 # complete
