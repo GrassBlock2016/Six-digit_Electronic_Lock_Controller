@@ -1,5 +1,5 @@
 Assembler report for SixDigit_Electronic_Lock_Controller
-Sat Jun 08 17:27:57 2024
+Tue Jun 11 15:13:34 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Jun 08 17:27:57 2024 ;
+; Assembler Status      ; Successful - Tue Jun 11 15:13:34 2024 ;
 ; Revision Name         ; SixDigit_Electronic_Lock_Controller   ;
 ; Top-level Entity Name ; SixDigit_Electronic_Lock_Controller   ;
 ; Family                ; Stratix                               ;
@@ -95,7 +95,7 @@ applicable agreement for further details.
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 ; Device         ; EP1S10F484C5                                                                                                    ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                      ;
-; Checksum       ; 0x00151E17                                                                                                      ;
+; Checksum       ; 0x001503B0                                                                                                      ;
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 ; Device         ; EPC4                                                                                                            ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                      ;
-; Checksum       ; 0x062E2BC9                                                                                                      ;
+; Checksum       ; 0x062E44DE                                                                                                      ;
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 
 
@@ -116,11 +116,11 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jun 08 17:27:56 2024
+    Info: Processing started: Tue Jun 11 15:13:33 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Processing ended: Sat Jun 08 17:27:57 2024
+    Info: Processing ended: Tue Jun 11 15:13:34 2024
     Info: Elapsed time: 00:00:01
 
 

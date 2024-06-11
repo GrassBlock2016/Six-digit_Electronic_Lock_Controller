@@ -8,7 +8,7 @@ module register(d,q,clk,clr);
 		begin
 			if(clr) 
 				q <= 4'b0000;
-			else 
+			else if (d != 4'b1110)
 				q <= d;
 		end
 endmodule

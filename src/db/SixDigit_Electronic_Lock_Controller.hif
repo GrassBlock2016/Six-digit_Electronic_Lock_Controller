@@ -20,62 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-passwd_register
-# storage
-db|SixDigit_Electronic_Lock_Controller.(2).cnf
-db|SixDigit_Electronic_Lock_Controller.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-passwd_register.v
-f628a822b79b774c5227bc9b4962a9
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-passwd_register:set_password
-passwd_register:cin_password
-}
-# end
-# entity
-register
-# storage
-db|SixDigit_Electronic_Lock_Controller.(3).cnf
-db|SixDigit_Electronic_Lock_Controller.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-register.v
-2d2c54cc51e6c17ba2ad841afa68fc
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-passwd_register:set_password|register:r1
-passwd_register:set_password|register:r2
-passwd_register:set_password|register:r3
-passwd_register:set_password|register:r4
-passwd_register:set_password|register:r5
-passwd_register:set_password|register:r6
-passwd_register:cin_password|register:r1
-passwd_register:cin_password|register:r2
-passwd_register:cin_password|register:r3
-passwd_register:cin_password|register:r4
-passwd_register:cin_password|register:r5
-passwd_register:cin_password|register:r6
-}
-# end
-# entity
 yima2to4
 # storage
 db|SixDigit_Electronic_Lock_Controller.(4).cnf
@@ -189,7 +133,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-f81ad147283c019239c615542c49352
+d5ac4ac172762017c7d012f1e0ea6375
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -197,6 +141,62 @@ OFF
 }
 # hierarchies {
 |
+}
+# end
+# entity
+passwd_register
+# storage
+db|SixDigit_Electronic_Lock_Controller.(2).cnf
+db|SixDigit_Electronic_Lock_Controller.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+passwd_register.v
+c5abc291cd4ba5811fa6155aabf7a7
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+passwd_register:set_password
+passwd_register:cin_password
+}
+# end
+# entity
+register
+# storage
+db|SixDigit_Electronic_Lock_Controller.(3).cnf
+db|SixDigit_Electronic_Lock_Controller.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+register.v
+b12f9dabe680901897aaf3817cf8c292
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+passwd_register:set_password|register:r1
+passwd_register:set_password|register:r2
+passwd_register:set_password|register:r3
+passwd_register:set_password|register:r4
+passwd_register:set_password|register:r5
+passwd_register:set_password|register:r6
+passwd_register:cin_password|register:r1
+passwd_register:cin_password|register:r2
+passwd_register:cin_password|register:r3
+passwd_register:cin_password|register:r4
+passwd_register:cin_password|register:r5
+passwd_register:cin_password|register:r6
 }
 # end
 # entity
@@ -211,7 +211,7 @@ ON
 # case_sensitive
 # source_file
 error_counter.v
-87de28895ae3f65ad416d94331bad3
+a133aab2609124916e328a387d30d23e
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
