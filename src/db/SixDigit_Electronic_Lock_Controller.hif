@@ -38,7 +38,8 @@ AUTO_RESOURCE_SHARING
 OFF
 }
 # hierarchies {
-yima2to4:yima
+yima2to4:yima_mode
+yima2to4:yima_passwd
 }
 # end
 # entity
@@ -118,29 +119,10 @@ AUTO_RESOURCE_SHARING
 OFF
 }
 # hierarchies {
-judge:jg
-}
-# end
-# entity
-SixDigit_Electronic_Lock_Controller
-# storage
-db|SixDigit_Electronic_Lock_Controller.(0).cnf
-db|SixDigit_Electronic_Lock_Controller.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-SixDigit_Electronic_Lock_Controller.v
-d5ac4ac172762017c7d012f1e0ea6375
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-|
+judge:jg1
+judge:jg2
+judge:jg3
+judge:jg4
 }
 # end
 # entity
@@ -162,7 +144,10 @@ AUTO_RESOURCE_SHARING
 OFF
 }
 # hierarchies {
-passwd_register:set_password
+passwd_register:set_password1
+passwd_register:set_password2
+passwd_register:set_password3
+passwd_register:set_password4
 passwd_register:cin_password
 }
 # end
@@ -185,12 +170,30 @@ AUTO_RESOURCE_SHARING
 OFF
 }
 # hierarchies {
-passwd_register:set_password|register:r1
-passwd_register:set_password|register:r2
-passwd_register:set_password|register:r3
-passwd_register:set_password|register:r4
-passwd_register:set_password|register:r5
-passwd_register:set_password|register:r6
+passwd_register:set_password1|register:r1
+passwd_register:set_password1|register:r2
+passwd_register:set_password1|register:r3
+passwd_register:set_password1|register:r4
+passwd_register:set_password1|register:r5
+passwd_register:set_password1|register:r6
+passwd_register:set_password2|register:r1
+passwd_register:set_password2|register:r2
+passwd_register:set_password2|register:r3
+passwd_register:set_password2|register:r4
+passwd_register:set_password2|register:r5
+passwd_register:set_password2|register:r6
+passwd_register:set_password3|register:r1
+passwd_register:set_password3|register:r2
+passwd_register:set_password3|register:r3
+passwd_register:set_password3|register:r4
+passwd_register:set_password3|register:r5
+passwd_register:set_password3|register:r6
+passwd_register:set_password4|register:r1
+passwd_register:set_password4|register:r2
+passwd_register:set_password4|register:r3
+passwd_register:set_password4|register:r4
+passwd_register:set_password4|register:r5
+passwd_register:set_password4|register:r6
 passwd_register:cin_password|register:r1
 passwd_register:cin_password|register:r2
 passwd_register:cin_password|register:r3
@@ -219,6 +222,28 @@ OFF
 }
 # hierarchies {
 error_counter:error_cnt
+}
+# end
+# entity
+SixDigit_Electronic_Lock_Controller
+# storage
+db|SixDigit_Electronic_Lock_Controller.(0).cnf
+db|SixDigit_Electronic_Lock_Controller.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+SixDigit_Electronic_Lock_Controller.v
+81ab414a5eb682b9ae4f729515bca427
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+|
 }
 # end
 # complete

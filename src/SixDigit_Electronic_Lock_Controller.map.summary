@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Jun 11 15:13:29 2024
+Analysis & Synthesis Status : Successful - Sun Jun 16 01:19:26 2024
 Quartus II Version : 6.0 Build 202 06/20/2006 SP 1 SJ Full Version
 Revision Name : SixDigit_Electronic_Lock_Controller
 Top-level Entity Name : SixDigit_Electronic_Lock_Controller
 Family : Stratix
-Total logic elements : 133
-Total pins : 88
+Total logic elements : 300
+Total pins : 162
 Total virtual pins : 0
 Total memory bits : 0
 DSP block 9-bit elements : 0
