@@ -225,6 +225,28 @@ error_counter:error_cnt
 }
 # end
 # entity
+mode_switch_checker
+# storage
+db|SixDigit_Electronic_Lock_Controller.(8).cnf
+db|SixDigit_Electronic_Lock_Controller.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mode_switch_checker.v
+8f7425c6c4edfe542e6c83e8c54800
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+mode_switch_checker:mode_chk
+}
+# end
+# entity
 SixDigit_Electronic_Lock_Controller
 # storage
 db|SixDigit_Electronic_Lock_Controller.(0).cnf
@@ -236,7 +258,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-81ab414a5eb682b9ae4f729515bca427
+9d982f6cb1b1f291a6489c191ca9fe2d
 7
 # internal_option {
 AUTO_RESOURCE_SHARING

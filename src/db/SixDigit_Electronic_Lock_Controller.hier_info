@@ -1,27 +1,5 @@
 |SixDigit_Electronic_Lock_Controller
-m => res~3.IN0
-m => comb~32.IN1
-m => comb~33.IN1
-m => comb~34.IN1
-m => comb~35.IN0
-m => comb~0.IN1
-m => comb~2.IN1
-m => comb~4.IN1
-m => comb~6.IN1
-m => comb~8.IN1
-m => comb~10.IN1
-m => comb~12.IN1
-m => comb~14.IN1
-m => comb~16.IN1
-m => comb~18.IN1
-m => comb~20.IN1
-m => comb~22.IN1
-m => comb~24.IN1
-m => comb~26.IN1
-m => comb~28.IN1
-m => comb~30.IN1
-m => always0~0.IN0
-m => always0~1.IN1
+m => m~0.IN1
 inA[0] => LessThan0.IN8
 inA[0] => checked_inA~3.DATAA
 inA[1] => LessThan0.IN7
@@ -1459,5 +1437,11 @@ start => flash_count~1.OUTPUTSELECT
 start => flash_count~2.OUTPUTSELECT
 start => flash_count~3.OUTPUTSELECT
 led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SixDigit_Electronic_Lock_Controller|mode_switch_checker:mode_chk
+m => error_flag~reg0.CLK
+res => error_flag~reg0.DATAIN
+error_flag <= error_flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

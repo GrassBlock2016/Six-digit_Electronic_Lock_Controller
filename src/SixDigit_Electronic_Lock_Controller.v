@@ -28,9 +28,7 @@ module SixDigit_Electronic_Lock_Controller(
 	wire tick;
     reg [3:0] out1_reg, out2_reg, out3_reg, out4_reg, out5_reg, out6_reg;
 	reg start_flashing;
-	wire mode;				// 引入错误检测修正后的mode
 	
-	assign mode = m & res;	// 如果检测结果不正确禁止切换模式
 	assign res = (res1|res2|res3|res4) & m;
 	// 如果输入非进制数则显示E(error)
 	assign checked_inA = (inA > 4'b1001) ? 4'b1110 : inA;
@@ -128,17 +126,29 @@ module SixDigit_Electronic_Lock_Controller(
 	timer tm(true_clk, tick);
 	
 	// LED闪烁控制状态机模块实例化
-	led_flasher led_fls(tick, start_flashing, led);	
+	led_flasher led_fls(tick, start_flashing, led);
+	
+	// 模式切换检查模块实例化
+	mode_switch_checker mode_chk(m, res, error_flag);
 	
     // 模式选择和输出赋值的控制逻辑
     always @(posedge clk) begin
-        case ({y2, y1, y0})
-            3'b001: {out1_reg, out2_reg} <= {checked_inA, checked_inB};
-            3'b010: {out3_reg, out4_reg} <= {checked_inA, checked_inB};
-            3'b100: {out5_reg, out6_reg} <= {checked_inA, checked_inB};
-        endcase 
+		if (error_flag) begin
+			out1_reg <= 4'b1110;
+			out2_reg <= 4'b1110;
+			out3_reg <= 4'b1110;
+			out4_reg <= 4'b1110;
+			out5_reg <= 4'b1110;
+			out6_reg <= 4'b1110;
+		end else begin
+        	case ({y2, y1, y0})
+            	3'b001: {out1_reg, out2_reg} <= {checked_inA, checked_inB};
+            	3'b010: {out3_reg, out4_reg} <= {checked_inA, checked_inB};
+            	3'b100: {out5_reg, out6_reg} <= {checked_inA, checked_inB};
+        	endcase
+		end 
 
-		if (~(m) & clr) begin
+		if (!m & clr) begin
 			out1_reg <= 4'b0000;
             out2_reg <= 4'b0000;
             out3_reg <= 4'b0000;
@@ -149,7 +159,7 @@ module SixDigit_Electronic_Lock_Controller(
 		
 		// 禁止错误状态下切换模式
 		//if (!m & !res) begin
-		//    out1_reg <= 4'b1110;
+		//	out1_reg <= 4'b1110;
 		//	out2_reg <= 4'b1110;
 		//	out3_reg <= 4'b1110;
 		//	out4_reg <= 4'b1110;

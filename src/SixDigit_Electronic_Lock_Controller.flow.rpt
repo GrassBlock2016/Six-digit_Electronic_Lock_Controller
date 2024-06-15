@@ -1,5 +1,5 @@
 Flow report for SixDigit_Electronic_Lock_Controller
-Sun Jun 16 01:19:33 2024
+Sun Jun 16 02:27:31 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -37,13 +37,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +--------------------------+-----------------------------------------------+
-; Flow Status              ; Successful - Sun Jun 16 01:19:33 2024         ;
+; Flow Status              ; Successful - Sun Jun 16 02:27:30 2024         ;
 ; Quartus II Version       ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name            ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name    ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                   ; Stratix                                       ;
 ; Met timing requirements  ; Yes                                           ;
-; Total logic elements     ; 235 / 10,570 ( 2 % )                          ;
+; Total logic elements     ; 238 / 10,570 ( 2 % )                          ;
 ; Total pins               ; 162 / 336 ( 48 % )                            ;
 ; Total virtual pins       ; 0                                             ;
 ; Total memory bits        ; 0 / 920,448 ( 0 % )                           ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 06/16/2024 01:19:25                 ;
+; Start date & time ; 06/16/2024 02:27:24                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; SixDigit_Electronic_Lock_Controller ;
 +-------------------+-------------------------------------+
@@ -81,8 +81,8 @@ applicable agreement for further details.
 ; Analysis & Synthesis ; 00:00:01     ;
 ; Fitter               ; 00:00:03     ;
 ; Assembler            ; 00:00:01     ;
-; Timing Analyzer      ; 00:00:01     ;
-; Total                ; 00:00:06     ;
+; Timing Analyzer      ; 00:00:00     ;
+; Total                ; 00:00:05     ;
 +----------------------+--------------+
 
 
