@@ -1,5 +1,5 @@
 Simulator report for SixDigit_Electronic_Lock_Controller
-Sun Jun 16 02:23:43 2024
+Sun Jun 16 17:00:26 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -46,38 +46,38 @@ applicable agreement for further details.
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 1049 nodes   ;
-; Simulation Coverage         ;      31.78 % ;
-; Total Number of Transitions ; 1939         ;
+; Simulation Coverage         ;      31.23 % ;
+; Total Number of Transitions ; 1874         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix      ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                                  ;
-+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                                ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                                             ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                                   ; 0 ns          ;
-; Vector input source                                                                        ; C:\Users\ASUS\Desktop\Six-digit_Electronic_Lock_Controller\src\W_2.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                                     ; On            ;
-; Check outputs                                                                              ; Off                                                                    ; Off           ;
-; Report simulation coverage                                                                 ; On                                                                     ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                                     ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                                     ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                                     ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                                    ; Off           ;
-; Detect glitches                                                                            ; Off                                                                    ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                                    ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                                    ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                                    ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                     ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                             ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                    ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                                                                     ;               ;
-; Glitch Filtering                                                                           ; Off                                                                    ; Off           ;
-+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                   ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                         ; 0 ns          ;
+; Vector input source                                                                        ; F:\ÏÄ¼¾Ó²¼þ\Six-digit_Electronic_Lock_Controller\src\W_2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                           ; On            ;
+; Check outputs                                                                              ; Off                                                          ; Off           ;
+; Report simulation coverage                                                                 ; On                                                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                          ; Off           ;
+; Detect glitches                                                                            ; Off                                                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                          ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                                                           ;               ;
+; Glitch Filtering                                                                           ; Off                                                          ; Off           ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -92,13 +92,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      31.78 % ;
+; Total coverage as a percentage                      ;      31.23 % ;
 ; Total nodes checked                                 ; 1049         ;
 ; Total output ports checked                          ; 1076         ;
-; Total output ports with complete 1/0-value coverage ; 342          ;
-; Total output ports with no 1/0-value coverage       ; 610          ;
-; Total output ports with no 1-value coverage         ; 631          ;
-; Total output ports with no 0-value coverage         ; 713          ;
+; Total output ports with complete 1/0-value coverage ; 336          ;
+; Total output ports with no 1/0-value coverage       ; 624          ;
+; Total output ports with no 1-value coverage         ; 644          ;
+; Total output ports with no 0-value coverage         ; 720          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -120,11 +120,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|checked_inB[2]                                                                         ; |SixDigit_Electronic_Lock_Controller|checked_inB[2]                                                                              ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|checked_inB[1]                                                                         ; |SixDigit_Electronic_Lock_Controller|checked_inB[1]                                                                              ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|checked_inB[0]                                                                         ; |SixDigit_Electronic_Lock_Controller|checked_inB[0]                                                                              ; out              ;
-; |SixDigit_Electronic_Lock_Controller|comb~0                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~0                                                                                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|comb~1                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~1                                                                                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|comb~2                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~2                                                                                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|comb~4                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~4                                                                                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|comb~6                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~6                                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~8                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~8                                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~9                                                                                 ; |SixDigit_Electronic_Lock_Controller|comb~9                                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~10                                                                                ; |SixDigit_Electronic_Lock_Controller|comb~10                                                                                     ; out0             ;
@@ -226,7 +221,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|a1                                                                                     ; |SixDigit_Electronic_Lock_Controller|a1                                                                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|ps0                                                                                    ; |SixDigit_Electronic_Lock_Controller|ps0                                                                                         ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|ps1                                                                                    ; |SixDigit_Electronic_Lock_Controller|ps1                                                                                         ; out              ;
-; |SixDigit_Electronic_Lock_Controller|s23[1]                                                                                 ; |SixDigit_Electronic_Lock_Controller|s23[1]                                                                                      ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s25[0]                                                                                 ; |SixDigit_Electronic_Lock_Controller|s25[0]                                                                                      ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s25[1]                                                                                 ; |SixDigit_Electronic_Lock_Controller|s25[1]                                                                                      ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s26[1]                                                                                 ; |SixDigit_Electronic_Lock_Controller|s26[1]                                                                                      ; pin_out          ;
@@ -331,7 +325,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r6|q[1]                                         ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r6|q[1]                                              ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5|q[1]                                         ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5|q[1]                                              ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5|q[0]                                         ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5|q[0]                                              ; out              ;
-; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[1]                                         ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[1]                                              ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|d1_checked[3]                                            ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|d1_checked[3]                                                 ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|d1_checked[2]                                            ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|d1_checked[2]                                                 ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|d1_checked[1]                                            ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|d1_checked[1]                                                 ; out              ;
@@ -384,6 +377,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~7                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~7                                                                          ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~9                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~9                                                                          ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~7                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~7                                                                          ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~9                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~9                                                                          ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~6                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~6                                                                          ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~9                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~9                                                                          ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal3~5                                                                     ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal3~5                                                                          ; out0             ;
@@ -459,8 +453,13 @@ The following table displays output ports that do not toggle to 1 during simulat
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                                               ; Output Port Name                                                                                                             ; Output Port Type ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |SixDigit_Electronic_Lock_Controller|comb~0                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~0                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~1                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~1                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~2                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~2                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~3                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~3                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~4                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~4                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~5                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~5                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~6                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~6                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~7                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~7                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~15                                                                            ; |SixDigit_Electronic_Lock_Controller|comb~15                                                                                 ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~23                                                                            ; |SixDigit_Electronic_Lock_Controller|comb~23                                                                                 ; out0             ;
@@ -510,14 +509,17 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |SixDigit_Electronic_Lock_Controller|s16[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s16[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s21[1]                                                                             ; |SixDigit_Electronic_Lock_Controller|s21[1]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s21[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s21[2]                                                                                  ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s21[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s21[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s22[0]                                                                             ; |SixDigit_Electronic_Lock_Controller|s22[0]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s22[1]                                                                             ; |SixDigit_Electronic_Lock_Controller|s22[1]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s22[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s22[2]                                                                                  ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s22[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s22[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s23[0]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[0]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s23[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[2]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s23[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s24[1]                                                                             ; |SixDigit_Electronic_Lock_Controller|s24[1]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s24[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s24[2]                                                                                  ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s24[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s24[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s25[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s25[2]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s25[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s25[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s26[0]                                                                             ; |SixDigit_Electronic_Lock_Controller|s26[0]                                                                                  ; pin_out          ;
@@ -687,14 +689,17 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[2]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[2]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[1]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[1]                                          ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[2]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[2]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[0]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[0]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[2]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[2]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[1]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[1]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[0]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[0]                                          ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1|q[2]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1|q[2]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1|q[1]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1|q[1]                                          ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|comb~0                                               ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|comb~0                                                    ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|comb~1                                               ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|comb~1                                                    ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|comb~2                                               ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|comb~2                                                    ; out0             ;
@@ -775,12 +780,14 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |SixDigit_Electronic_Lock_Controller|judge:jg3|Equal5~5                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg3|Equal5~5                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg3|Equal5~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg3|Equal5~8                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~6                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~6                                                                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal0~8                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~5                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~5                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~6                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~6                                                                      ; out0             ;
-; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~9                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~9                                                                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal1~8                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~5                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~5                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal2~8                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal3~6                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal3~6                                                                      ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal3~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal3~8                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal4~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal4~8                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal5~5                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal5~5                                                                      ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal5~8                                                                 ; |SixDigit_Electronic_Lock_Controller|judge:jg2|Equal5~8                                                                      ; out0             ;
@@ -1099,8 +1106,13 @@ The following table displays output ports that do not toggle to 0 during simulat
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                                               ; Output Port Name                                                                                                             ; Output Port Type ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |SixDigit_Electronic_Lock_Controller|comb~0                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~0                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~1                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~1                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~2                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~2                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~3                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~3                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~4                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~4                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~5                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~5                                                                                  ; out0             ;
+; |SixDigit_Electronic_Lock_Controller|comb~6                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~6                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~7                                                                             ; |SixDigit_Electronic_Lock_Controller|comb~7                                                                                  ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~15                                                                            ; |SixDigit_Electronic_Lock_Controller|comb~15                                                                                 ; out0             ;
 ; |SixDigit_Electronic_Lock_Controller|comb~23                                                                            ; |SixDigit_Electronic_Lock_Controller|comb~23                                                                                 ; out0             ;
@@ -1202,6 +1214,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |SixDigit_Electronic_Lock_Controller|s22[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s22[2]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s22[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s22[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s23[0]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[0]                                                                                  ; pin_out          ;
+; |SixDigit_Electronic_Lock_Controller|s23[1]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[1]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s23[2]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[2]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s23[3]                                                                             ; |SixDigit_Electronic_Lock_Controller|s23[3]                                                                                  ; pin_out          ;
 ; |SixDigit_Electronic_Lock_Controller|s24[0]                                                                             ; |SixDigit_Electronic_Lock_Controller|s24[0]                                                                                  ; pin_out          ;
@@ -1391,6 +1404,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[0]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[0]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[2]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[2]                                          ; out              ;
+; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[1]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[1]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[0]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[0]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[3]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3|q[3]                                          ; out              ;
 ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[2]                                     ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2|q[2]                                          ; out              ;
@@ -1828,7 +1842,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Jun 16 02:23:43 2024
+    Info: Processing started: Sun Jun 16 17:00:26 2024
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Overwriting simulation input file with simulation results
     Info: A backup of W_2.vwf called SixDigit_Electronic_Lock_Controller.sim_ori.vwf is created in the db folder
@@ -1837,13 +1851,13 @@ Info: Option to preserve fewer signal transitions to reduce memory requirements 
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Warning: Found clock-sensitive change during active clock edge at time 440.0 ns on register "|SixDigit_Electronic_Lock_Controller|error_counter:error_cnt|error_count[0]"
 Warning: Found clock-sensitive change during active clock edge at time 440.0 ns on register "|SixDigit_Electronic_Lock_Controller|error_counter:error_cnt|error_count[1]"
-Warning: Found clock-sensitive change during active clock edge at time 640.0 ns on register "|SixDigit_Electronic_Lock_Controller|mode_switch_checker:mode_chk|error_flag"
+Warning: Found clock-sensitive change during active clock edge at time 720.0 ns on register "|SixDigit_Electronic_Lock_Controller|mode_switch_checker:mode_chk|error_flag"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      31.78 %
-Info: Number of transitions in simulation is 1939
+Info: Simulation coverage is      31.23 %
+Info: Number of transitions in simulation is 1874
 Info: Vector file W_2.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 4 warnings
-    Info: Processing ended: Sun Jun 16 02:23:43 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Jun 16 17:00:26 2024
+    Info: Elapsed time: 00:00:01
 
 

@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="SixDigit_Electronic_Lock_Controller">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SixDigit_Electronic_Lock_Controller|error_counter:error_cnt|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_vrh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_1sh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SixDigit_Electronic_Lock_Controller|timer:tm|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_jth.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
