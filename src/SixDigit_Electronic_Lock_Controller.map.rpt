@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Sun Jun 16 02:27:25 2024
+Mon Jun 17 00:37:27 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -17,6 +17,7 @@ Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
  10. Parameter Settings for User Entity Instance: led_flasher:led_fls
  11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -42,12 +43,12 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Jun 16 02:27:25 2024         ;
+; Analysis & Synthesis Status ; Successful - Mon Jun 17 00:37:27 2024         ;
 ; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                      ; Stratix                                       ;
-; Total logic elements        ; 303                                           ;
+; Total logic elements        ; 304                                           ;
 ; Total pins                  ; 162                                           ;
 ; Total virtual pins          ; 0                                             ;
 ; Total memory bits           ; 0                                             ;
@@ -142,9 +143,9 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 303   ;
+; Total logic elements                        ; 304   ;
 ;     -- Combinational with no register       ; 122   ;
-;     -- Register only                        ; 145   ;
+;     -- Register only                        ; 146   ;
 ;     -- Combinational with a register        ; 36    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
@@ -156,19 +157,19 @@ applicable agreement for further details.
 ;         -- Combinational cells for routing  ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 281   ;
+;     -- normal mode                          ; 282   ;
 ;     -- arithmetic mode                      ; 22    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 120   ;
 ;                                             ;       ;
-; Total registers                             ; 181   ;
+; Total registers                             ; 182   ;
 ; Total logic cells in carry chains           ; 23    ;
 ; I/O pins                                    ; 162   ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 30    ;
-; Total fan-out                               ; 1161  ;
+; Maximum fan-out                             ; 31    ;
+; Total fan-out                               ; 1163  ;
 ; Average fan-out                             ; 2.50  ;
 +---------------------------------------------+-------+
 
@@ -178,7 +179,7 @@ applicable agreement for further details.
 +--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+
 ; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                            ;
 +--------------------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+
-; |SixDigit_Electronic_Lock_Controller ; 303 (112)   ; 181          ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 162  ; 0            ; 122 (87)     ; 145 (24)          ; 36 (1)           ; 23 (0)          ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                           ;
+; |SixDigit_Electronic_Lock_Controller ; 304 (113)   ; 182          ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 162  ; 0            ; 122 (87)     ; 146 (25)          ; 36 (1)           ; 23 (0)          ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                           ;
 ;    |error_counter:error_cnt|         ; 2 (2)       ; 2            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt                   ;
 ;    |led_flasher:led_fls|             ; 11 (11)     ; 8            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 1 (1)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls                       ;
 ;    |mode_switch_checker:mode_chk|    ; 1 (1)       ; 1            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|mode_switch_checker:mode_chk              ;
@@ -239,7 +240,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 181   ;
+; Total registers                              ; 182   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 120   ;
@@ -279,9 +280,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Jun 16 02:27:24 2024
+    Info: Processing started: Mon Jun 17 00:37:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
-Warning (10236): Verilog HDL net warning at SixDigit_Electronic_Lock_Controller.v(132): created undeclared net "error_flag"
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file register.v
@@ -304,7 +304,7 @@ Warning: Can't analyze file -- file C:/Users/ASUS/Desktop/Six-digit_Electronic_L
 Info: Found 1 design units, including 1 entities, in source file mode_switch_checker.v
     Info: Found entity 1: mode_switch_checker
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(144): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(153): all case item expressions in this case statement are onehot
 Info: Elaborating entity "yima2to4" for hierarchy "yima2to4:yima_mode"
 Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:set_password1"
 Info: Elaborating entity "register" for hierarchy "passwd_register:set_password1|register:r1"
@@ -342,12 +342,18 @@ Info: Encoding result for state machine "|SixDigit_Electronic_Lock_Controller|le
     Info: State "|SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|state.IDLE" uses code string "000"
     Info: State "|SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|state.DONE" uses code string "110"
     Info: State "|SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|state.FLASH" uses code string "101"
-Info: Implemented 465 device resources after synthesis - the final resource count might be different
+Info: Implemented 466 device resources after synthesis - the final resource count might be different
     Info: Implemented 16 input pins
     Info: Implemented 146 output pins
-    Info: Implemented 303 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Processing ended: Sun Jun 16 02:27:25 2024
-    Info: Elapsed time: 00:00:01
+    Info: Implemented 304 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Processing ended: Mon Jun 17 00:37:27 2024
+    Info: Elapsed time: 00:00:00
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.map.smsg.
 
 

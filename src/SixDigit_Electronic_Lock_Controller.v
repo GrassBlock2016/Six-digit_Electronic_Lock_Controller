@@ -26,10 +26,13 @@ module SixDigit_Electronic_Lock_Controller(
 	wire res1,res2,res3,res4; // 每个密码的比较结果
 	wire [1:0] error_count;
 	wire tick;
+	wire error_flag;		// 切换模式报错信号
     reg [3:0] out1_reg, out2_reg, out3_reg, out4_reg, out5_reg, out6_reg;
 	reg start_flashing;
+	reg res_latched;  // 锁存的比较结果
 	
 	assign res = (res1|res2|res3|res4) & m;
+	
 	// 如果输入非进制数则显示E(error)
 	assign checked_inA = (inA > 4'b1001) ? 4'b1110 : inA;
 	assign checked_inB = (inB > 4'b1001) ? 4'b1110 : inB;
@@ -129,10 +132,16 @@ module SixDigit_Electronic_Lock_Controller(
 	led_flasher led_fls(tick, start_flashing, led);
 	
 	// 模式切换检查模块实例化
-	mode_switch_checker mode_chk(m, res, error_flag);
+	mode_switch_checker mode_chk(m, res_latched, error_flag);
 	
     // 模式选择和输出赋值的控制逻辑
     always @(posedge clk) begin
+		if (y3) begin
+			res_latched <= res;
+		end else begin
+			res_latched = 1'b0;
+		end
+		
 		if (error_flag) begin
 			out1_reg <= 4'b1110;
 			out2_reg <= 4'b1110;
