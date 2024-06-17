@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.636 ns
-From           : clr
-To             : out4_reg[1]
+Actual Time    : 7.700 ns
+From           : a1
+To             : error_counter:error_cnt|error_count[1]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,69 +15,39 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.975 ns
-From           : passwd_register:set_password3|register:r4|q[0]
-To             : res
-From Clock     : m
-To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case tpd
-Slack          : N/A
-Required Time  : None
-Actual Time    : 13.410 ns
-From           : a1
-To             : res
-From Clock     : --
+Actual Time    : 11.000 ns
+From           : led_flasher:led_fls|led
+To             : led
+From Clock     : true_clk
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.989 ns
-From           : inA[2]
-To             : passwd_register:set_password3|register:r3|q[2]
+Actual Time    : 5.200 ns
+From           : inB[2]
+To             : passwd_register:set_password2|register:r4|q[2]
 From Clock     : --
-To Clock       : m
+To Clock       : clk
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 103.11 MHz ( period = 9.698 ns )
-From           : passwd_register:set_password3|register:r4|q[0]
-To             : res_latched
+Actual Time    : 38.17 MHz ( period = 26.200 ns )
+From           : passwd_register:set_password1|register:r3|q[0]
+To             : error_counter:error_cnt|error_count[1]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'a0'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 110.56 MHz ( period = 9.045 ns )
-From           : passwd_register:cin_password|register:r5|q[2]
-To             : error_counter:error_cnt|error_count[1]
-From Clock     : a0
-To Clock       : a0
-Failed Paths   : 0
-
-Type           : Clock Setup: 'a1'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 111.63 MHz ( period = 8.958 ns )
-From           : passwd_register:cin_password|register:r5|q[2]
-To             : error_counter:error_cnt|error_count[1]
-From Clock     : a1
-To Clock       : a1
 Failed Paths   : 0
 
 Type           : Clock Setup: 'true_clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 289.10 MHz ( period = 3.459 ns )
-From           : timer:tm|count[14]
-To             : timer:tm|tick
+Actual Time    : 243.90 MHz ( period = 4.100 ns )
+From           : timer:tm|lpm_counter:count_rtl_0|alt_counter_f10ke:wysi_counter|q[0]
+To             : timer:tm|lpm_counter:count_rtl_0|alt_counter_f10ke:wysi_counter|q[23]
 From Clock     : true_clk
 To Clock       : true_clk
 Failed Paths   : 0

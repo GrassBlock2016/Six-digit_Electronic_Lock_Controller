@@ -1,5 +1,5 @@
 Flow report for SixDigit_Electronic_Lock_Controller
-Mon Jun 17 00:37:33 2024
+Mon Jun 17 16:00:48 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -34,25 +34,22 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------+
-; Flow Summary                                                             ;
-+--------------------------+-----------------------------------------------+
-; Flow Status              ; Successful - Mon Jun 17 00:37:33 2024         ;
-; Quartus II Version       ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
-; Revision Name            ; SixDigit_Electronic_Lock_Controller           ;
-; Top-level Entity Name    ; SixDigit_Electronic_Lock_Controller           ;
-; Family                   ; Stratix                                       ;
-; Met timing requirements  ; Yes                                           ;
-; Total logic elements     ; 238 / 10,570 ( 2 % )                          ;
-; Total pins               ; 162 / 336 ( 48 % )                            ;
-; Total virtual pins       ; 0                                             ;
-; Total memory bits        ; 0 / 920,448 ( 0 % )                           ;
-; DSP block 9-bit elements ; 0 / 48 ( 0 % )                                ;
-; Total PLLs               ; 0 / 6 ( 0 % )                                 ;
-; Total DLLs               ; 0 / 2 ( 0 % )                                 ;
-; Device                   ; EP1S10F484C5                                  ;
-; Timing Models            ; Final                                         ;
-+--------------------------+-----------------------------------------------+
++-------------------------------------------------------------------------+
+; Flow Summary                                                            ;
++-------------------------+-----------------------------------------------+
+; Flow Status             ; Successful - Mon Jun 17 16:00:48 2024         ;
+; Quartus II Version      ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
+; Revision Name           ; SixDigit_Electronic_Lock_Controller           ;
+; Top-level Entity Name   ; SixDigit_Electronic_Lock_Controller           ;
+; Family                  ; ACEX1K                                        ;
+; Device                  ; EP1K30TC144-1                                 ;
+; Timing Models           ; Final                                         ;
+; Met timing requirements ; Yes                                           ;
+; Total logic elements    ; 291 / 1,728 ( 17 % )                          ;
+; Total pins              ; 44 / 102 ( 43 % )                             ;
+; Total memory bits       ; 0 / 24,576 ( 0 % )                            ;
+; Total PLLs              ; 0 / 1 ( 0 % )                                 ;
++-------------------------+-----------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -60,17 +57,19 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 06/17/2024 00:37:27                 ;
+; Start date & time ; 06/17/2024 16:00:33                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; SixDigit_Electronic_Lock_Controller ;
 +-------------------+-------------------------------------+
 
 
-+--------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                   ;
-+-----------------+-------+---------------+-------------+------------+
-; Assignment Name ; Value ; Default Value ; Entity Name ; Section Id ;
-+-----------------+-------+---------------+-------------+------------+
++---------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                          ;
++-----------------+--------------+---------------+-------------+------------+
+; Assignment Name ; Value        ; Default Value ; Entity Name ; Section Id ;
++-----------------+--------------+---------------+-------------+------------+
+; FITTER_EFFORT   ; Standard Fit ; Auto Fit      ; --          ; --         ;
++-----------------+--------------+---------------+-------------+------------+
 
 
 +-------------------------------------+
@@ -78,11 +77,11 @@ applicable agreement for further details.
 +----------------------+--------------+
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
-; Analysis & Synthesis ; 00:00:00     ;
-; Fitter               ; 00:00:03     ;
-; Assembler            ; 00:00:01     ;
-; Timing Analyzer      ; 00:00:00     ;
-; Total                ; 00:00:04     ;
+; Analysis & Synthesis ; 00:00:03     ;
+; Fitter               ; 00:00:07     ;
+; Assembler            ; 00:00:00     ;
+; Timing Analyzer      ; 00:00:01     ;
+; Total                ; 00:00:11     ;
 +----------------------+--------------+
 
 
@@ -92,7 +91,7 @@ applicable agreement for further details.
 quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 quartus_fit --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 quartus_asm --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
-quartus_tan --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller --timing_analysis_only
+quartus_tan --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 
 
 

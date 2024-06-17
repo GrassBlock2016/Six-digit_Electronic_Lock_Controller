@@ -1,5 +1,26 @@
 |SixDigit_Electronic_Lock_Controller
-m => m~0.IN1
+m => res_tmp~3.IN0
+m => comb~32.IN1
+m => comb~33.IN1
+m => comb~34.IN1
+m => comb~35.IN0
+m => comb~0.IN1
+m => comb~2.IN1
+m => comb~4.IN1
+m => comb~6.IN1
+m => comb~8.IN1
+m => comb~10.IN1
+m => comb~12.IN1
+m => comb~14.IN1
+m => comb~16.IN1
+m => comb~18.IN1
+m => comb~20.IN1
+m => comb~22.IN1
+m => comb~24.IN1
+m => comb~26.IN1
+m => comb~28.IN1
+m => comb~30.IN1
+m => always0~0.IN0
 inA[0] => LessThan0.IN8
 inA[0] => checked_inA~3.DATAA
 inA[1] => LessThan0.IN7
@@ -16,7 +37,7 @@ inB[2] => LessThan1.IN6
 inB[2] => checked_inB~1.DATAA
 inB[3] => LessThan1.IN5
 inB[3] => checked_inB~0.DATAA
-clk => clk~0.IN5
+clk => clk~0.IN6
 clr => comb~7.IN0
 clr => comb~15.IN0
 clr => comb~23.IN0
@@ -48,132 +69,14 @@ out6[0] <= out6_reg[0].DB_MAX_OUTPUT_PORT_TYPE
 out6[1] <= out6_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 out6[2] <= out6_reg[2].DB_MAX_OUTPUT_PORT_TYPE
 out6[3] <= out6_reg[3].DB_MAX_OUTPUT_PORT_TYPE
-res <= res~4.DB_MAX_OUTPUT_PORT_TYPE
+res <= res_reg.DB_MAX_OUTPUT_PORT_TYPE
 a0 => a0~0.IN1
 a1 => a1~0.IN1
 led <= led_flasher:led_fls.port2
 ps0 => ps0~0.IN1
 ps1 => ps1~0.IN1
-s11[0] <= set1_out1[0].DB_MAX_OUTPUT_PORT_TYPE
-s11[1] <= set1_out1[1].DB_MAX_OUTPUT_PORT_TYPE
-s11[2] <= set1_out1[2].DB_MAX_OUTPUT_PORT_TYPE
-s11[3] <= set1_out1[3].DB_MAX_OUTPUT_PORT_TYPE
-s12[0] <= set1_out2[0].DB_MAX_OUTPUT_PORT_TYPE
-s12[1] <= set1_out2[1].DB_MAX_OUTPUT_PORT_TYPE
-s12[2] <= set1_out2[2].DB_MAX_OUTPUT_PORT_TYPE
-s12[3] <= set1_out2[3].DB_MAX_OUTPUT_PORT_TYPE
-s13[0] <= set1_out3[0].DB_MAX_OUTPUT_PORT_TYPE
-s13[1] <= set1_out3[1].DB_MAX_OUTPUT_PORT_TYPE
-s13[2] <= set1_out3[2].DB_MAX_OUTPUT_PORT_TYPE
-s13[3] <= set1_out3[3].DB_MAX_OUTPUT_PORT_TYPE
-s14[0] <= set1_out4[0].DB_MAX_OUTPUT_PORT_TYPE
-s14[1] <= set1_out4[1].DB_MAX_OUTPUT_PORT_TYPE
-s14[2] <= set1_out4[2].DB_MAX_OUTPUT_PORT_TYPE
-s14[3] <= set1_out4[3].DB_MAX_OUTPUT_PORT_TYPE
-s15[0] <= set1_out5[0].DB_MAX_OUTPUT_PORT_TYPE
-s15[1] <= set1_out5[1].DB_MAX_OUTPUT_PORT_TYPE
-s15[2] <= set1_out5[2].DB_MAX_OUTPUT_PORT_TYPE
-s15[3] <= set1_out5[3].DB_MAX_OUTPUT_PORT_TYPE
-s16[0] <= set1_out6[0].DB_MAX_OUTPUT_PORT_TYPE
-s16[1] <= set1_out6[1].DB_MAX_OUTPUT_PORT_TYPE
-s16[2] <= set1_out6[2].DB_MAX_OUTPUT_PORT_TYPE
-s16[3] <= set1_out6[3].DB_MAX_OUTPUT_PORT_TYPE
-s21[0] <= set2_out1[0].DB_MAX_OUTPUT_PORT_TYPE
-s21[1] <= set2_out1[1].DB_MAX_OUTPUT_PORT_TYPE
-s21[2] <= set2_out1[2].DB_MAX_OUTPUT_PORT_TYPE
-s21[3] <= set2_out1[3].DB_MAX_OUTPUT_PORT_TYPE
-s22[0] <= set2_out2[0].DB_MAX_OUTPUT_PORT_TYPE
-s22[1] <= set2_out2[1].DB_MAX_OUTPUT_PORT_TYPE
-s22[2] <= set2_out2[2].DB_MAX_OUTPUT_PORT_TYPE
-s22[3] <= set2_out2[3].DB_MAX_OUTPUT_PORT_TYPE
-s23[0] <= set2_out3[0].DB_MAX_OUTPUT_PORT_TYPE
-s23[1] <= set2_out3[1].DB_MAX_OUTPUT_PORT_TYPE
-s23[2] <= set2_out3[2].DB_MAX_OUTPUT_PORT_TYPE
-s23[3] <= set2_out3[3].DB_MAX_OUTPUT_PORT_TYPE
-s24[0] <= set2_out4[0].DB_MAX_OUTPUT_PORT_TYPE
-s24[1] <= set2_out4[1].DB_MAX_OUTPUT_PORT_TYPE
-s24[2] <= set2_out4[2].DB_MAX_OUTPUT_PORT_TYPE
-s24[3] <= set2_out4[3].DB_MAX_OUTPUT_PORT_TYPE
-s25[0] <= set2_out5[0].DB_MAX_OUTPUT_PORT_TYPE
-s25[1] <= set2_out5[1].DB_MAX_OUTPUT_PORT_TYPE
-s25[2] <= set2_out5[2].DB_MAX_OUTPUT_PORT_TYPE
-s25[3] <= set2_out5[3].DB_MAX_OUTPUT_PORT_TYPE
-s26[0] <= set2_out6[0].DB_MAX_OUTPUT_PORT_TYPE
-s26[1] <= set2_out6[1].DB_MAX_OUTPUT_PORT_TYPE
-s26[2] <= set2_out6[2].DB_MAX_OUTPUT_PORT_TYPE
-s26[3] <= set2_out6[3].DB_MAX_OUTPUT_PORT_TYPE
-s31[0] <= set3_out1[0].DB_MAX_OUTPUT_PORT_TYPE
-s31[1] <= set3_out1[1].DB_MAX_OUTPUT_PORT_TYPE
-s31[2] <= set3_out1[2].DB_MAX_OUTPUT_PORT_TYPE
-s31[3] <= set3_out1[3].DB_MAX_OUTPUT_PORT_TYPE
-s32[0] <= set3_out2[0].DB_MAX_OUTPUT_PORT_TYPE
-s32[1] <= set3_out2[1].DB_MAX_OUTPUT_PORT_TYPE
-s32[2] <= set3_out2[2].DB_MAX_OUTPUT_PORT_TYPE
-s32[3] <= set3_out2[3].DB_MAX_OUTPUT_PORT_TYPE
-s33[0] <= set3_out3[0].DB_MAX_OUTPUT_PORT_TYPE
-s33[1] <= set3_out3[1].DB_MAX_OUTPUT_PORT_TYPE
-s33[2] <= set3_out3[2].DB_MAX_OUTPUT_PORT_TYPE
-s33[3] <= set3_out3[3].DB_MAX_OUTPUT_PORT_TYPE
-s34[0] <= set3_out4[0].DB_MAX_OUTPUT_PORT_TYPE
-s34[1] <= set3_out4[1].DB_MAX_OUTPUT_PORT_TYPE
-s34[2] <= set3_out4[2].DB_MAX_OUTPUT_PORT_TYPE
-s34[3] <= set3_out4[3].DB_MAX_OUTPUT_PORT_TYPE
-s35[0] <= set3_out5[0].DB_MAX_OUTPUT_PORT_TYPE
-s35[1] <= set3_out5[1].DB_MAX_OUTPUT_PORT_TYPE
-s35[2] <= set3_out5[2].DB_MAX_OUTPUT_PORT_TYPE
-s35[3] <= set3_out5[3].DB_MAX_OUTPUT_PORT_TYPE
-s36[0] <= set3_out6[0].DB_MAX_OUTPUT_PORT_TYPE
-s36[1] <= set3_out6[1].DB_MAX_OUTPUT_PORT_TYPE
-s36[2] <= set3_out6[2].DB_MAX_OUTPUT_PORT_TYPE
-s36[3] <= set3_out6[3].DB_MAX_OUTPUT_PORT_TYPE
-s41[0] <= set4_out1[0].DB_MAX_OUTPUT_PORT_TYPE
-s41[1] <= set4_out1[1].DB_MAX_OUTPUT_PORT_TYPE
-s41[2] <= set4_out1[2].DB_MAX_OUTPUT_PORT_TYPE
-s41[3] <= set4_out1[3].DB_MAX_OUTPUT_PORT_TYPE
-s42[0] <= set4_out2[0].DB_MAX_OUTPUT_PORT_TYPE
-s42[1] <= set4_out2[1].DB_MAX_OUTPUT_PORT_TYPE
-s42[2] <= set4_out2[2].DB_MAX_OUTPUT_PORT_TYPE
-s42[3] <= set4_out2[3].DB_MAX_OUTPUT_PORT_TYPE
-s43[0] <= set4_out3[0].DB_MAX_OUTPUT_PORT_TYPE
-s43[1] <= set4_out3[1].DB_MAX_OUTPUT_PORT_TYPE
-s43[2] <= set4_out3[2].DB_MAX_OUTPUT_PORT_TYPE
-s43[3] <= set4_out3[3].DB_MAX_OUTPUT_PORT_TYPE
-s44[0] <= set4_out4[0].DB_MAX_OUTPUT_PORT_TYPE
-s44[1] <= set4_out4[1].DB_MAX_OUTPUT_PORT_TYPE
-s44[2] <= set4_out4[2].DB_MAX_OUTPUT_PORT_TYPE
-s44[3] <= set4_out4[3].DB_MAX_OUTPUT_PORT_TYPE
-s45[0] <= set4_out5[0].DB_MAX_OUTPUT_PORT_TYPE
-s45[1] <= set4_out5[1].DB_MAX_OUTPUT_PORT_TYPE
-s45[2] <= set4_out5[2].DB_MAX_OUTPUT_PORT_TYPE
-s45[3] <= set4_out5[3].DB_MAX_OUTPUT_PORT_TYPE
-s46[0] <= set4_out6[0].DB_MAX_OUTPUT_PORT_TYPE
-s46[1] <= set4_out6[1].DB_MAX_OUTPUT_PORT_TYPE
-s46[2] <= set4_out6[2].DB_MAX_OUTPUT_PORT_TYPE
-s46[3] <= set4_out6[3].DB_MAX_OUTPUT_PORT_TYPE
-c1[0] <= cin_out1[0].DB_MAX_OUTPUT_PORT_TYPE
-c1[1] <= cin_out1[1].DB_MAX_OUTPUT_PORT_TYPE
-c1[2] <= cin_out1[2].DB_MAX_OUTPUT_PORT_TYPE
-c1[3] <= cin_out1[3].DB_MAX_OUTPUT_PORT_TYPE
-c2[0] <= cin_out2[0].DB_MAX_OUTPUT_PORT_TYPE
-c2[1] <= cin_out2[1].DB_MAX_OUTPUT_PORT_TYPE
-c2[2] <= cin_out2[2].DB_MAX_OUTPUT_PORT_TYPE
-c2[3] <= cin_out2[3].DB_MAX_OUTPUT_PORT_TYPE
-c3[0] <= cin_out3[0].DB_MAX_OUTPUT_PORT_TYPE
-c3[1] <= cin_out3[1].DB_MAX_OUTPUT_PORT_TYPE
-c3[2] <= cin_out3[2].DB_MAX_OUTPUT_PORT_TYPE
-c3[3] <= cin_out3[3].DB_MAX_OUTPUT_PORT_TYPE
-c4[0] <= cin_out4[0].DB_MAX_OUTPUT_PORT_TYPE
-c4[1] <= cin_out4[1].DB_MAX_OUTPUT_PORT_TYPE
-c4[2] <= cin_out4[2].DB_MAX_OUTPUT_PORT_TYPE
-c4[3] <= cin_out4[3].DB_MAX_OUTPUT_PORT_TYPE
-c5[0] <= cin_out5[0].DB_MAX_OUTPUT_PORT_TYPE
-c5[1] <= cin_out5[1].DB_MAX_OUTPUT_PORT_TYPE
-c5[2] <= cin_out5[2].DB_MAX_OUTPUT_PORT_TYPE
-c5[3] <= cin_out5[3].DB_MAX_OUTPUT_PORT_TYPE
-c6[0] <= cin_out6[0].DB_MAX_OUTPUT_PORT_TYPE
-c6[1] <= cin_out6[1].DB_MAX_OUTPUT_PORT_TYPE
-c6[2] <= cin_out6[2].DB_MAX_OUTPUT_PORT_TYPE
-c6[3] <= cin_out6[3].DB_MAX_OUTPUT_PORT_TYPE
+eo[0] <= error_counter:error_cnt.port3
+eo[1] <= error_counter:error_cnt.port3
 
 
 |SixDigit_Electronic_Lock_Controller|yima2to4:yima_mode
@@ -1223,6 +1126,7 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|judge:jg2
@@ -1276,6 +1180,7 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|judge:jg3
@@ -1329,6 +1234,7 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|judge:jg4
@@ -1382,13 +1288,16 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt
-j => error_count[0]~reg0.CLK
-j => error_count[1]~reg0.CLK
-correct => error_count~2.OUTPUTSELECT
-correct => error_count~3.OUTPUTSELECT
+j => error_count[0]~reg0.ENA
+j => error_count[1]~reg0.ENA
+rd => error_count[0]~reg0.CLK
+rd => error_count[1]~reg0.CLK
+correct => error_count~8.OUTPUTSELECT
+correct => error_count~9.OUTPUTSELECT
 error_count[0] <= error_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 error_count[1] <= error_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -1437,11 +1346,5 @@ start => flash_count~1.OUTPUTSELECT
 start => flash_count~2.OUTPUTSELECT
 start => flash_count~3.OUTPUTSELECT
 led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|SixDigit_Electronic_Lock_Controller|mode_switch_checker:mode_chk
-m => error_flag~reg0.CLK
-res => error_flag~reg0.DATAIN
-error_flag <= error_flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
