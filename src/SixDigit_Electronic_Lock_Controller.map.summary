@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Mon Jun 17 16:00:35 2024
+Analysis & Synthesis Status : Successful - Tue Jun 18 01:05:06 2024
 Quartus II Version : 6.0 Build 202 06/20/2006 SP 1 SJ Full Version
 Revision Name : SixDigit_Electronic_Lock_Controller
 Top-level Entity Name : SixDigit_Electronic_Lock_Controller
 Family : ACEX1K
-Total logic elements : 291
+Total logic elements : 255
 Total pins : 44
 Total memory bits : 0
 Total PLLs : 0

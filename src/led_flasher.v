@@ -1,35 +1,34 @@
-// 状态机，控制十次的闪烁
-module led_flasher(
-    input clk,
-    input start,
-    output reg led
+// 控制灯的闪烁
+module led_flasher (
+    input wire clk,       		// 时钟信号，1Hz
+    input wire switch,    		// 开关信号
+    output reg led,        		// LED输出
+	output reg flash_end_flag 	// 闪烁结束的信号
 );
-    reg [3:0] flash_count;
-    reg [1:0] state;	// 状态参数
-    parameter IDLE = 2'b00, FLASH = 2'b01, DONE = 2'b10; // 分别对应闪烁前，闪烁中和闪烁结束的状态
+    reg [3:0] second_count;  // 计时寄存器，计数10秒
+    reg blinking;            // 标志寄存器，指示是否正在闪烁
 
     always @(posedge clk) begin
-        case (state)	// 根据不同的状态做出反应
-            IDLE: begin
-                if (start) begin
-                    state <= FLASH;
-                    flash_count <= 0;
-                    led <= 0;
-                end else begin
-                    led <= 0;
-                end
-            end
-            FLASH: begin
+        if (switch) begin
+            if (!blinking) begin
+                // 开关被按下，初始化计数器和标志
+                blinking <= 1;
+                second_count <= 0;
+            end else if (second_count < 10) begin
+                // 计时进行中，LED闪烁
+                second_count <= second_count + 1;
                 led <= ~led;
-                flash_count <= flash_count + 1;
-                if (flash_count == 10) begin
-                    state <= DONE;
-                end
-            end
-            DONE: begin
+            end else begin
+                // 计时结束，停止闪烁
+                blinking <= 0;
                 led <= 0;
-                state <= IDLE;
+				flash_end_flag <= 1'b1;
             end
-        endcase
+        end else begin
+            // 开关未被按下，重置所有状态
+            blinking <= 0;
+            second_count <= 0;
+            led <= 0;
+        end
     end
 endmodule

@@ -1,5 +1,5 @@
 Fitter report for SixDigit_Electronic_Lock_Controller
-Mon Jun 17 16:00:43 2024
+Tue Jun 18 01:05:08 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -55,14 +55,14 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Fitter Summary                                                        ;
 +-----------------------+-----------------------------------------------+
-; Fitter Status         ; Successful - Mon Jun 17 16:00:43 2024         ;
+; Fitter Status         ; Successful - Tue Jun 18 01:05:08 2024         ;
 ; Quartus II Version    ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name         ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                ; ACEX1K                                        ;
 ; Device                ; EP1K30TC144-1                                 ;
 ; Timing Models         ; Final                                         ;
-; Total logic elements  ; 291 / 1,728 ( 17 % )                          ;
+; Total logic elements  ; 255 / 1,728 ( 15 % )                          ;
 ; Total pins            ; 44 / 102 ( 43 % )                             ;
 ; Total memory bits     ; 0 / 24,576 ( 0 % )                            ;
 ; Total PLLs            ; 0 / 1 ( 0 % )                                 ;
@@ -130,7 +130,7 @@ applicable agreement for further details.
 ; inB[2]   ; 121   ; --  ; 17   ; 48      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
 ; inB[1]   ; 130   ; --  ; 22   ; 48      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
 ; inB[3]   ; 120   ; --  ; 14   ; 66      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
-; true_clk ; 67    ; --  ; 8    ; 25      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; true_clk ; 67    ; --  ; 8    ; 6       ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
 ; ps1      ; 70    ; --  ; 5    ; 16      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
 ; ps0      ; 69    ; --  ; 6    ; 14      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
 +----------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
@@ -330,31 +330,30 @@ applicable agreement for further details.
 ; Name                                  ; Pin #   ; Fan-Out ; Usage        ; Global Usage ;
 +---------------------------------------+---------+---------+--------------+--------------+
 ; out3_reg[3]~866                       ; LC2_D10 ; 8       ; Clock enable ; Non-global   ;
-; out3_reg[3]~867                       ; LC5_D12 ; 8       ; Clock enable ; Non-global   ;
-; yima2to4:yima_mode|Decoder0~13        ; LC4_B29 ; 7       ; Clock enable ; Non-global   ;
-; passwd_register:cin_password|comb~0   ; LC4_B31 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:cin_password|comb~34  ; LC7_B31 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:cin_password|comb~35  ; LC2_B31 ; 8       ; Clock        ; Non-global   ;
-; comb~35                               ; LC1_B33 ; 24      ; Async. clear ; Internal     ;
-; comb~118                              ; LC5_B33 ; 24      ; Async. clear ; Non-global   ;
-; comb~119                              ; LC4_B33 ; 24      ; Async. clear ; Non-global   ;
-; comb~120                              ; LC8_B33 ; 24      ; Async. clear ; Non-global   ;
-; comb~121                              ; LC7_B33 ; 24      ; Async. clear ; Non-global   ;
-; passwd_register:set_password1|comb~42 ; LC3_B35 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password4|comb~38 ; LC6_B35 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password2|comb~35 ; LC5_B35 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password3|comb~35 ; LC2_B35 ; 8       ; Clock        ; Non-global   ;
+; out3_reg[3]~867                       ; LC1_D12 ; 8       ; Clock enable ; Non-global   ;
+; passwd_register:cin_password|comb~35  ; LC2_A28 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:cin_password|comb~0   ; LC2_A29 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:cin_password|comb~34  ; LC8_A30 ; 8       ; Clock        ; Non-global   ;
+; yima2to4:yima_mode|Decoder0~13        ; LC6_A31 ; 7       ; Clock enable ; Non-global   ;
+; comb~35                               ; LC1_A25 ; 24      ; Async. clear ; Internal     ;
+; comb~79                               ; LC5_A25 ; 24      ; Async. clear ; Non-global   ;
+; comb~80                               ; LC8_A25 ; 24      ; Async. clear ; Non-global   ;
+; comb~81                               ; LC4_A25 ; 24      ; Async. clear ; Non-global   ;
+; comb~82                               ; LC7_A25 ; 24      ; Async. clear ; Non-global   ;
+; passwd_register:set_password1|comb~38 ; LC7_A30 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password4|comb~43 ; LC6_A30 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password2|comb~36 ; LC4_A30 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password3|comb~36 ; LC5_A30 ; 8       ; Clock        ; Non-global   ;
 ; clk                                   ; 119     ; 37      ; Clock        ; Non-global   ;
-; true_clk                              ; 67      ; 25      ; Clock        ; Non-global   ;
-; timer:tm|tick                         ; LC6_A36 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password4|comb~39 ; LC3_B36 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password3|comb~34 ; LC5_B32 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password1|comb~40 ; LC1_B29 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password1|comb~44 ; LC2_B29 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password4|comb~36 ; LC6_B29 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password2|comb~34 ; LC7_B29 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password2|comb~36 ; LC5_B29 ; 8       ; Clock        ; Non-global   ;
-; passwd_register:set_password3|comb~36 ; LC8_B29 ; 8       ; Clock        ; Non-global   ;
+; true_clk                              ; 67      ; 6       ; Clock        ; Non-global   ;
+; passwd_register:set_password1|comb~36 ; LC6_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password1|comb~39 ; LC2_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password4|comb~41 ; LC8_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password4|comb~44 ; LC1_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password2|comb~35 ; LC3_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password2|comb~37 ; LC5_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password3|comb~35 ; LC4_A32 ; 8       ; Clock        ; Non-global   ;
+; passwd_register:set_password3|comb~37 ; LC7_A32 ; 8       ; Clock        ; Non-global   ;
 +---------------------------------------+---------+---------+--------------+--------------+
 
 
@@ -363,7 +362,7 @@ applicable agreement for further details.
 +---------+---------+---------+--------+
 ; Name    ; Pin #   ; Fan-Out ; Global ;
 +---------+---------+---------+--------+
-; comb~35 ; LC1_B33 ; 24      ; yes    ;
+; comb~35 ; LC1_A25 ; 24      ; yes    ;
 +---------+---------+---------+--------+
 
 
@@ -372,19 +371,11 @@ applicable agreement for further details.
 +--------------------+------------------------+
 ; Carry Chain Length ; Number of Carry Chains ;
 +--------------------+------------------------+
-; 0 - 1              ; 0                      ;
-; 2 - 3              ; 0                      ;
-; 4 - 5              ; 0                      ;
-; 6 - 7              ; 0                      ;
-; 8 - 9              ; 0                      ;
-; 10 - 11            ; 0                      ;
-; 12 - 13            ; 0                      ;
-; 14 - 15            ; 0                      ;
-; 16 - 17            ; 0                      ;
-; 18 - 19            ; 0                      ;
-; 20 - 21            ; 0                      ;
-; 22 - 23            ; 0                      ;
-; 24 - 25            ; 1                      ;
+; 0                  ; 0                      ;
+; 1                  ; 0                      ;
+; 2                  ; 0                      ;
+; 3                  ; 0                      ;
+; 4                  ; 1                      ;
 +--------------------+------------------------+
 
 
@@ -393,7 +384,7 @@ applicable agreement for further details.
 +--------+-------+
 ; Length ; Count ;
 +--------+-------+
-; 2      ; 25    ;
+; 2      ; 23    ;
 +--------+-------+
 
 
@@ -411,47 +402,47 @@ applicable agreement for further details.
 ; m                                               ; 42      ;
 ; clk                                             ; 37      ;
 ; clr                                             ; 29      ;
-; true_clk                                        ; 25      ;
-; comb~123                                        ; 24      ;
-; comb~124                                        ; 24      ;
-; comb~125                                        ; 24      ;
-; comb~126                                        ; 24      ;
+; comb~84                                         ; 24      ;
+; comb~85                                         ; 24      ;
+; comb~86                                         ; 24      ;
+; comb~87                                         ; 24      ;
+; a0                                              ; 16      ;
 ; a1                                              ; 16      ;
 ; ps1                                             ; 16      ;
-; a0                                              ; 16      ;
 ; inA[0]                                          ; 16      ;
 ; inB[0]                                          ; 16      ;
 ; ps0                                             ; 14      ;
-; passwd_register:set_password1|comb~48           ; 8       ;
+; passwd_register:set_password4|comb~49           ; 8       ;
+; passwd_register:set_password3|comb~39           ; 8       ;
+; passwd_register:set_password2|comb~39           ; 8       ;
+; passwd_register:set_password1|comb~42           ; 8       ;
+; passwd_register:cin_password|comb~37            ; 8       ;
+; passwd_register:cin_password|comb~38            ; 8       ;
+; passwd_register:cin_password|comb~36            ; 8       ;
 ; passwd_register:set_password2|comb~38           ; 8       ;
 ; passwd_register:set_password3|comb~38           ; 8       ;
-; passwd_register:set_password4|comb~42           ; 8       ;
-; passwd_register:cin_password|comb~38            ; 8       ;
-; passwd_register:set_password4|comb~40           ; 8       ;
-; passwd_register:set_password2|comb~39           ; 8       ;
-; passwd_register:set_password3|comb~39           ; 8       ;
-; passwd_register:set_password2|comb~37           ; 8       ;
-; passwd_register:set_password4|comb~43           ; 8       ;
-; passwd_register:set_password1|comb~46           ; 8       ;
-; passwd_register:set_password1|comb~50           ; 8       ;
-; passwd_register:set_password3|comb~37           ; 8       ;
-; out3_reg[3]~874                                 ; 8       ;
-; passwd_register:cin_password|comb~36            ; 8       ;
-; passwd_register:cin_password|comb~37            ; 8       ;
+; passwd_register:set_password3|comb~40           ; 8       ;
+; passwd_register:set_password2|comb~40           ; 8       ;
 ; out3_reg[3]~873                                 ; 8       ;
-; timer:tm|tick~0                                 ; 8       ;
+; passwd_register:set_password1|comb~40           ; 8       ;
+; passwd_register:set_password4|comb~47           ; 8       ;
+; passwd_register:set_password4|comb~50           ; 8       ;
+; passwd_register:set_password1|comb~43           ; 8       ;
+; out3_reg[3]~874                                 ; 8       ;
 ; yima2to4:yima_mode|Decoder0~14                  ; 7       ;
-; led_flasher:led_fls|state.FLASH~14              ; 6       ;
-; led_flasher:led_fls|flash_count[0]~23           ; 5       ;
-; led_flasher:led_fls|state.IDLE~7                ; 5       ;
-; passwd_register:cin_password|register:r3|q[3]~2 ; 4       ;
-; passwd_register:cin_password|register:r5|q[3]~2 ; 4       ;
-; led_flasher:led_fls|flash_count[1]~21           ; 4       ;
-; error_counter:error_cnt|error_count[1]~83       ; 4       ;
-; passwd_register:cin_password|register:r3|q[2]~0 ; 4       ;
-; passwd_register:set_password1|comb~45           ; 4       ;
-; start_flashing~1                                ; 4       ;
+; true_clk                                        ; 6       ;
+; led_flasher:led_fls|LessThan0~23                ; 6       ;
+; error_counter:error_cnt|error_count[1]~57       ; 4       ;
+; passwd_register:set_password4|comb~45           ; 4       ;
+; passwd_register:set_password4|comb~46           ; 4       ;
 ; out1_reg~462                                    ; 4       ;
+; led_flasher:led_fls|second_count~26             ; 4       ;
+; out1_reg~461                                    ; 4       ;
+; passwd_register:cin_password|register:r5|q[2]~3 ; 4       ;
+; error_counter:error_cnt|error_count[0]~56       ; 4       ;
+; passwd_register:cin_password|register:r1|q[0]~2 ; 4       ;
+; passwd_register:cin_password|register:r3|q[0]~3 ; 4       ;
+; passwd_register:cin_password|register:r4|q[1]~0 ; 4       ;
 +-------------------------------------------------+---------+
 
 
@@ -460,7 +451,7 @@ applicable agreement for further details.
 +-------------------+---------+--------------+-----------------+---------------------------+----------+
 ; Peripheral Signal ; Source  ; Usage        ; Dedicated Clock ; Peripheral Control Signal ; Polarity ;
 +-------------------+---------+--------------+-----------------+---------------------------+----------+
-; comb~35           ; LC1_B33 ; Async. clear ; no              ; yes                       ; -ve      ;
+; comb~35           ; LC1_A25 ; Async. clear ; no              ; yes                       ; -ve      ;
 +-------------------+---------+--------------+-----------------+---------------------------+----------+
 
 
@@ -469,15 +460,15 @@ applicable agreement for further details.
 +--------------------------+----------------+
 ; Number of Logic Elements ; Number of LABs ;
 +--------------------------+----------------+
-; 0                        ; 169            ;
-; 1                        ; 8              ;
+; 0                        ; 178            ;
+; 1                        ; 5              ;
 ; 2                        ; 0              ;
 ; 3                        ; 0              ;
-; 4                        ; 1              ;
-; 5                        ; 1              ;
-; 6                        ; 5              ;
-; 7                        ; 12             ;
-; 8                        ; 20             ;
+; 4                        ; 0              ;
+; 5                        ; 0              ;
+; 6                        ; 4              ;
+; 7                        ; 6              ;
+; 8                        ; 23             ;
 +--------------------------+----------------+
 
 
@@ -486,13 +477,14 @@ applicable agreement for further details.
 +-----------------------------+----------------+
 ; Local Routing Interconnects ; Number of LABs ;
 +-----------------------------+----------------+
-; 0                           ; 188            ;
-; 1                           ; 1              ;
-; 2                           ; 5              ;
-; 3                           ; 10             ;
+; 0                           ; 190            ;
+; 1                           ; 2              ;
+; 2                           ; 6              ;
+; 3                           ; 7              ;
 ; 4                           ; 5              ;
-; 5                           ; 6              ;
+; 5                           ; 4              ;
 ; 6                           ; 1              ;
+; 7                           ; 1              ;
 +-----------------------------+----------------+
 
 
@@ -501,18 +493,18 @@ applicable agreement for further details.
 +----------------------------+----------------+
 ; LAB External Interconnects ; Number of LABs ;
 +----------------------------+----------------+
-; 0 - 1                      ; 172            ;
-; 2 - 3                      ; 4              ;
-; 4 - 5                      ; 8              ;
-; 6 - 7                      ; 6              ;
-; 8 - 9                      ; 3              ;
+; 0 - 1                      ; 178            ;
+; 2 - 3                      ; 2              ;
+; 4 - 5                      ; 5              ;
+; 6 - 7                      ; 7              ;
+; 8 - 9                      ; 2              ;
 ; 10 - 11                    ; 6              ;
-; 12 - 13                    ; 2              ;
-; 14 - 15                    ; 5              ;
+; 12 - 13                    ; 3              ;
+; 14 - 15                    ; 4              ;
 ; 16 - 17                    ; 4              ;
 ; 18 - 19                    ; 2              ;
 ; 20 - 21                    ; 1              ;
-; 22 - 23                    ; 3              ;
+; 22 - 23                    ; 2              ;
 +----------------------------+----------------+
 
 
@@ -521,13 +513,13 @@ applicable agreement for further details.
 +-------+---------------------+-----------------------------+------------------------------+
 ; Row   ; Interconnect Used   ; Left Half Interconnect Used ; Right Half Interconnect Used ;
 +-------+---------------------+-----------------------------+------------------------------+
-;  A    ;  27 / 144 ( 19 % )  ;  0 / 72 ( 0 % )             ;  0 / 72 ( 0 % )              ;
-;  B    ;  115 / 144 ( 80 % ) ;  25 / 72 ( 35 % )           ;  12 / 72 ( 17 % )            ;
-;  C    ;  9 / 144 ( 6 % )    ;  2 / 72 ( 3 % )             ;  5 / 72 ( 7 % )              ;
-;  D    ;  8 / 144 ( 6 % )    ;  15 / 72 ( 21 % )           ;  0 / 72 ( 0 % )              ;
+;  A    ;  113 / 144 ( 78 % ) ;  27 / 72 ( 38 % )           ;  9 / 72 ( 13 % )             ;
+;  B    ;  1 / 144 ( < 1 % )  ;  0 / 72 ( 0 % )             ;  0 / 72 ( 0 % )              ;
+;  C    ;  1 / 144 ( < 1 % )  ;  2 / 72 ( 3 % )             ;  1 / 72 ( 1 % )              ;
+;  D    ;  8 / 144 ( 6 % )    ;  16 / 72 ( 22 % )           ;  0 / 72 ( 0 % )              ;
 ;  E    ;  2 / 144 ( 1 % )    ;  3 / 72 ( 4 % )             ;  0 / 72 ( 0 % )              ;
 ;  F    ;  1 / 144 ( < 1 % )  ;  4 / 72 ( 6 % )             ;  0 / 72 ( 0 % )              ;
-; Total ;  162 / 864 ( 19 % ) ;  49 / 432 ( 11 % )          ;  17 / 432 ( 4 % )            ;
+; Total ;  126 / 864 ( 15 % ) ;  52 / 432 ( 12 % )          ;  10 / 432 ( 2 % )            ;
 +-------+---------------------+-----------------------------+------------------------------+
 
 
@@ -536,43 +528,43 @@ applicable agreement for further details.
 +-------+-------------------+
 ; Col.  ; Interconnect Used ;
 +-------+-------------------+
-; 1     ;  5 / 24 ( 21 % )  ;
-; 2     ;  0 / 24 ( 0 % )   ;
+; 1     ;  1 / 24 ( 4 % )   ;
+; 2     ;  3 / 24 ( 13 % )  ;
 ; 3     ;  0 / 24 ( 0 % )   ;
 ; 4     ;  0 / 24 ( 0 % )   ;
 ; 5     ;  1 / 24 ( 4 % )   ;
-; 6     ;  1 / 24 ( 4 % )   ;
+; 6     ;  2 / 24 ( 8 % )   ;
 ; 7     ;  3 / 24 ( 13 % )  ;
-; 8     ;  1 / 24 ( 4 % )   ;
+; 8     ;  2 / 24 ( 8 % )   ;
 ; 9     ;  3 / 24 ( 13 % )  ;
-; 10    ;  3 / 24 ( 13 % )  ;
+; 10    ;  4 / 24 ( 17 % )  ;
 ; 11    ;  3 / 24 ( 13 % )  ;
-; 12    ;  5 / 24 ( 21 % )  ;
-; 13    ;  2 / 24 ( 8 % )   ;
+; 12    ;  4 / 24 ( 17 % )  ;
+; 13    ;  1 / 24 ( 4 % )   ;
 ; 14    ;  1 / 24 ( 4 % )   ;
-; 15    ;  0 / 24 ( 0 % )   ;
-; 16    ;  2 / 24 ( 8 % )   ;
+; 15    ;  3 / 24 ( 13 % )  ;
+; 16    ;  0 / 24 ( 0 % )   ;
 ; 17    ;  1 / 24 ( 4 % )   ;
-; 18    ;  0 / 24 ( 0 % )   ;
+; 18    ;  1 / 24 ( 4 % )   ;
 ; 19    ;  0 / 24 ( 0 % )   ;
-; 20    ;  0 / 24 ( 0 % )   ;
+; 20    ;  1 / 24 ( 4 % )   ;
 ; 21    ;  0 / 24 ( 0 % )   ;
 ; 22    ;  1 / 24 ( 4 % )   ;
 ; 23    ;  1 / 24 ( 4 % )   ;
-; 24    ;  1 / 24 ( 4 % )   ;
+; 24    ;  0 / 24 ( 0 % )   ;
 ; 25    ;  0 / 24 ( 0 % )   ;
 ; 26    ;  1 / 24 ( 4 % )   ;
 ; 27    ;  0 / 24 ( 0 % )   ;
-; 28    ;  2 / 24 ( 8 % )   ;
+; 28    ;  4 / 24 ( 17 % )  ;
 ; 29    ;  1 / 24 ( 4 % )   ;
 ; 30    ;  2 / 24 ( 8 % )   ;
-; 31    ;  2 / 24 ( 8 % )   ;
-; 32    ;  1 / 24 ( 4 % )   ;
+; 31    ;  1 / 24 ( 4 % )   ;
+; 32    ;  0 / 24 ( 0 % )   ;
 ; 33    ;  0 / 24 ( 0 % )   ;
 ; 34    ;  1 / 24 ( 4 % )   ;
 ; 35    ;  1 / 24 ( 4 % )   ;
-; 36    ;  1 / 24 ( 4 % )   ;
-; Total ;  46 / 864 ( 5 % ) ;
+; 36    ;  0 / 24 ( 0 % )   ;
+; Total ;  47 / 864 ( 5 % ) ;
 +-------+-------------------+
 
 
@@ -586,82 +578,81 @@ applicable agreement for further details.
 +-------+-------------------+
 
 
-+----------------------------------------------------------+
-; Fitter Resource Usage Summary                            ;
-+-----------------------------------+----------------------+
-; Resource                          ; Usage                ;
-+-----------------------------------+----------------------+
-; Registers                         ; 181 / 1,728 ( 10 % ) ;
-; Total LABs                        ; 0 / 216 ( 0 % )      ;
-; Logic elements in carry chains    ; 24                   ;
-; User inserted logic elements      ; 0                    ;
-; I/O pins                          ; 44 / 102 ( 43 % )    ;
-;     -- Clock pins                 ; 0 / 0 ( -- )         ;
-;     -- Dedicated input pins       ; 1 / 4 ( 25 % )       ;
-; Global signals                    ; 1                    ;
-; EABs                              ; 0 / 6 ( 0 % )        ;
-; Total memory bits                 ; 0 / 24,576 ( 0 % )   ;
-; Total RAM block bits              ; 0 / 24,576 ( 0 % )   ;
-; PLLs                              ; 0 / 1 ( 0 % )        ;
-; Maximum fan-out node              ; inA[3]               ;
-; Maximum fan-out                   ; 66                   ;
-; Highest non-global fan-out signal ; inA[3]               ;
-; Highest non-global fan-out        ; 66                   ;
-; Total fan-out                     ; 1254                 ;
-; Average fan-out                   ; 3.74                 ;
-+-----------------------------------+----------------------+
++---------------------------------------------------------+
+; Fitter Resource Usage Summary                           ;
++-----------------------------------+---------------------+
+; Resource                          ; Usage               ;
++-----------------------------------+---------------------+
+; Registers                         ; 154 / 1,728 ( 9 % ) ;
+; Total LABs                        ; 0 / 216 ( 0 % )     ;
+; Logic elements in carry chains    ; 4                   ;
+; User inserted logic elements      ; 0                   ;
+; I/O pins                          ; 44 / 102 ( 43 % )   ;
+;     -- Clock pins                 ; 0 / 0 ( -- )        ;
+;     -- Dedicated input pins       ; 1 / 4 ( 25 % )      ;
+; Global signals                    ; 1                   ;
+; EABs                              ; 0 / 6 ( 0 % )       ;
+; Total memory bits                 ; 0 / 24,576 ( 0 % )  ;
+; Total RAM block bits              ; 0 / 24,576 ( 0 % )  ;
+; PLLs                              ; 0 / 1 ( 0 % )       ;
+; Maximum fan-out node              ; inA[3]              ;
+; Maximum fan-out                   ; 66                  ;
+; Highest non-global fan-out signal ; inA[3]              ;
+; Highest non-global fan-out        ; 66                  ;
+; Total fan-out                     ; 1156                ;
+; Average fan-out                   ; 3.87                ;
++-----------------------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                   ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------+
-; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                  ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------+
-; |SixDigit_Electronic_Lock_Controller      ; 291 (101)   ; 181          ; 0           ; 44   ; 110 (75)     ; 0 (0)             ; 181 (26)         ; 24 (0)          ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                                                 ;
-;    |error_counter:error_cnt|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt                                         ;
-;    |judge:jg1|                            ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg1                                                       ;
-;    |judge:jg4|                            ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg4                                                       ;
-;    |led_flasher:led_fls|                  ; 13 (13)     ; 8            ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 8 (8)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls                                             ;
-;    |passwd_register:cin_password|         ; 29 (5)      ; 24           ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password                                    ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1                        ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2                        ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3                        ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4                        ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5                        ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6                        ;
-;    |passwd_register:set_password1|        ; 30 (6)      ; 24           ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1                                   ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r1                       ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r2                       ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r3                       ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r4                       ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r5                       ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r6                       ;
-;    |passwd_register:set_password2|        ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2                                   ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1                       ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2                       ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3                       ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4                       ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5                       ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r6                       ;
-;    |passwd_register:set_password3|        ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3                                   ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r1                       ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r2                       ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r3                       ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r4                       ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r5                       ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r6                       ;
-;    |passwd_register:set_password4|        ; 28 (4)      ; 24           ; 0           ; 0    ; 4 (4)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4                                   ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r1                       ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r2                       ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r3                       ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r4                       ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r5                       ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r6                       ;
-;    |timer:tm|                             ; 31 (7)      ; 25           ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 25 (1)           ; 24 (0)          ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|timer:tm                                                        ;
-;       |lpm_counter:count_rtl_0|           ; 24 (0)      ; 24           ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 24 (0)           ; 24 (0)          ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|timer:tm|lpm_counter:count_rtl_0                                ;
-;          |alt_counter_f10ke:wysi_counter| ; 24 (24)     ; 24           ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 24 (24)          ; 24 (24)         ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|timer:tm|lpm_counter:count_rtl_0|alt_counter_f10ke:wysi_counter ;
-;    |yima2to4:yima_mode|                   ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima_mode                                              ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                     ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                    ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; |SixDigit_Electronic_Lock_Controller      ; 255 (101)   ; 154          ; 0           ; 44   ; 101 (75)     ; 0 (0)             ; 154 (26)         ; 4 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                                                                   ;
+;    |error_counter:error_cnt|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt                                                           ;
+;    |judge:jg1|                            ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg1                                                                         ;
+;    |judge:jg4|                            ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg4                                                                         ;
+;    |led_flasher:led_fls|                  ; 8 (4)       ; 6            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 6 (2)            ; 4 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls                                                               ;
+;       |lpm_counter:second_count_rtl_0|    ; 4 (0)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|lpm_counter:second_count_rtl_0                                ;
+;          |alt_counter_f10ke:wysi_counter| ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|lpm_counter:second_count_rtl_0|alt_counter_f10ke:wysi_counter ;
+;    |passwd_register:cin_password|         ; 29 (5)      ; 24           ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password                                                      ;
+;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1                                          ;
+;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2                                          ;
+;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3                                          ;
+;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4                                          ;
+;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5                                          ;
+;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6                                          ;
+;    |passwd_register:set_password1|        ; 28 (4)      ; 24           ; 0           ; 0    ; 4 (4)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1                                                     ;
+;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r1                                         ;
+;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r2                                         ;
+;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r3                                         ;
+;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r4                                         ;
+;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r5                                         ;
+;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r6                                         ;
+;    |passwd_register:set_password2|        ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2                                                     ;
+;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1                                         ;
+;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2                                         ;
+;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3                                         ;
+;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4                                         ;
+;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5                                         ;
+;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r6                                         ;
+;    |passwd_register:set_password3|        ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3                                                     ;
+;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r1                                         ;
+;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r2                                         ;
+;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r3                                         ;
+;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r4                                         ;
+;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r5                                         ;
+;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r6                                         ;
+;    |passwd_register:set_password4|        ; 30 (6)      ; 24           ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4                                                     ;
+;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r1                                         ;
+;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r2                                         ;
+;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r3                                         ;
+;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r4                                         ;
+;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r5                                         ;
+;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r6                                         ;
+;    |yima2to4:yima_mode|                   ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima_mode                                                                ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -720,7 +711,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/114514/src/SixDigit_Electronic_Lock_Controller.pin.
+The pin-out file can be found in C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pin.
 
 
 +-----------------+
@@ -729,7 +720,7 @@ The pin-out file can be found in D:/114514/src/SixDigit_Electronic_Lock_Controll
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Jun 17 16:00:37 2024
+    Info: Processing started: Tue Jun 18 01:05:07 2024
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Selected device EP1K30TC144-1 for design "SixDigit_Electronic_Lock_Controller"
 Info: Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
@@ -738,15 +729,15 @@ Info: Timing requirements not specified -- optimizing circuit to achieve the fol
     Info: Not setting a global tco requirement
     Info: Not setting a global tpd requirement
 Info: Inserted 0 logic cells in first fitting attempt
-Info: Started fitting attempt 1 on Mon Jun 17 2024 at 16:00:37
+Info: Started fitting attempt 1 on Tue Jun 18 2024 at 01:05:07
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
-Info: Fitter placement operations ending: elapsed time is 00:00:02
+Info: Fitter placement operations ending: elapsed time is 00:00:01
 Info: Fitter routing operations beginning
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: Quartus II Fitter was successful. 0 errors, 0 warnings
-    Info: Processing ended: Mon Jun 17 16:00:43 2024
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Tue Jun 18 01:05:08 2024
+    Info: Elapsed time: 00:00:01
 
 

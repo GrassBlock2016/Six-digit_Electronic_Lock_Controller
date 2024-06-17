@@ -1,6 +1,0 @@
-
-State Machine - |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|state
-Name state.IDLE state.DONE state.FLASH 
-state.IDLE 0 0 0 
-state.DONE 1 1 0 
-state.FLASH 1 0 1 

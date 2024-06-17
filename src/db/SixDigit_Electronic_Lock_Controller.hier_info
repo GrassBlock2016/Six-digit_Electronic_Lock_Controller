@@ -1302,49 +1302,21 @@ error_count[0] <= error_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 error_count[1] <= error_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SixDigit_Electronic_Lock_Controller|timer:tm
-clk => count[22].CLK
-clk => count[21].CLK
-clk => count[20].CLK
-clk => count[19].CLK
-clk => count[18].CLK
-clk => count[17].CLK
-clk => count[16].CLK
-clk => count[15].CLK
-clk => count[14].CLK
-clk => count[13].CLK
-clk => count[12].CLK
-clk => count[11].CLK
-clk => count[10].CLK
-clk => count[9].CLK
-clk => count[8].CLK
-clk => count[7].CLK
-clk => count[6].CLK
-clk => count[5].CLK
-clk => count[4].CLK
-clk => count[3].CLK
-clk => count[2].CLK
-clk => count[1].CLK
-clk => count[0].CLK
-clk => tick~reg0.CLK
-clk => count[23].CLK
-tick <= tick~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls
-clk => flash_count[3].CLK
-clk => flash_count[2].CLK
-clk => flash_count[1].CLK
-clk => flash_count[0].CLK
+clk => second_count[3].CLK
+clk => second_count[2].CLK
+clk => second_count[1].CLK
+clk => second_count[0].CLK
 clk => led~reg0.CLK
-clk => state~6.IN1
-start => state~0.OUTPUTSELECT
-start => state~1.OUTPUTSELECT
-start => state~2.OUTPUTSELECT
-start => flash_count~0.OUTPUTSELECT
-start => flash_count~1.OUTPUTSELECT
-start => flash_count~2.OUTPUTSELECT
-start => flash_count~3.OUTPUTSELECT
+clk => flash_end_flag~reg0.CLK
+clk => blinking.CLK
+switch => blinking~2.OUTPUTSELECT
+switch => second_count~8.OUTPUTSELECT
+switch => second_count~9.OUTPUTSELECT
+switch => second_count~10.OUTPUTSELECT
+switch => second_count~11.OUTPUTSELECT
+switch => led~2.OUTPUTSELECT
 led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+flash_end_flag <= flash_end_flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -27,12 +27,12 @@ module SixDigit_Electronic_Lock_Controller(
 	wire res1,res2,res3,res4; // 每个密码的比较结果  555555555555555555
 	wire [1:0] error_count;
 	wire tick;
-	wire error_flag;		// 切换模式报错信号
+	//wire error_flag;		// 切换模式报错信号
     reg [3:0] out1_reg, out2_reg, out3_reg, out4_reg, out5_reg, out6_reg;
 	reg start_flashing;
 	reg res_reg;
+	wire flash_end_flag;	// 报错闪烁结束的标志
 	wire res_tmp;
-	//reg res_latched;  // 锁存的比较结果
 	
 	assign res_tmp = (res1|res2|res3|res4) & m;
 	
@@ -133,22 +133,16 @@ module SixDigit_Electronic_Lock_Controller(
 	error_counter error_cnt(y3,clk, res_tmp, error_count);
 	
 	// 定时器模块实例化
-	timer tm(true_clk, tick);
+	//timer tm(true_clk, tick);
 	
 	// LED闪烁控制状态机模块实例化
-	led_flasher led_fls(tick, start_flashing, led);
+	led_flasher led_fls(true_clk, start_flashing, led, flash_end_flag);
 	
 	// 模式切换检查模块实例化
 	//mode_switch_checker mode_chk(m, res_latched, error_flag);
 	
     // 模式选择和输出赋值的控制逻辑
     always @(posedge clk) begin
-		//if (y3) begin
-		//	res_latched <= res;
-		//end else begin
-		//	res_latched = 1'b0;
-		//end
-		
 		//if (error_flag) begin
 		//	out1_reg <= 4'b1110;
 		//	out2_reg <= 4'b1110;
@@ -156,13 +150,14 @@ module SixDigit_Electronic_Lock_Controller(
 		//	out4_reg <= 4'b1110;
 		//	out5_reg <= 4'b1110;
 		//	out6_reg <= 4'b1110;
-		//end else begin
-        	case ({y2, y1, y0})
-            	3'b001: {out1_reg, out2_reg} <= {checked_inA, checked_inB};
-            	3'b010: {out3_reg, out4_reg} <= {checked_inA, checked_inB};
-            	3'b100: {out5_reg, out6_reg} <= {checked_inA, checked_inB};
-        	endcase
-		//end 
+		//end
+		
+        case ({y2, y1, y0})
+           	3'b001: {out1_reg, out2_reg} <= {checked_inA, checked_inB};
+           	3'b010: {out3_reg, out4_reg} <= {checked_inA, checked_inB};
+           	3'b100: {out5_reg, out6_reg} <= {checked_inA, checked_inB};
+        endcase
+
 		if (y3) begin
 			res_reg <= res_tmp;
 		end
@@ -176,19 +171,11 @@ module SixDigit_Electronic_Lock_Controller(
             out6_reg <= 4'b0000;
 		end
 		
-		// 禁止错误状态下切换模式
-		//if (!m & !res) begin
-		//	out1_reg <= 4'b1110;
-		//	out2_reg <= 4'b1110;
-		//	out3_reg <= 4'b1110;
-		//	out4_reg <= 4'b1110;
-		//	out5_reg <= 4'b1110;
-		//	out6_reg <= 4'b1110;
-		//end
-		
-		// 错误统计
+		// 错误统计以及闪烁停止信号
 		if (error_count == 2'b11) begin
 		    start_flashing <= 1;
+		end else if (flash_end_flag == 1'b0) begin
+			start_flashing <= 0;
 		end else begin
 			start_flashing <= 0;
 		end

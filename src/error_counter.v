@@ -5,8 +5,8 @@ module error_counter(
     input correct,
     output reg [1:0] error_count
 );
-    always @(negedge rd) begin	// 当j上升沿开始计数
-		if(j) begin
+    always @(negedge rd) begin
+		if (j) begin
         	if (correct) begin
             	error_count <= 2'b00;
         	end else if (error_count < 2'b11) begin

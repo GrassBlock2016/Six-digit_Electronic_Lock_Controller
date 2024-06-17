@@ -1,5 +1,5 @@
 Flow report for SixDigit_Electronic_Lock_Controller
-Mon Jun 17 16:00:48 2024
+Tue Jun 18 01:05:10 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------+-----------------------------------------------+
-; Flow Status             ; Successful - Mon Jun 17 16:00:48 2024         ;
+; Flow Status             ; Successful - Tue Jun 18 01:05:10 2024         ;
 ; Quartus II Version      ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name           ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name   ; SixDigit_Electronic_Lock_Controller           ;
@@ -45,7 +45,7 @@ applicable agreement for further details.
 ; Device                  ; EP1K30TC144-1                                 ;
 ; Timing Models           ; Final                                         ;
 ; Met timing requirements ; Yes                                           ;
-; Total logic elements    ; 291 / 1,728 ( 17 % )                          ;
+; Total logic elements    ; 255 / 1,728 ( 15 % )                          ;
 ; Total pins              ; 44 / 102 ( 43 % )                             ;
 ; Total memory bits       ; 0 / 24,576 ( 0 % )                            ;
 ; Total PLLs              ; 0 / 1 ( 0 % )                                 ;
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 06/17/2024 16:00:33                 ;
+; Start date & time ; 06/18/2024 01:05:05                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; SixDigit_Electronic_Lock_Controller ;
 +-------------------+-------------------------------------+
@@ -77,11 +77,11 @@ applicable agreement for further details.
 +----------------------+--------------+
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
-; Analysis & Synthesis ; 00:00:03     ;
-; Fitter               ; 00:00:07     ;
+; Analysis & Synthesis ; 00:00:01     ;
+; Fitter               ; 00:00:01     ;
 ; Assembler            ; 00:00:00     ;
-; Timing Analyzer      ; 00:00:01     ;
-; Total                ; 00:00:11     ;
+; Timing Analyzer      ; 00:00:00     ;
+; Total                ; 00:00:02     ;
 +----------------------+--------------+
 
 
