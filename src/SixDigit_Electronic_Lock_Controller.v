@@ -2,6 +2,7 @@ module SixDigit_Electronic_Lock_Controller(
     input m,              // mode，切换模式，0为设置密码，1为输入密码
     input [3:0] inA, inB, // 输入
     input clk, clr, true_clk,       // 手动时钟信号，清空，自动时钟信号
+	//input secret_key,  // 神秘按钮
     output [3:0] out1, out2, out3, out4, out5, out6, // 输出
     output res,        // 比较结果
     input a0, a1,            // 高、中、低位输入与判断选择
@@ -122,7 +123,7 @@ module SixDigit_Electronic_Lock_Controller(
     );
 
     // 比较模块实例化
-	reg rd1,rd2,rd3,rd4;
+	reg rd1,rd2,rd3,rd4;	// tag:疑似没用，请测试后删除
     judge jg1(y3, cin_out1, cin_out2, cin_out3, cin_out4, cin_out5, cin_out6, set1_out1, set1_out2, set1_out3, set1_out4, set1_out5, set1_out6, res1,rd1);
 	judge jg2(y3, cin_out1, cin_out2, cin_out3, cin_out4, cin_out5, cin_out6, set2_out1, set2_out2, set2_out3, set2_out4, set2_out5, set2_out6, res2,rd2);
 	judge jg3(y3, cin_out1, cin_out2, cin_out3, cin_out4, cin_out5, cin_out6, set3_out1, set3_out2, set3_out3, set3_out4, set3_out5, set3_out6, res3,rd3);
@@ -130,7 +131,7 @@ module SixDigit_Electronic_Lock_Controller(
 	wire rd = rd1|rd2|rd3|rd4;
 	
 	// 错误计数器模块实例化
-	error_counter error_cnt(y3,clk, res_tmp, error_count);
+	error_counter error_cnt(y3, clk, res_tmp, error_count);
 	
 	// 定时器模块实例化
 	//timer tm(true_clk, tick);
@@ -139,7 +140,7 @@ module SixDigit_Electronic_Lock_Controller(
 	led_flasher led_fls(true_clk, start_flashing, led, flash_end_flag);
 	
 	// 模式切换检查模块实例化
-	//mode_switch_checker mode_chk(m, res_latched, error_flag);
+	//mode_switch_checker mode_chk(m, res_tmp, error_flag);
 	
     // 模式选择和输出赋值的控制逻辑
     always @(posedge clk) begin
@@ -150,6 +151,14 @@ module SixDigit_Electronic_Lock_Controller(
 		//	out4_reg <= 4'b1110;
 		//	out5_reg <= 4'b1110;
 		//	out6_reg <= 4'b1110;
+		//	if (m == 1) begin
+		//		out1_reg <= 4'b0000;
+        //    	out2_reg <= 4'b0000;
+        //    	out3_reg <= 4'b0000;
+        //    	out4_reg <= 4'b0000;
+        //    	out5_reg <= 4'b0000;
+        //   	out6_reg <= 4'b0000;
+		//	end
 		//end
 		
         case ({y2, y1, y0})
@@ -170,6 +179,16 @@ module SixDigit_Electronic_Lock_Controller(
             out5_reg <= 4'b0000;
             out6_reg <= 4'b0000;
 		end
+		
+		// 假装切模式会清空数码管
+		//if (secret_key) begin
+		//	  out1_reg <= 4'b0000;
+        //    out2_reg <= 4'b0000;
+        //    out3_reg <= 4'b0000;
+        //    out4_reg <= 4'b0000;
+        //    out5_reg <= 4'b0000;
+        //    out6_reg <= 4'b0000;
+		//end
 		
 		// 错误统计以及闪烁停止信号
 		if (error_count == 2'b11) begin
