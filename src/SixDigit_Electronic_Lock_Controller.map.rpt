@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SixDigit_Electronic_Lock_Controller
-Tue Jun 18 01:05:06 2024
+Tue Jun 18 16:52:18 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -13,8 +13,7 @@ Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Parameter Settings for Inferred Entity Instance: led_flasher:led_fls|lpm_counter:second_count_rtl_0
-  9. Analysis & Synthesis Messages
+  8. Analysis & Synthesis Messages
 
 
 
@@ -40,12 +39,12 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Jun 18 01:05:06 2024         ;
+; Analysis & Synthesis Status ; Successful - Tue Jun 18 16:52:18 2024         ;
 ; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name               ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name       ; SixDigit_Electronic_Lock_Controller           ;
 ; Family                      ; ACEX1K                                        ;
-; Total logic elements        ; 255                                           ;
+; Total logic elements        ; 258                                           ;
 ; Total pins                  ; 44                                            ;
 ; Total memory bits           ; 0                                             ;
 ; Total PLLs                  ; 0                                             ;
@@ -112,96 +111,78 @@ applicable agreement for further details.
 ; error_counter.v                       ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/error_counter.v                       ;
 ; led_flasher.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/led_flasher.v                         ;
 ; judge.v                               ; yes             ; Other                  ; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/judge.v                               ;
-; lpm_counter.tdf                       ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/lpm_counter.tdf                                          ;
-; lpm_constant.inc                      ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_constant.inc                                         ;
-; lpm_decode.inc                        ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_decode.inc                                           ;
-; lpm_add_sub.inc                       ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_add_sub.inc                                          ;
-; cmpconst.inc                          ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/cmpconst.inc                                             ;
-; lpm_compare.inc                       ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_compare.inc                                          ;
-; lpm_counter.inc                       ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_counter.inc                                          ;
-; dffeea.inc                            ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/dffeea.inc                                               ;
-; alt_synch_counter.inc                 ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_synch_counter.inc                                    ;
-; alt_synch_counter_f.inc               ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_synch_counter_f.inc                                  ;
-; alt_counter_f10ke.inc                 ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_counter_f10ke.inc                                    ;
-; alt_counter_stratix.inc               ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_counter_stratix.inc                                  ;
-; aglobal60.inc                         ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/aglobal60.inc                                            ;
-; alt_counter_f10ke.tdf                 ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/alt_counter_f10ke.tdf                                    ;
-; flex10ke_lcell.inc                    ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/flex10ke_lcell.inc                                       ;
 +---------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------+
 ; Analysis & Synthesis Resource Usage Summary ;
-+-----------------------------------+---------+
-; Resource                          ; Usage   ;
-+-----------------------------------+---------+
-; Total logic elements              ; 255     ;
-; Total combinational functions     ; 255     ;
-;     -- Total 4-input functions    ; 116     ;
-;     -- Total 3-input functions    ; 68      ;
-;     -- Total 2-input functions    ; 70      ;
-;     -- Total 1-input functions    ; 1       ;
-;     -- Total 0-input functions    ; 0       ;
-; Combinational cells for routing   ; 0       ;
-; Total registers                   ; 154     ;
-; Total logic cells in carry chains ; 4       ;
-; I/O pins                          ; 44      ;
-; Maximum fan-out node              ; inA[3]  ;
-; Maximum fan-out                   ; 66      ;
-; Total fan-out                     ; 1156    ;
-; Average fan-out                   ; 3.87    ;
-+-----------------------------------+---------+
++---------------------------------+-----------+
+; Resource                        ; Usage     ;
++---------------------------------+-----------+
+; Total logic elements            ; 258       ;
+; Total combinational functions   ; 257       ;
+;     -- Total 4-input functions  ; 122       ;
+;     -- Total 3-input functions  ; 67        ;
+;     -- Total 2-input functions  ; 67        ;
+;     -- Total 1-input functions  ; 1         ;
+;     -- Total 0-input functions  ; 0         ;
+; Combinational cells for routing ; 0         ;
+; Total registers                 ; 155       ;
+; I/O pins                        ; 44        ;
+; Maximum fan-out node            ; inA[3]    ;
+; Maximum fan-out                 ; 66        ;
+; Total fan-out                   ; 1170      ;
+; Average fan-out                 ; 3.87      ;
++---------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                       ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                    ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; |SixDigit_Electronic_Lock_Controller      ; 255 (101)   ; 154          ; 0           ; 44   ; 101 (75)     ; 0 (0)             ; 154 (26)         ; 4 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                                                                   ;
-;    |error_counter:error_cnt|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt                                                           ;
-;    |judge:jg1|                            ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg1                                                                         ;
-;    |judge:jg4|                            ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg4                                                                         ;
-;    |led_flasher:led_fls|                  ; 8 (4)       ; 6            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 6 (2)            ; 4 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls                                                               ;
-;       |lpm_counter:second_count_rtl_0|    ; 4 (0)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|lpm_counter:second_count_rtl_0                                ;
-;          |alt_counter_f10ke:wysi_counter| ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|lpm_counter:second_count_rtl_0|alt_counter_f10ke:wysi_counter ;
-;    |passwd_register:cin_password|         ; 29 (5)      ; 24           ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password                                                      ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1                                          ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2                                          ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3                                          ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4                                          ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5                                          ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6                                          ;
-;    |passwd_register:set_password1|        ; 28 (4)      ; 24           ; 0           ; 0    ; 4 (4)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1                                                     ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r1                                         ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r2                                         ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r3                                         ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r4                                         ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r5                                         ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r6                                         ;
-;    |passwd_register:set_password2|        ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2                                                     ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1                                         ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2                                         ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3                                         ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4                                         ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5                                         ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r6                                         ;
-;    |passwd_register:set_password3|        ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3                                                     ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r1                                         ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r2                                         ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r3                                         ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r4                                         ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r5                                         ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r6                                         ;
-;    |passwd_register:set_password4|        ; 30 (6)      ; 24           ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4                                                     ;
-;       |register:r1|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r1                                         ;
-;       |register:r2|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r2                                         ;
-;       |register:r3|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r3                                         ;
-;       |register:r4|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r4                                         ;
-;       |register:r5|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r5                                         ;
-;       |register:r6|                       ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r6                                         ;
-;    |yima2to4:yima_mode|                   ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima_mode                                                                ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++--------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+
+; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                            ;
++--------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+
+; |SixDigit_Electronic_Lock_Controller ; 258 (101)   ; 155          ; 0           ; 44   ; 103 (75)     ; 1 (0)             ; 154 (26)         ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller                                           ;
+;    |error_counter:error_cnt|         ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt                   ;
+;    |judge:jg1|                       ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg1                                 ;
+;    |judge:jg4|                       ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|judge:jg4                                 ;
+;    |led_flasher:led_fls|             ; 11 (11)     ; 7            ; 0           ; 0    ; 4 (4)        ; 1 (1)             ; 6 (6)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls                       ;
+;    |passwd_register:cin_password|    ; 29 (5)      ; 24           ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password              ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r1  ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r2  ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r3  ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r4  ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r5  ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:cin_password|register:r6  ;
+;    |passwd_register:set_password1|   ; 30 (6)      ; 24           ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1             ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r1 ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r2 ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r3 ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r4 ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r5 ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password1|register:r6 ;
+;    |passwd_register:set_password2|   ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2             ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r1 ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r2 ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r3 ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r4 ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r5 ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password2|register:r6 ;
+;    |passwd_register:set_password3|   ; 27 (3)      ; 24           ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3             ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r1 ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r2 ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r3 ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r4 ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r5 ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password3|register:r6 ;
+;    |passwd_register:set_password4|   ; 28 (4)      ; 24           ; 0           ; 0    ; 4 (4)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4             ;
+;       |register:r1|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r1 ;
+;       |register:r2|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r2 ;
+;       |register:r3|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r3 ;
+;       |register:r4|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r4 ;
+;       |register:r5|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r5 ;
+;       |register:r6|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|passwd_register:set_password4|register:r6 ;
+;    |yima2to4:yima_mode|              ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SixDigit_Electronic_Lock_Controller|yima2to4:yima_mode                        ;
++--------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -210,8 +191,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 154   ;
-; Number of registers using Synchronous Clear  ; 4     ;
+; Total registers                              ; 155   ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 120   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -220,40 +201,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: led_flasher:led_fls|lpm_counter:second_count_rtl_0 ;
-+------------------------+-------------------+--------------------------------------------------------+
-; Parameter Name         ; Value             ; Type                                                   ;
-+------------------------+-------------------+--------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                           ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                         ;
-; LPM_WIDTH              ; 4                 ; Untyped                                                ;
-; LPM_DIRECTION          ; UP                ; Untyped                                                ;
-; LPM_MODULUS            ; 0                 ; Untyped                                                ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                                                ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                                                ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                                ;
-; DEVICE_FAMILY          ; ACEX1K            ; Untyped                                                ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                                                ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                                     ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                                     ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                                                ;
-; LABWIDE_SCLR           ; ON                ; Untyped                                                ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                                                ;
-; CBXI_PARAMETER         ; NOTHING           ; Untyped                                                ;
-+------------------------+-------------------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Jun 18 01:05:05 2024
+    Info: Processing started: Tue Jun 18 16:52:18 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Found 1 design units, including 1 entities, in source file SixDigit_Electronic_Lock_Controller.v
     Info: Found entity 1: SixDigit_Electronic_Lock_Controller
@@ -277,49 +231,36 @@ Warning: Can't analyze file -- file C:/Users/ASUS/Desktop/Six-digit_Electronic_L
 Info: Found 1 design units, including 1 entities, in source file mode_switch_checker.v
     Info: Found entity 1: mode_switch_checker
 Info: Elaborating entity "SixDigit_Electronic_Lock_Controller" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at SixDigit_Electronic_Lock_Controller.v(130): object "rd" assigned a value but never read
-Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(155): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at SixDigit_Electronic_Lock_Controller.v(163): all case item expressions in this case statement are onehot
 Info: Elaborating entity "yima2to4" for hierarchy "yima2to4:yima_mode"
 Info: Elaborating entity "passwd_register" for hierarchy "passwd_register:set_password1"
 Info: Elaborating entity "register" for hierarchy "passwd_register:set_password1|register:r1"
 Warning: Using design file judge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: judge
 Info: Elaborating entity "judge" for hierarchy "judge:jg1"
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "a1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "b1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "a2" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "b2" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "a3" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "b3" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "a4" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "b4" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "a5" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "b5" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "a6" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at judge.v(13): variable "b6" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "a1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "b1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "a2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "b2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "a3" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "b3" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "a4" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "b4" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "a5" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "b5" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "a6" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at judge.v(11): variable "b6" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Info: Elaborating entity "error_counter" for hierarchy "error_counter:error_cnt"
 Info: Elaborating entity "led_flasher" for hierarchy "led_flasher:led_fls"
-Warning (10230): Verilog HDL assignment warning at led_flasher.v(19): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at led_flasher.v(24): truncated value with size 32 to match size of target (4)
 Warning: Port "#2" on the entity instantiation of "yima_passwd" is connected to a signal of width 32. The formal width of the signal in the module is 1.  Extra bits will be driven by GND.
 Warning: Port "#2" on the entity instantiation of "yima_mode" is connected to a signal of width 32. The formal width of the signal in the module is 1.  Extra bits will be driven by GND.
-Info: Inferred 1 megafunctions from design logic
-    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "led_flasher:led_fls|second_count[0]~16"
-Info: Found 1 design units, including 1 entities, in source file ../../../../../altera/quartus60/libraries/megafunctions/lpm_counter.tdf
-    Info: Found entity 1: lpm_counter
-Info: Elaborated megafunction instantiation "led_flasher:led_fls|lpm_counter:second_count_rtl_0"
-Info: Found 1 design units, including 1 entities, in source file ../../../../../altera/quartus60/libraries/megafunctions/alt_counter_f10ke.tdf
-    Info: Found entity 1: alt_counter_f10ke
-Info: Elaborated megafunction instantiation "led_flasher:led_fls|lpm_counter:second_count_rtl_0|alt_counter_f10ke:wysi_counter", which is child of megafunction instantiation "led_flasher:led_fls|lpm_counter:second_count_rtl_0"
-Info: Instantiated megafunction "led_flasher:led_fls|lpm_counter:second_count_rtl_0" with the following parameter:
-    Info: Parameter "LPM_WIDTH" = "4"
-    Info: Parameter "LPM_DIRECTION" = "UP"
-    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
-Info: Implemented 299 device resources after synthesis - the final resource count might be different
+Info: Implemented 302 device resources after synthesis - the final resource count might be different
     Info: Implemented 16 input pins
     Info: Implemented 28 output pins
-    Info: Implemented 255 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Processing ended: Tue Jun 18 01:05:06 2024
+    Info: Implemented 258 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Processing ended: Tue Jun 18 16:52:18 2024
     Info: Elapsed time: 00:00:01
 
 

@@ -3,12 +3,10 @@ module judge(
     input s,
     input [3:0] a1, a2, a3, a4, a5, a6,
     input [3:0] b1, b2, b3, b4, b5, b6,
-    output reg c,
-	output reg rd
+    output reg c
 );
 
     always @(s) begin
-		rd <= 1;
         if (s) begin
             if (a1 == b1 && a2 == b2 && a3 == b3 && a4 == b4 && a5 == b5 && a6 == b6) begin
                 c <= 1'b1;
@@ -18,7 +16,6 @@ module judge(
         end else begin
             c <= 1'b0;
         end
-	rd <= 0;
     end
 
 endmodule

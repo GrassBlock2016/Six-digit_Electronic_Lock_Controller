@@ -1126,7 +1126,6 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
-rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|judge:jg2
@@ -1180,7 +1179,6 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
-rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|judge:jg3
@@ -1234,7 +1232,6 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
-rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|judge:jg4
@@ -1288,14 +1285,13 @@ b6[1] => Equal5.IN6
 b6[2] => Equal5.IN5
 b6[3] => Equal5.IN4
 c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
-rd <= <GND>
 
 
 |SixDigit_Electronic_Lock_Controller|error_counter:error_cnt
 j => error_count[0]~reg0.ENA
 j => error_count[1]~reg0.ENA
-rd => error_count[0]~reg0.CLK
-rd => error_count[1]~reg0.CLK
+clk => error_count[0]~reg0.CLK
+clk => error_count[1]~reg0.CLK
 correct => error_count~8.OUTPUTSELECT
 correct => error_count~9.OUTPUTSELECT
 error_count[0] <= error_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1303,20 +1299,15 @@ error_count[1] <= error_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SixDigit_Electronic_Lock_Controller|led_flasher:led_fls
+clk => blinking.CLK
 clk => second_count[3].CLK
 clk => second_count[2].CLK
 clk => second_count[1].CLK
 clk => second_count[0].CLK
 clk => led~reg0.CLK
-clk => flash_end_flag~reg0.CLK
-clk => blinking.CLK
-switch => blinking~2.OUTPUTSELECT
-switch => second_count~8.OUTPUTSELECT
-switch => second_count~9.OUTPUTSELECT
-switch => second_count~10.OUTPUTSELECT
-switch => second_count~11.OUTPUTSELECT
-switch => led~2.OUTPUTSELECT
+clk => switch_prev.CLK
+switch => always0~0.IN1
+switch => switch_prev.DATAIN
 led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
-flash_end_flag <= flash_end_flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

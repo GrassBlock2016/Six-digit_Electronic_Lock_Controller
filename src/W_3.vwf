@@ -892,25 +892,12 @@ TRANSITION_LIST("led")
 		LEVEL 0 FOR 270.0;
 		NODE
 		{
-			REPEAT = 2;
-			NODE
-			{
-				REPEAT = 4;
-				LEVEL 1 FOR 20.0;
-				LEVEL 0 FOR 20.0;
-			}
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 60.0;
-		}
-		NODE
-		{
 			REPEAT = 4;
 			LEVEL 1 FOR 20.0;
 			LEVEL 0 FOR 20.0;
 		}
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 550.0;
 	}
 }
 
