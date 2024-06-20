@@ -5,7 +5,7 @@ module error_counter(
     input correct,
     output reg [1:0] error_count
 );
-    always @(negedge clk) begin
+    always @(posedge clk) begin
 		if (j) begin
         	if (correct) begin
            		error_count <= 2'b00;
@@ -18,6 +18,7 @@ module error_counter(
 					error_count <= 2'b11;
 				end else if (error_count == 2'b11) begin
 					error_count <= 2'b01;
+				end
 			end
 		end
 	end

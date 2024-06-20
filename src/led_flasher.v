@@ -19,7 +19,7 @@ module led_flasher (
 		end
 		
 		if (blinking) begin
-		    if (second_count < 10) begin
+		    if (second_count < 15) begin
 		    // 计时进行中，LED跟随时钟闪烁
 				second_count <= second_count + 1;
 				led <= ~led;

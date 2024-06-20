@@ -1,5 +1,5 @@
 Assembler report for SixDigit_Electronic_Lock_Controller
-Tue Jun 18 16:52:21 2024
+Wed Jun 19 13:28:57 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -10,8 +10,8 @@ Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.sof
-  6. Assembler Device Options: C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pof
+  5. Assembler Device Options: C:/Users/Lenovo-pc/Desktop/ÖÕ¼«ÎÞµÐìÅ¿áµðÕ¨Ìì°æ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.sof
+  6. Assembler Device Options: C:/Users/Lenovo-pc/Desktop/ÖÕ¼«ÎÞµÐìÅ¿áµðÕ¨Ìì°æ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jun 18 16:52:21 2024 ;
+; Assembler Status      ; Successful - Wed Jun 19 13:28:57 2024 ;
 ; Revision Name         ; SixDigit_Electronic_Lock_Controller   ;
 ; Top-level Entity Name ; SixDigit_Electronic_Lock_Controller   ;
 ; Family                ; ACEX1K                                ;
@@ -79,36 +79,36 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                              ;
-+--------------------------------------------------------------------------------------------------------+
-; File Name                                                                                              ;
-+--------------------------------------------------------------------------------------------------------+
-; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.sof ;
-; C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pof ;
-+--------------------------------------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.sof ;
-+----------------+-----------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                         ;
-+----------------+-----------------------------------------------------------------------------------------------------------------+
-; Device         ; EP1K30TC144-1                                                                                                   ;
-; JTAG usercode  ; 0x0000007F                                                                                                      ;
-; Checksum       ; 0x000304D6                                                                                                      ;
-+----------------+-----------------------------------------------------------------------------------------------------------------+
-
-
+; Assembler Generated Files                                                                                                        ;
 +----------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pof ;
-+----------------+-----------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                         ;
-+----------------+-----------------------------------------------------------------------------------------------------------------+
-; Device         ; EPC2                                                                                                            ;
-; JTAG usercode  ; 0x00000000                                                                                                      ;
-; Checksum       ; 0x025A52FA                                                                                                      ;
-+----------------+-----------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                        ;
++----------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Lenovo-pc/Desktop/ÖÕ¼«ÎÞµÐìÅ¿áµðÕ¨Ìì°æ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.sof ;
+; C:/Users/Lenovo-pc/Desktop/ÖÕ¼«ÎÞµÐìÅ¿áµðÕ¨Ìì°æ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pof ;
++----------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Lenovo-pc/Desktop/ÖÕ¼«ÎÞµÐìÅ¿áµðÕ¨Ìì°æ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.sof ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                   ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Device         ; EP1K30TC144-1                                                                                                                             ;
+; JTAG usercode  ; 0x0000007F                                                                                                                                ;
+; Checksum       ; 0x00034D17                                                                                                                                ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Lenovo-pc/Desktop/ÖÕ¼«ÎÞµÐìÅ¿áµðÕ¨Ìì°æ/Six-digit_Electronic_Lock_Controller/src/SixDigit_Electronic_Lock_Controller.pof ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                   ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Device         ; EPC2                                                                                                                                      ;
+; JTAG usercode  ; 0x00000000                                                                                                                                ;
+; Checksum       ; 0x025A5355                                                                                                                                ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,11 +117,11 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Jun 18 16:52:21 2024
+    Info: Processing started: Wed Jun 19 13:28:57 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SixDigit_Electronic_Lock_Controller -c SixDigit_Electronic_Lock_Controller
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Processing ended: Tue Jun 18 16:52:21 2024
+    Info: Processing ended: Wed Jun 19 13:28:57 2024
     Info: Elapsed time: 00:00:00
 
 

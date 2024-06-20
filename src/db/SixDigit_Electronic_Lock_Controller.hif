@@ -1172,498 +1172,6 @@ c89a3d47968155565cd6d7fab3ae6a
 }
 # end
 # entity
-lpm_counter
-# storage
-db|SixDigit_Electronic_Lock_Controller.(16).cnf
-db|SixDigit_Electronic_Lock_Controller.(16).cnf
-# case_insensitive
-# source_file
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_counter.tdf
-9ee47257a6b8b166152317b4e89afa
-6
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-4
-PARAMETER_UNKNOWN
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_SVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_PORT_UPDOWN
-PORT_CONNECTIVITY
-PARAMETER_UNKNOWN
-DEF
-DEVICE_FAMILY
-ACEX1K
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-NOT_GATE_PUSH_BACK
-ON
-NOT_GATE_PUSH_BACK
-USR
-CARRY_CNT_EN
-SMART
-PARAMETER_UNKNOWN
-DEF
-LABWIDE_SCLR
-ON
-PARAMETER_UNKNOWN
-DEF
-USE_NEW_VERSION
-TRUE
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-NOTHING
-PARAMETER_UNKNOWN
-DEF
-}
-# used_port {
-sclr
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-clk_en
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_constant.inc
-dcde44eee59335c1e2fe75d574f9646
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_decode.inc
-bd0e2f5e01c1bd360461dceb53d48
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_add_sub.inc
-7d9a33dd39f13aa690c3d0edd88351
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|cmpconst.inc
-e61874547688138e6fc0b49ff8760
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_counter.inc
-758886b0947dd67e65ec58adda9b948
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|dffeea.inc
-55d29d20f7e852c37746bec4e2495ec
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_synch_counter.inc
-e64d362a7450ad9895aa7e1e5dc2b42a
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_synch_counter_f.inc
-88e2e3ac71decf106c8d913bf441832f
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_counter_f10ke.inc
-d8a92a43831e9df2804dcf9a927e20
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_counter_stratix.inc
-587bf41cd15486161ec3eb5a1fef4c2
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|aglobal60.inc
-b3d07c643dae10ab2b3e646e99ec45fc
-}
-# end
-# entity
-alt_counter_f10ke
-# storage
-db|SixDigit_Electronic_Lock_Controller.(17).cnf
-db|SixDigit_Electronic_Lock_Controller.(17).cnf
-# case_insensitive
-# source_file
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_counter_f10ke.tdf
-f6e37bce553c52f6f17e6c8b3f399
-6
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-4
-PARAMETER_UNKNOWN
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-USR
-LPM_SVALUE
-15
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-15
-PARAMETER_UNKNOWN
-DEF
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CASCADE_CHAIN_LENGTH
-2
-CASCADE_CHAIN_LENGTH
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-DEVICE_FAMILY
-ACEX1K
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-sclr
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-cout
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-clk_en
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_constant.inc
-dcde44eee59335c1e2fe75d574f9646
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|aglobal60.inc
-b3d07c643dae10ab2b3e646e99ec45fc
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|flex10ke_lcell.inc
-c89a3d47968155565cd6d7fab3ae6a
-}
-# end
-# entity
-lpm_counter
-# storage
-db|SixDigit_Electronic_Lock_Controller.(18).cnf
-db|SixDigit_Electronic_Lock_Controller.(18).cnf
-# case_insensitive
-# source_file
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_counter.tdf
-9ee47257a6b8b166152317b4e89afa
-6
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-4
-PARAMETER_UNKNOWN
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_SVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_PORT_UPDOWN
-PORT_CONNECTIVITY
-PARAMETER_UNKNOWN
-DEF
-DEVICE_FAMILY
-ACEX1K
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-NOT_GATE_PUSH_BACK
-ON
-NOT_GATE_PUSH_BACK
-USR
-CARRY_CNT_EN
-SMART
-PARAMETER_UNKNOWN
-DEF
-LABWIDE_SCLR
-ON
-PARAMETER_UNKNOWN
-DEF
-USE_NEW_VERSION
-TRUE
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-NOTHING
-PARAMETER_UNKNOWN
-DEF
-}
-# used_port {
-sclr
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_constant.inc
-dcde44eee59335c1e2fe75d574f9646
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_decode.inc
-bd0e2f5e01c1bd360461dceb53d48
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_add_sub.inc
-7d9a33dd39f13aa690c3d0edd88351
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|cmpconst.inc
-e61874547688138e6fc0b49ff8760
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_counter.inc
-758886b0947dd67e65ec58adda9b948
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|dffeea.inc
-55d29d20f7e852c37746bec4e2495ec
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_synch_counter.inc
-e64d362a7450ad9895aa7e1e5dc2b42a
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_synch_counter_f.inc
-88e2e3ac71decf106c8d913bf441832f
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_counter_f10ke.inc
-d8a92a43831e9df2804dcf9a927e20
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_counter_stratix.inc
-587bf41cd15486161ec3eb5a1fef4c2
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|aglobal60.inc
-b3d07c643dae10ab2b3e646e99ec45fc
-}
-# end
-# entity
-alt_counter_f10ke
-# storage
-db|SixDigit_Electronic_Lock_Controller.(19).cnf
-db|SixDigit_Electronic_Lock_Controller.(19).cnf
-# case_insensitive
-# source_file
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|alt_counter_f10ke.tdf
-f6e37bce553c52f6f17e6c8b3f399
-6
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-4
-PARAMETER_UNKNOWN
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-USR
-LPM_SVALUE
-15
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-15
-PARAMETER_UNKNOWN
-DEF
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CASCADE_CHAIN_LENGTH
-2
-CASCADE_CHAIN_LENGTH
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-DEVICE_FAMILY
-ACEX1K
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-sclr
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-cout
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_constant.inc
-dcde44eee59335c1e2fe75d574f9646
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|aglobal60.inc
-b3d07c643dae10ab2b3e646e99ec45fc
-..|..|..|..|..|altera|quartus60|libraries|megafunctions|flex10ke_lcell.inc
-c89a3d47968155565cd6d7fab3ae6a
-}
-# end
-# entity
-SixDigit_Electronic_Lock_Controller
-# storage
-db|SixDigit_Electronic_Lock_Controller.(0).cnf
-db|SixDigit_Electronic_Lock_Controller.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-SixDigit_Electronic_Lock_Controller.v
-c443d7722cd23136f4a5dbe937a4eec
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-|
-}
-# end
-# entity
 judge
 # storage
 db|SixDigit_Electronic_Lock_Controller.(4).cnf
@@ -1689,6 +1197,28 @@ judge:jg4
 }
 # end
 # entity
+mode_switch_checker
+# storage
+db|SixDigit_Electronic_Lock_Controller.(16).cnf
+db|SixDigit_Electronic_Lock_Controller.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mode_switch_checker.v
+2929b1b635ad2926d53cbbd5237c3db
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+mode_switch_checker:mode_chk
+}
+# end
+# entity
 error_counter
 # storage
 db|SixDigit_Electronic_Lock_Controller.(5).cnf
@@ -1700,7 +1230,7 @@ ON
 # case_sensitive
 # source_file
 error_counter.v
-e4b78312d5687efea983175e97d1689d
+10d3234f5f66b7f28d9ac25cc8706f
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -1722,7 +1252,7 @@ ON
 # case_sensitive
 # source_file
 led_flasher.v
-e19d1d99ca6d548fcad55db729739
+3060d0ebe2dda4271b9f3087a4f87024
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -1730,6 +1260,28 @@ OFF
 }
 # hierarchies {
 led_flasher:led_fls
+}
+# end
+# entity
+SixDigit_Electronic_Lock_Controller
+# storage
+db|SixDigit_Electronic_Lock_Controller.(0).cnf
+db|SixDigit_Electronic_Lock_Controller.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+SixDigit_Electronic_Lock_Controller.v
+7a43677b3e69798db75b3993dca0a7
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+|
 }
 # end
 # complete

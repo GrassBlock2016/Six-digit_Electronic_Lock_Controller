@@ -61,7 +61,7 @@ out1[3]                      : 17        : output : LVTTL/LVCMOS      :         
 GND*                         : 18        :        :                   :         :           :                
 out3[1]                      : 19        : output : LVTTL/LVCMOS      :         :           : Y              
 GND*                         : 20        :        :                   :         :           :                
-GND*                         : 21        :        :                   :         :           :                
+hide                         : 21        : input  : LVTTL/LVCMOS      :         :           : Y              
 GND*                         : 22        :        :                   :         :           :                
 GND*                         : 23        :        :                   :         :           :                
 VCC_IO                       : 24        : power  :                   : 3.3V    :           :                

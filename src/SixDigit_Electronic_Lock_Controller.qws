@@ -12,17 +12,17 @@ ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
 DocPathName=error_counter.v
 DocumentCLSID={84678d98-dc76-11d0-a0d8-0020affa5bde}
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAAAAAAAAAGICAAAAAPPPPPPPPPPPPPPPPOEAAAAAAOEAAAAAAFCGAAAAALCCAAAAA
-IsActiveChildFrame=True
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAAAAAAAAAGICAAAAAMPPPPPPPCOPPPPPPNPPPPPPPBEAAAAAAJAFAAAAAOBCAAAAA
+IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0.StateMap]
 AFC_IN_REPORT=False
 [ProjectWorkspace.Frames.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0]
-DocPathName=SixDigit_Electronic_Lock_Controller.v
+DocPathName=mode_switch_checker.v
 DocumentCLSID={84678d98-dc76-11d0-a0d8-0020affa5bde}
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPKJAAAAAAHJAAAAAAAFGAAAAAEHCAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAAAAAAAAAHICAAAAAMPPPPPPPCOPPPPPPMEAAAAAAINAAAAAAIFFAAAAAGLCAAAAA
 IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0.StateMap]
@@ -32,7 +32,7 @@ ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-2.ViewFrame-0]
 DocPathName=led_flasher.v
 DocumentCLSID={84678d98-dc76-11d0-a0d8-0020affa5bde}
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAANOAAAAAAGICAAAAAPPPPPPPPPPPPPPPPMJAAAAAAMJAAAAAACFGAAAAAJHCAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPOGAAAAAABJAAAAAAELEAAAAADCCAAAAA
 IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-2.ViewFrame-0.StateMap]
@@ -40,12 +40,12 @@ AFC_IN_REPORT=False
 [ProjectWorkspace.Frames.ChildFrames.Document-3]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-3.ViewFrame-0]
-DocPathName=W_3.vwf
+DocPathName=W_2.vwf
 DocumentCLSID={4a9ed22a-e60b-11d1-a0bd-0020affa43f2}
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMDAAAAAAAIAAAAAADBGAAAAAGECAAAAA
-IsActiveChildFrame=False
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAAAAAAAAACDCAAAAAPPPPPPPPPPPPPPPPCEAAAAAAHFAAAAAAJKEAAAAAJOBAAAAA
+IsActiveChildFrame=True
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-3.ViewFrame-0.StateMap]
 AFC_SIM_AP_NAME=SixDigit_Electronic_Lock_Controller
-AFC_PROJ_DB_PATH=C:/Users/ASUS/Desktop/Six-digit_Electronic_Lock_Controller/src/db/SixDigit_Electronic_Lock_Controller.quartus_db
+AFC_PROJ_DB_PATH=C:/Documents and Settings/Administrator/×ÀÃæ/ÐÂ°æ/Six-digit_Electronic_Lock_Controller/src/db/SixDigit_Electronic_Lock_Controller.quartus_db
 AFC_IN_REPORT=False

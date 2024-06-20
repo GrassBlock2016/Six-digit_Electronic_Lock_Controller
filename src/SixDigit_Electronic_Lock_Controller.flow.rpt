@@ -1,5 +1,5 @@
 Flow report for SixDigit_Electronic_Lock_Controller
-Tue Jun 18 16:52:22 2024
+Wed Jun 19 13:28:58 2024
 Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------+-----------------------------------------------+
-; Flow Status             ; Successful - Tue Jun 18 16:52:22 2024         ;
+; Flow Status             ; Successful - Wed Jun 19 13:28:58 2024         ;
 ; Quartus II Version      ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
 ; Revision Name           ; SixDigit_Electronic_Lock_Controller           ;
 ; Top-level Entity Name   ; SixDigit_Electronic_Lock_Controller           ;
@@ -45,8 +45,8 @@ applicable agreement for further details.
 ; Device                  ; EP1K30TC144-1                                 ;
 ; Timing Models           ; Final                                         ;
 ; Met timing requirements ; Yes                                           ;
-; Total logic elements    ; 258 / 1,728 ( 15 % )                          ;
-; Total pins              ; 44 / 102 ( 43 % )                             ;
+; Total logic elements    ; 273 / 1,728 ( 16 % )                          ;
+; Total pins              ; 45 / 102 ( 44 % )                             ;
 ; Total memory bits       ; 0 / 24,576 ( 0 % )                            ;
 ; Total PLLs              ; 0 / 1 ( 0 % )                                 ;
 +-------------------------+-----------------------------------------------+
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 06/18/2024 16:52:18                 ;
+; Start date & time ; 06/19/2024 13:28:52                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; SixDigit_Electronic_Lock_Controller ;
 +-------------------+-------------------------------------+
@@ -78,10 +78,10 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
 ; Analysis & Synthesis ; 00:00:01     ;
-; Fitter               ; 00:00:01     ;
+; Fitter               ; 00:00:02     ;
 ; Assembler            ; 00:00:00     ;
 ; Timing Analyzer      ; 00:00:00     ;
-; Total                ; 00:00:02     ;
+; Total                ; 00:00:03     ;
 +----------------------+--------------+
 
 
