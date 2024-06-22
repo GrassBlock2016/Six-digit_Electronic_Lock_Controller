@@ -5,7 +5,7 @@
 
 ## 项目介绍
 
-本项目基于前文介绍过的Quartus II 6.0软件以及Verilog HDL语言编写，并已经过DICE SEM II实验箱的上机调试和验收。该项目各主要文件的说明如下：
+本项目基于Quartus II 6.0软件以及Verilog HDL语言编写，并已经过DICE SEM II实验箱的上机调试和验收。该项目各主要文件的说明如下：
 
 ### 目录结构
 
