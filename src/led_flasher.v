@@ -1,10 +1,10 @@
 // 控制灯的闪烁
 module led_flasher (
-    input wire clk,       		// 时钟信号，1Hz
+    input wire clk,       		// 时钟信号，10Hz
     input wire switch,    		// 开关信号
     output reg led        		// LED输出
 );
-    reg [3:0] second_count;  // 计时寄存器，计数10秒
+    reg [3:0] second_count;  // 计时寄存器
     reg blinking;            // 标志寄存器，指示是否正在闪烁
 	reg switch_prev;         // 记录上一个时钟周期的开关状态
 

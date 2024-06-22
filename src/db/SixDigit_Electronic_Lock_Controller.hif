@@ -120,25 +120,6 @@ passwd_register:cin_password|register:r6
 }
 # end
 # entity
-timer
-# storage
-db|SixDigit_Electronic_Lock_Controller.(6).cnf
-db|SixDigit_Electronic_Lock_Controller.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-timer.v
-7a8263b512caa3f1af91378c51629dc
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# end
-# entity
 lpm_counter
 # storage
 db|SixDigit_Electronic_Lock_Controller.(9).cnf
@@ -1197,28 +1178,6 @@ judge:jg4
 }
 # end
 # entity
-mode_switch_checker
-# storage
-db|SixDigit_Electronic_Lock_Controller.(16).cnf
-db|SixDigit_Electronic_Lock_Controller.(16).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-mode_switch_checker.v
-2929b1b635ad2926d53cbbd5237c3db
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-mode_switch_checker:mode_chk
-}
-# end
-# entity
 error_counter
 # storage
 db|SixDigit_Electronic_Lock_Controller.(5).cnf
@@ -1241,28 +1200,6 @@ error_counter:error_cnt
 }
 # end
 # entity
-led_flasher
-# storage
-db|SixDigit_Electronic_Lock_Controller.(7).cnf
-db|SixDigit_Electronic_Lock_Controller.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-led_flasher.v
-3060d0ebe2dda4271b9f3087a4f87024
-7
-# internal_option {
-AUTO_RESOURCE_SHARING
-OFF
-}
-# hierarchies {
-led_flasher:led_fls
-}
-# end
-# entity
 SixDigit_Electronic_Lock_Controller
 # storage
 db|SixDigit_Electronic_Lock_Controller.(0).cnf
@@ -1274,7 +1211,7 @@ ON
 # case_sensitive
 # source_file
 SixDigit_Electronic_Lock_Controller.v
-7a43677b3e69798db75b3993dca0a7
+5ee5eabf67ad96b0518bb422af4696f
 7
 # internal_option {
 AUTO_RESOURCE_SHARING
@@ -1282,6 +1219,28 @@ OFF
 }
 # hierarchies {
 |
+}
+# end
+# entity
+led_flasher
+# storage
+db|SixDigit_Electronic_Lock_Controller.(6).cnf
+db|SixDigit_Electronic_Lock_Controller.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+led_flasher.v
+28ca547ef5aa1aed2ce4912abb2df895
+7
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+led_flasher:led_fls
 }
 # end
 # complete

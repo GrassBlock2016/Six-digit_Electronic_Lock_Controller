@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="SixDigit_Electronic_Lock_Controller">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SixDigit_Electronic_Lock_Controller|led_flasher:led_fls|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_klh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -38,7 +38,7 @@ set_global_assignment -name VERILOG_FILE 2to4.v
 set_global_assignment -name VERILOG_FILE yima2to4.v
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_WAVEFORM_FILE SixDigit_Electronic_Lock_Controller.vwf
-set_global_assignment -name VECTOR_INPUT_SOURCE "C:\\Documents and Settings\\Administrator\\×ÀÃæ\\ÐÂ°æ\\Six-digit_Electronic_Lock_Controller\\src\\W_2.vwf"
+set_global_assignment -name VECTOR_INPUT_SOURCE "C:\\Users\\ASUS\\Desktop\\Six-digit_Electronic_Lock_Controller\\src\\f3.vwf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE W_1.vwf
 set_global_assignment -name VERILOG_FILE mux4to1.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE W_2.vwf
